@@ -1,16 +1,16 @@
 // Abrir o menu
 // Chamando a tag com uma constante
-const menu = document.getElementById('menu')
+const menu_icon = document.getElementById('menu-icon')
 
 // Aplicando a função de abrir o menu
-menu.addEventListener('click', () => {
+menu_icon.addEventListener('click', () => {
     if (nav.style.display = 'none') {
         nav.style.display = 'block'
     }
 })
 
 // Acesso ao menu usando o teclado
-menu.addEventListener('keypress', (tecla) => {
+menu_icon.addEventListener('keypress', (tecla) => {
     if (tecla.key === 'Enter') {
         tecla.target.click()
     }

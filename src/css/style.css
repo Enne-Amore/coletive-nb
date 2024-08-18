@@ -1,1 +1,97 @@
 @charset 'UTF-8';
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    padding-left: 10px;
+}
+#cabecalho .logo {
+    width: 215px;
+    height: auto;
+}
+#cabecalho .icone {
+    font-size: 12em;
+}
+#cabecalho .modal-container {
+    background-color: transparent;
+    display: none;
+    width: max-content;
+    height: max-content;
+    z-index: 2;
+    border: 0;
+}
+#cabecalho .modal-container .transparencia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+    animation: fade .1s ease-out;
+}
+#cabecalho .modal-container .menu {
+    position: relative;
+
+    background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000 100%);
+    box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    padding: 2.5em 2em 4em;
+    max-width: 40vw;
+    border-bottom-right-radius: 1em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+    animation: esquerda .4s ease-out .2s both;
+}
+#cabecalho .modal-container .menu .nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Conteúdo */
+#conteudo #topo {
+    position: fixed;
+    right: 2%;
+    bottom: 6%;
+    background-color: var(--roxa-clara);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
+    color: white;
+    border-radius: 50%;
+    padding: 1%;
+    font-size: 2.5em;
+    cursor: pointer;
+    transition-duration: .4s;
+    z-index: 1;
+    animation: fade .5s ease;
+}
+#conteudo #topo:hover,
+#conteudo #topo:focus-visible {
+    background-color: var(--roxa-escura);
+}
+#conteudo #topo:active {
+    background-color: white;
+    color: var(--roxa-escura);
+}
+#conteudo #topo:focus-visible {
+    outline: auto;
+}
+
+
+
+:root {
+    --roxa-escura: #713CA6;
+    --roxa-clara: #6A4EA6;
+    --amarela: #F2E530;
+    --laranja: #F2C029;
+    --preta: #242526;
+    --titulo: 'titulo', sans-serif;
+    --padrao: "Open Sans", sans-serif;
+    --texto: "texto", sans-serif;
+}
