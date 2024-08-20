@@ -1,11 +1,12 @@
 // Abrir o menu
 // Chamando a tag com uma constante
 const menu_icon = document.getElementById('menu-icon')
+const modal_container = document.getElementById('modal-container')
 
 // Aplicando a função de abrir o menu
 menu_icon.addEventListener('click', () => {
-    if (nav.style.display = 'none') {
-        nav.style.display = 'block'
+    if (modal_container.style.display = 'none') {
+        modal_container.style.display = 'block'
     }
 })
 
@@ -17,21 +18,12 @@ menu_icon.addEventListener('keypress', (tecla) => {
 })
 
 // Sair do menu
-// Chamada das tags por ID's
-const logo = window.document.querySelector('.logo')
-const nav = window.document.querySelector('.nav')
-const conteudo = window.document.getElementById('conteudo')
-const rodape = window.document.getElementById('rodape')
-
-// Adicionar o evento nelas
-if (innerWidth < 1200) {
-    logo.addEventListener('click', sairDoMenu)
-    nav.addEventListener('click', sairDoMenu)
-    conteudo.addEventListener('click', sairDoMenu)
-    rodape.addEventListener('click', sairDoMenu)
-}
+// Chamada da tag por ID
+const transparencia = window.document.querySelector('#transparencia')
 
 // Aplicando função de sair do menu
-function sairDoMenu() {
-    nav.style.display = 'none'
+if (innerWidth < 1200) {
+    transparencia.addEventListener('click', () => {
+        modal_container.style.display = 'none'
+    })
 }

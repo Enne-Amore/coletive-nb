@@ -15,6 +15,7 @@
 }
 #cabecalho .icone {
     font-size: 12em;
+    cursor: pointer;
 }
 #cabecalho .modal-container {
     background-color: transparent;
@@ -37,7 +38,7 @@
 #cabecalho .modal-container .menu {
     position: relative;
 
-    background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000000 100%);
     box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
     padding: 2.5em 2em 4em;
     max-width: 40vw;
@@ -50,12 +51,159 @@
     gap: 1em;
     animation: esquerda .4s ease-out .2s both;
 }
+#cabecalho .modal-container .menu h2 {
+    font-size: 20em;
+    font-family: var(--titulo);
+}
+#cabecalho .modal-container .menu hr {
+    background: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    width: 100%;
+    margin: 1em auto;
+}
 #cabecalho .modal-container .menu .nav ul {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+#cabecalho .modal-container .menu .nav ul a {
+    font-size: 2em;
 }
 
 /* Conteúdo */
+#conteudo #introducao {
+    background: url(../img/fundo-roxo.jpg);
+    padding: 12em 0 25em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10em;
+}
+#conteudo #introducao .ilustracao {
+    width: 335px;
+    height: auto;
+}
+#conteudo #introducao .frase-efeito {
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    background: linear-gradient(106deg, #6A4EA6 0%, #713CA6 97.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#conteudo #introducao .frase-efeito span {
+    background: var(--amarela);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -webkit-text-fill-color: var(--roxa-clara);
+    box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    padding: .4em .1em 0 .15em;
+}
+
+#conteudo #finalidades {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px 80px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    align-self: stretch;
+    background: linear-gradient(180deg, #6A4EA6 0%, #713CA6 100%);
+    box-shadow: 0px 4px 4px 0px rgba(113, 60, 166, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+#conteudo #finalidades .textos {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+#conteudo #finalidades .textos .titulo {
+    font-size: 24px;
+    font-family: var(--titulo);
+}
+#conteudo #finalidades .textos .lista {
+    padding-left: 8em;
+}
+#conteudo #finalidades .textos .lista li {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    font-family: var(--texto);
+    line-height: 35px;
+}
+#conteudo #finalidades .textos .lista li::before {
+    content: "⭐";
+    position: absolute;
+    left: -12%;
+}
+#conteudo #finalidades .textos .lista li span {
+    font-weight: bolder;
+    color: var(--amarela);
+}
+#conteudo #finalidades .img {
+    width: 315px;
+    height: auto;
+}
+#conteudo #finalidades .img img {
+    border-radius: 35px;
+    border: 1.5px dashed #713CA6;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+
+#conteudo #atividades {
+    display: flex;
+    flex-direction: column;
+    gap: 15em;
+    margin: 100px 20px;
+}
+#conteudo #atividades .titulo {
+    padding: 22px 40px 15px 40px;
+    background: linear-gradient(90deg, rgba(113, 60, 166, 0.00) 0%, var(--roxa-escura) 50%, rgba(113, 60, 166, 0.00) 100%);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-family: var(--titulo);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+}
+#conteudo #atividades .lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+}
+#conteudo #atividades .lista .atividade hr {
+    height: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+}
+#conteudo #atividades .lista .atividade p {
+    border-radius: 0px 0px 40px 40px;
+    background: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+    color: var(--roxa-escura);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(113, 60, 166, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.05);
+    font-family: var(--texto);
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    padding: 10px 15px 20px 15px;
+    margin: auto 2%;
+    transform: translateY(-1px);
+}
+#conteudo #atividades .lista .atividade p span {
+    font-weight: bolder;
+}
+
 #conteudo #topo {
     position: fixed;
     right: 2%;
@@ -64,8 +212,8 @@
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     color: white;
     border-radius: 50%;
-    padding: 1%;
-    font-size: 2.5em;
+    padding: 3%;
+    font-size: 12em;
     cursor: pointer;
     transition-duration: .4s;
     z-index: 1;
