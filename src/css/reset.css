@@ -20,7 +20,7 @@
 
 body {
     color: white;
-    font: 1vw var(--padrao);
+    font: 2vw var(--padrao);
     max-width: 100vw;
     overflow-x: hidden;
     animation: aparecer .5s ease-out;

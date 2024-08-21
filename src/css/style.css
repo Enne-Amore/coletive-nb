@@ -14,10 +14,10 @@
     height: auto;
 }
 #cabecalho .icone {
-    font-size: 12em;
+    font-size: 7em;
     cursor: pointer;
 }
-#cabecalho .modal-container {
+#cabecalho #modal-container {
     background-color: transparent;
     display: none;
     width: max-content;
@@ -25,7 +25,7 @@
     z-index: 2;
     border: 0;
 }
-#cabecalho .modal-container .transparencia {
+#cabecalho #modal-container #transparencia {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@
     backdrop-filter: blur(2px);
     animation: fade .1s ease-out;
 }
-#cabecalho .modal-container .menu {
+#cabecalho #modal-container #menu {
     position: relative;
 
     background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000000 100%);
@@ -51,33 +51,35 @@
     gap: 1em;
     animation: esquerda .4s ease-out .2s both;
 }
-#cabecalho .modal-container .menu h2 {
-    font-size: 20em;
+#cabecalho #modal-container #menu h2 {
+    font-size: 24px;
     font-family: var(--titulo);
+    color: white;
 }
-#cabecalho .modal-container .menu hr {
+#cabecalho #modal-container #menu hr {
     background: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
     margin: 1em auto;
 }
-#cabecalho .modal-container .menu .nav ul {
+#cabecalho #modal-container #menu .nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#cabecalho .modal-container .menu .nav ul a {
+#cabecalho #modal-container #menu .nav ul a {
     font-size: 2em;
 }
 
 /* Conteúdo */
 #conteudo #introducao {
-    background: url(../img/fundo-roxo.jpg);
-    padding: 12em 0 25em;
+    background: url(../img/fundo-roxo.jpg) no-repeat;
+    background-size: cover;
+    padding: 8em 0 16em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10em;
+    gap: 6em;
 }
 #conteudo #introducao .ilustracao {
     width: 335px;
@@ -110,10 +112,10 @@
 #conteudo #finalidades {
     display: flex;
     flex-direction: column;
-    padding: 35px 30px 80px 30px;
+    padding: 40px 30px 80px;
     justify-content: center;
     align-items: center;
-    gap: 10em;
+    gap: 6em;
     align-self: stretch;
     background: linear-gradient(180deg, #6A4EA6 0%, #713CA6 100%);
     box-shadow: 0px 4px 4px 0px rgba(113, 60, 166, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
@@ -121,14 +123,14 @@
 #conteudo #finalidades .textos {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
 }
 #conteudo #finalidades .textos .titulo {
     font-size: 24px;
     font-family: var(--titulo);
 }
 #conteudo #finalidades .textos .lista {
-    padding-left: 8em;
+    padding-left: 4.5em;
 }
 #conteudo #finalidades .textos .lista li {
     position: relative;
@@ -157,10 +159,11 @@
 }
 
 #conteudo #atividades {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 15em;
-    margin: 100px 20px;
+    gap: 8em;
+    margin: 100px auto;
 }
 #conteudo #atividades .titulo {
     padding: 22px 40px 15px 40px;
@@ -171,16 +174,19 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 35px;
+    width: 90%;
+    margin: auto;
 }
 #conteudo #atividades .lista {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10em;
+    gap: 6em;
 }
 #conteudo #atividades .lista .atividade hr {
+    width: 90%;
     height: 10px;
-    flex-shrink: 0;
+    margin: auto;
     border-radius: 10px;
     background: linear-gradient(90deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
     box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
@@ -197,12 +203,52 @@
     font-style: normal;
     line-height: 30px;
     padding: 10px 15px 20px 15px;
-    margin: auto 2%;
+    margin: auto;
+    width: 85%;
     transform: translateY(-1px);
 }
 #conteudo #atividades .lista .atividade p span {
     font-weight: bolder;
 }
+#conteudo #atividades .ilustracoes {
+    position: relative;
+    height: 40vh;
+    overflow-x: auto;
+}
+#conteudo #atividades .ilustracoes::-webkit-scrollbar {
+    height: 0;
+}
+#conteudo #atividades .ilustracoes hr {
+    height: 28.19px;
+    background: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05);
+    transform: translateY(20vh);
+}
+#conteudo #atividades .ilustracoes .imgs {
+    position: absolute;
+    top: 0;
+    left: 6.5vw;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    gap: 5em;
+    width: max-content;
+}
+#conteudo #atividades .ilustracoes .imgs figure {
+    border-radius: 40px;
+    overflow: hidden;
+    width: max-content;
+    height: 100%;
+}
+#conteudo #atividades .ilustracoes .imgs figure img {
+    border-radius: 35px;
+    border: 1.5px dashed var(--roxa-escura);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+#conteudo #atividades .ilustracoes .imgs figure:last-child {
+    margin-right: 20vw;
+}
+
 
 #conteudo #topo {
     position: fixed;
@@ -213,7 +259,7 @@
     color: white;
     border-radius: 50%;
     padding: 3%;
-    font-size: 12em;
+    font-size: 8em;
     cursor: pointer;
     transition-duration: .4s;
     z-index: 1;
