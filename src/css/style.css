@@ -22,7 +22,7 @@
     display: none;
     width: max-content;
     height: max-content;
-    z-index: 2;
+    z-index: 3;
     border: 0;
 }
 #cabecalho #modal-container #transparencia {
@@ -36,20 +36,19 @@
     animation: fade .1s ease-out;
 }
 #cabecalho #modal-container #menu {
-    position: relative;
-
+    position: fixed;
+    top: 0;
     background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000000 100%);
     box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
-    padding: 2.5em 2em 4em;
-    max-width: 40vw;
+    padding: 5.5em 4em;
     border-bottom-right-radius: 1em;
-    margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     gap: 1em;
-    animation: esquerda .4s ease-out .2s both;
+    width: max-content;
+    height: 100vh;
+    animation: esquerda .35s ease-out .1s both;
 }
 #cabecalho #modal-container #menu h2 {
     font-size: 24px;
@@ -60,15 +59,38 @@
     background: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
-    margin: 1em auto;
+    margin: 1.5em auto 1em;
 }
 #cabecalho #modal-container #menu .nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1em;
 }
 #cabecalho #modal-container #menu .nav ul a {
-    font-size: 2em;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#cabecalho #modal-container #menu .nav ul a:hover {
+    color: var(--amarela);
+}
+#cabecalho #modal-container #menu .nav ul a:active {
+    color: var(--laranja);
+}
+#cabecalho #modal-container #menu .nav ul a#faca-parte {
+    border-radius: 25px;
+    background-color: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+    color: var(--preta);
+    font-weight: 600;
+}
+#cabecalho #modal-container #menu .nav ul a#faca-parte:hover {
+    background-color: var(--laranja);
+}
+#cabecalho #modal-container #menu .nav ul a#faca-parte:active {
+    background-color: white;
+    color: var(--laranja);
 }
 
 /* Conteúdo */
@@ -79,7 +101,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6em;
+    gap: 5em;
 }
 #conteudo #introducao .ilustracao {
     width: 335px;
@@ -162,6 +184,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 8em;
     margin: 100px auto;
 }
@@ -175,7 +198,6 @@
     font-weight: 400;
     line-height: 35px;
     width: 90%;
-    margin: auto;
 }
 #conteudo #atividades .lista {
     list-style: none;
@@ -205,64 +227,59 @@
     padding: 10px 15px 20px 15px;
     margin: auto;
     width: 85%;
-    transform: translateY(-1px);
 }
 #conteudo #atividades .lista .atividade p span {
     font-weight: bolder;
 }
 #conteudo #atividades .ilustracoes {
     position: relative;
-    height: 40vh;
+    width: 100%;
+    height: auto;
     overflow-x: auto;
 }
 #conteudo #atividades .ilustracoes::-webkit-scrollbar {
     height: 0;
 }
 #conteudo #atividades .ilustracoes hr {
+    width: calc(100vw + 970px);
     height: 28.19px;
     background: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05);
-    transform: translateY(20vh);
+    transform: translateY(17vh);
 }
 #conteudo #atividades .ilustracoes .imgs {
-    position: absolute;
-    top: 0;
-    left: 6.5vw;
-    bottom: 0;
-    right: 0;
     display: flex;
     gap: 5em;
     width: max-content;
+    padding-left: calc(100vw - 325px);
+    padding-right: calc(100vw - 325px);
 }
 #conteudo #atividades .ilustracoes .imgs figure {
-    border-radius: 40px;
+    border-radius: 35px;
     overflow: hidden;
-    width: max-content;
-    height: 100%;
+    width: 283px;
+    height: max-content;
+    z-index: 1;
 }
 #conteudo #atividades .ilustracoes .imgs figure img {
     border-radius: 35px;
     border: 1.5px dashed var(--roxa-escura);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
-#conteudo #atividades .ilustracoes .imgs figure:last-child {
-    margin-right: 20vw;
-}
-
 
 #conteudo #topo {
     position: fixed;
-    right: 2%;
+    right: 3%;
     bottom: 6%;
     background-color: var(--roxa-clara);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.158);
     color: white;
     border-radius: 50%;
     padding: 3%;
-    font-size: 8em;
+    font-size: 7em;
     cursor: pointer;
     transition-duration: .4s;
-    z-index: 1;
+    z-index: 2;
     animation: fade .5s ease;
 }
 #conteudo #topo:hover,
