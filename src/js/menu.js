@@ -2,6 +2,7 @@
 // Chamando a tag com uma constante
 const menu_icon = document.getElementById('menu-icon')
 const modal_container = document.getElementById('modal-container')
+const nav = document.querySelectorAll('.nav ul a')
 
 // Aplicando a função de abrir o menu
 menu_icon.addEventListener('click', () => {
@@ -25,5 +26,11 @@ const transparencia = window.document.querySelector('#transparencia')
 if (innerWidth < 1200) {
     transparencia.addEventListener('click', () => {
         modal_container.style.display = 'none'
+    })
+    
+    nav.forEach((a) => {
+        a.addEventListener('click', () => {
+            modal_container.style.display = 'none'
+        })
     })
 }
