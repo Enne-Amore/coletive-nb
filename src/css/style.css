@@ -53,13 +53,14 @@
 #cabecalho #modal-container #menu h2 {
     font-size: 24px;
     font-family: var(--titulo);
+    font-weight: 400;
     color: white;
 }
 #cabecalho #modal-container #menu hr {
     border-color: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     width: 100%;
-    margin: 1.5em auto 1em;
+    margin: 1em auto .9em;
 }
 #cabecalho #modal-container #menu .nav ul {
     display: flex;
@@ -112,7 +113,6 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
     font-family: var(--titulo);
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
     line-height: 45px;
     letter-spacing: 1.4px;
@@ -132,7 +132,8 @@
     padding: .4em .1em 0 .15em;
 }
 
-#conteudo #finalidades {
+#conteudo #finalidades,
+#conteudo #mapeamento {
     display: flex;
     flex-direction: column;
     padding: 40px 30px 80px;
@@ -140,22 +141,26 @@
     align-items: center;
     gap: 6em;
     align-self: stretch;
-    background: linear-gradient(180deg, #6A4EA6 0%, #713CA6 100%);
+    background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
     box-shadow: 0px 4px 4px 0px rgba(113, 60, 166, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
-#conteudo #finalidades .textos {
+#conteudo #finalidades .textos,
+#conteudo #mapeamento .textos {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-#conteudo #finalidades .textos .titulo {
+#conteudo #finalidades .textos .titulo,
+#conteudo #mapeamento .textos .titulo {
     font-size: 24px;
     font-family: var(--titulo);
+    font-weight: 400;
 }
 #conteudo #finalidades .textos .lista {
     padding-left: 4.5em;
 }
-#conteudo #finalidades .textos .lista li {
+#conteudo #finalidades .textos .lista li,
+#conteudo #mapeamento .textos p {
     position: relative;
     list-style: none;
     font-size: 20px;
@@ -167,22 +172,26 @@
     position: absolute;
     left: -12%;
 }
-#conteudo #finalidades .textos .lista li strong {
+#conteudo #finalidades .textos .lista li strong,
+#conteudo #mapeamento .textos p strong {
     font-weight: bolder;
     color: var(--amarela);
 }
-#conteudo #finalidades .img {
+#conteudo #finalidades .img,
+#conteudo #mapeamento .img {
     width: 315px;
     height: auto;
 }
-#conteudo #finalidades .img img {
+#conteudo #finalidades .img img,
+#conteudo #mapeamento .img img {
     border-radius: 35px;
-    border: 1.5px dashed #713CA6;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    border: 1.5px dashed var(--roxa-escura);
+    filter: drop-shadow(0px 4px 4px 0px rgba(0, 0, 0, 0.10));
 }
 
 #conteudo #atividades,
-#conteudo #parceires {
+#conteudo #parceires,
+#conteudo #direitos {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -303,7 +312,8 @@
     background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
-#conteudo #membres .frase-efeito {
+#conteudo #membres .frase-efeito,
+#conteudo #direitos .frase-efeito {
     text-align: center;
     text-shadow: 0px 4px 4px rgba(242, 229, 48, 0.05), 0px 4px 4px rgba(0, 0, 0, 0.10);
     font-family: var(--titulo);
@@ -316,6 +326,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: auto 5%;
 }
 #conteudo #membres .ilustracoes hr {
     border-color: var(--roxa-clara);
@@ -349,7 +360,7 @@
     align-items: center;
     gap: 25px;
     border-radius: 30px;
-    background: linear-gradient(100deg, #FFCE31 0%, #F2E530 100%);
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
     box-shadow: 4px 4px 4px 0px rgba(242, 229, 48, 0.05), 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
 #conteudo #parceires .parceires .parceire .texto p {
@@ -359,7 +370,8 @@
     font-weight: 400;
     line-height: 35px;
 }
-#conteudo #parceires .parceires .parceire .texto a {
+#conteudo #parceires .parceires .parceire .texto a,
+#conteudo #mapeamento .textos a {
     display: flex;
     padding: 15px 35px;
     justify-content: center;
@@ -387,8 +399,86 @@
 #conteudo #parceires .parceires .parceire .texto a strong {
     font-weight: 700;
 }
-#conteudo #parceires .parceires .parceire .texto a .icone {
+#conteudo #parceires .parceires .parceire .texto a .icone,
+#conteudo #mapeamento .textos a .icone {
     font-size: 1.5em;
+}
+
+#conteudo #mapeamento .textos {
+    gap: .5em;
+}
+#conteudo #mapeamento .textos .titulo {
+    line-height: 35px;
+}
+#conteudo #mapeamento .textos a {
+    border: none;
+    background-color: var(--amarela);
+    color: var(--preta);
+    margin: .9em 5% 1em;
+}
+#conteudo #mapeamento .textos a:hover {
+    background-color: var(--laranja);
+}
+#conteudo #mapeamento .textos a:active {
+    background-color: white;
+    color: var(--laranja);
+}
+
+#conteudo #direitos .frase-efeito {
+    margin: auto 8%;
+}
+#conteudo #direitos .direitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#conteudo #direitos .direitos .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(242, 229, 48, 0.05), 4px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    width: 280px;
+}
+#conteudo #direitos .direitos .card:hover {
+    background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
+}
+#conteudo #direitos .direitos .card:hover .img img {
+    transform: scale(1.2);
+}
+#conteudo #direitos .direitos .card:hover .texto {
+    color: white;
+}
+#conteudo #direitos .direitos .card:active {
+    background: linear-gradient(100deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
+}
+#conteudo #direitos .direitos .card .img {
+    width: 280px;
+    height: auto;
+    border-radius: 35px;
+    overflow: hidden;
+}
+#conteudo #direitos .direitos .card .img img {
+    border-radius: 35px;
+    background: linear-gradient(180deg, rgba(106, 78, 166, 0.00) 0%, rgba(106, 78, 166, 0.50) 100%), lightgray -9px 0px / 117.857% 100% no-repeat;
+    transition: .2s ease-out;
+}
+#conteudo #direitos .direitos .card .texto {
+    color: var(--preta);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    width: 85%;
+    margin: .6em auto 1em;
+    transition: .2s ease-out;
+}
+#conteudo #direitos .direitos hr {
+    border-color: var(--roxa-clara);
+    box-shadow: 0px 0px 6px 0px rgba(106, 78, 166, 0.05), 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
+    width: 100%;
 }
 
 #conteudo #topo {
