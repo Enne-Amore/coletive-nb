@@ -1,1 +1,11 @@
 @charset 'UTF-8';
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1vw;
+    }
+
+    #cabecalho .icone {
+        display: none;
+    }
+}
