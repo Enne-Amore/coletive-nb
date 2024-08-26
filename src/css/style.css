@@ -38,15 +38,14 @@
 #cabecalho #modal-container #menu {
     position: fixed;
     top: 0;
-    background: radial-gradient(50% 50% at 50% 50%, #242526 0%, #000000 100%);
+    background: radial-gradient(50% 50% at 50% 50%, var(--preta) 0%, black 100%);
     box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
     padding: 5.5em 4em;
-    border-bottom-right-radius: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
-    width: max-content;
+    width: 65vw;
     height: 100vh;
     animation: esquerda .35s ease-out .1s both;
 }
@@ -104,7 +103,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5em;
+    gap: 4em;
 }
 #conteudo #introducao .ilustracao {
     width: 335px;
@@ -165,9 +164,11 @@
     font-family: var(--titulo);
     font-weight: 400;
     line-height: 35px;
-    max-width: 95%;
 }
 #conteudo #finalidades .textos .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
     padding-left: 4.5em;
 }
 #conteudo #finalidades .textos .lista li,
@@ -508,6 +509,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    width: 70%;
 }
 #conteudo #conselho-municipal .textos p {
     color: var(--preta);
@@ -603,6 +605,7 @@
 #rodape .contatos .card-tell .titulo img {
     width: 30px;
     height: auto;
+    background: none;
 }
 #rodape .contatos .card-tell .tells {
     display: flex;
