@@ -26,7 +26,7 @@
     #cabecalho .nav-desktop ul .dropdown {
         position: relative;
         display: inline-block;
-        padding: 6px 25px 0px 10px;
+        padding: 6px 25px 0px 5px;
     }
     #cabecalho .nav-desktop ul .dropdown .icone {
         display: flex;
@@ -34,10 +34,12 @@
         font-size: 3.5em;
         cursor: no-drop;
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .icone {
+    #cabecalho .nav-desktop ul .dropdown:hover .icone,
+    #cabecalho .nav-desktop ul .dropdown:focus-visible .icone {
         color: var(--laranja);
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .dropdown-content {
+    #cabecalho .nav-desktop ul .dropdown:hover .dropdown-content,
+    #cabecalho .nav-desktop ul .dropdown:focus-visible .dropdown-content {
         display: flex;
     }
     #cabecalho .nav-desktop ul .dropdown .dropdown-content {
@@ -152,6 +154,9 @@
     #conteudo #atividades .lista .atividade:nth-child(even) p {
         transform: translateX(100px);
     }
+    #conteudo #atividades .ilustracoes {
+        margin-top: auto;
+    }
     #conteudo #membres .ilustracoes hr,
     #conteudo #atividades .ilustracoes hr {
         transform: translateY(550%);
@@ -232,6 +237,7 @@
 
     #conteudo #direitos {
         gap: 5em;
+        margin: 100px auto 120px;
     }
     #conteudo #direitos .direitos {
         width: 100%;

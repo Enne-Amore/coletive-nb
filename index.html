@@ -17,6 +17,7 @@
     <!-- JavaScript -->
     <script src="src/js/menu.js" defer></script>
     <script src="src/js/topo.js" defer></script>
+    <script src="src/js/dropdown.js" defer></script>
 </head>
 <body>
     <header id="cabecalho">
@@ -84,8 +85,8 @@
                     Membres
                 </a>
 
-                <div class="dropdown">
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de mais opções" tabindex="0">
+                <div class="dropdown" id="dropdown" tabindex="0">
+                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de mais opções">
                         keyboard_arrow_down
                     </span>
 
@@ -101,7 +102,7 @@
                         <a href="#rodape" aria-label="Ir à seção de nossos contatos">
                             Contatos
                         </a>
-                      </div>
+                    </div>
                 </div>
 
                 <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento e faça parte do movimento" id="faca-parte">
@@ -311,7 +312,7 @@
 
                     <div class="texto">
                         <p>
-                            A Articulação Brasileira Não-Binárie (ABRANB) é uma rede nacional na qual estamos vinculades e contribuindo para as causas não-binárias.
+                            A <strong>Articulação Brasileira Não-Binárie (ABRANB)</strong> é uma rede nacional na qual estamos vinculades e contribuindo para as causas não-binárias.
                         </p>
 
                         <a href="https://linktr.ee/abranb.articulacao" target="_blank" rel="noopener noreferrer">
@@ -337,7 +338,7 @@
 
                     <div class="texto">
                         <p>
-                            O Fundo Brasil nos apoiou em um dos nossos projetos com recurso ao passar no edital.
+                            O <strong>Fundo Brasil</strong> nos apoiou em um dos nossos projetos com recurso ao passar no edital.
                         </p>
 
                         <a href="https://www.fundobrasil.org.br/" target="_blank" rel="noopener noreferrer">
@@ -418,7 +419,7 @@
             </div>
         </section>
 
-        <section id="conselho-municipal">
+        <aside id="conselho-municipal">
             <div class="textos">
                 <h1 class="titulo">E Falando em direitos ...</h1>
 
@@ -442,7 +443,7 @@
                     <img src="src/img/conselho-municipal-cnb-mobile.png" alt="Coletive Não-Binárie dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa">
                 </picture>
             </figure>
-        </section>
+        </aside>
 
         <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0">
             shift

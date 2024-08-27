@@ -23,7 +23,7 @@ menu_icon.addEventListener('keypress', (tecla) => {
 const transparencia = window.document.querySelector('#transparencia')
 
 // Aplicando função de sair do menu
-if (innerWidth < 1200) {
+if (innerWidth <= 1200) {
     transparencia.addEventListener('click', () => {
         modal_container.style.display = 'none'
     })

@@ -4,7 +4,7 @@ const topo = document.getElementById('topo')
 // Adicionando os eventos
 topo.addEventListener("click", function(){
     window.scrollTo(0, 0)
-    document.getElementsByTagName('a')[0].focus()
+    document.getElementsByTagName('a')[7].focus()
 })
 
 // Voltar ao topo usando o teclado
@@ -19,14 +19,22 @@ document.addEventListener('scroll', ocultar)
 
 // Funcção de ocultar
 function ocultar() {
-    
-    if (window.scrollY > 6000) {
-        topo.style.display = 'flex'
-        
+    if (innerWidth <= 1200) {
+        if (window.scrollY > 6000) {
+            topo.style.display = 'flex'
+            
+        } else {
+            topo.style.display = 'none'
+        }
+
     } else {
-        topo.style.display = 'none'
+        if (window.scrollY > 5000) {
+            topo.style.display = 'flex'
+            
+        } else {
+            topo.style.display = 'none'
+        }
     }
-    
 }
 
 ocultar()
