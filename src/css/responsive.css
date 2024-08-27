@@ -15,43 +15,45 @@
     #cabecalho .icone {
         display: none;
     }
-    #cabecalho .nav,
-    #cabecalho .nav ul {
+    #cabecalho .nav-desktop,
+    #cabecalho .nav-desktop ul {
         display: flex;
     }
-    #cabecalho .nav ul a {
+    #cabecalho .nav-desktop ul a {
         font-size: 24px;
         padding: 15px 20px;
     }
-    #cabecalho .nav ul .dropdown {
+    #cabecalho .nav-desktop ul .dropdown {
         position: relative;
         display: inline-block;
+        padding: 6px 25px 0px 10px;
     }
-    #cabecalho .nav ul .dropdown .icone {
+    #cabecalho .nav-desktop ul .dropdown .icone {
         display: flex;
         color: var(--amarela);
         font-size: 3.5em;
-        padding: 5px 20px 0px 10px;
+        cursor: no-drop;
     }
-    #cabecalho .nav ul .dropdown .icone:hover {
+    #cabecalho .nav-desktop ul .dropdown:hover .icone {
         color: var(--laranja);
     }
-    #cabecalho .nav ul .dropdown:hover .dropdown-content {
+    #cabecalho .nav-desktop ul .dropdown:hover .dropdown-content {
         display: flex;
     }
-    #cabecalho .nav ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
         display: none;
         flex-direction: column;
         position: absolute;
         background: radial-gradient(50% 50% at 50% 50%, var(--preta) 0%, black 100%);
         box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
         border-radius: 30px;
+        border: 1.5px dashed white;
         padding: 1em;
-        margin-left: -50%;
+        margin-left: -70%;
         z-index: 1;
         animation: cima .2s ease-out;
     }
-    #cabecalho .nav ul a#faca-parte {
+    #cabecalho .nav-desktop ul a#faca-parte {
         border-radius: 30px;
         padding: 15px 30px;
     }
@@ -183,10 +185,16 @@
         margin: auto 15%;
     }
 
+    #conteudo #parceires .parceires {
+        gap: 6em;
+    }
     #conteudo #parceires .parceires .parceire {
         flex-direction: row;
         align-items: center;
         gap: 4em;
+    }
+    #conteudo #parceires .parceires .parceire:last-child {
+        flex-direction: row-reverse;
     }
     #conteudo #parceires .parceires .parceire .img {
         width: 320px;

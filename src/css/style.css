@@ -69,23 +69,23 @@
     gap: 1em;
 }
 #cabecalho #modal-container #menu .nav ul a,
-#cabecalho .nav ul a {
+#cabecalho .nav-desktop ul a {
     padding: 15px 30px;
     font-size: 20px;
     font-weight: 500;
 }
 #cabecalho #modal-container #menu .nav ul a:hover,
 #cabecalho #modal-container #menu .nav ul a:focus-visible,
-#cabecalho .nav ul a:hover,
-#cabecalho .nav ul a:focus-visible {
+#cabecalho .nav-desktop ul a:hover,
+#cabecalho .nav-desktop ul a:focus-visible {
     color: var(--amarela);
 }
 #cabecalho #modal-container #menu .nav ul a:active,
-#cabecalho .nav ul a:active {
+#cabecalho .nav-desktop ul a:active {
     color: var(--laranja);
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte,
-#cabecalho .nav ul a#faca-parte {
+#cabecalho .nav-desktop ul a#faca-parte {
     border-radius: 25px;
     background-color: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
@@ -94,18 +94,18 @@
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte:hover,
 #cabecalho #modal-container #menu .nav ul a#faca-parte:focus-visible,
-#cabecalho .nav ul a#faca-parte:hover,
-#cabecalho .nav ul a#faca-parte:focus-visible {
+#cabecalho .nav-desktop ul a#faca-parte:hover,
+#cabecalho .nav-desktop ul a#faca-parte:focus-visible {
     background-color: var(--laranja);
     color: white;
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte:active,
-#cabecalho .nav ul a#faca-parte:active {
+#cabecalho .nav-desktop ul a#faca-parte:active {
     background-color: white;
     color: var(--laranja);
 }
-#cabecalho .nav,
-#cabecalho .nav ul {
+#cabecalho .nav-desktop,
+#cabecalho .nav-desktop ul {
     display: none;
 }
 
