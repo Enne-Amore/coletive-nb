@@ -8,6 +8,7 @@
     justify-content: space-between;
     padding: 10px 20px;
     padding-left: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
 }
 #cabecalho .logo {
     width: 215px;
@@ -67,19 +68,24 @@
     align-items: center;
     gap: 1em;
 }
-#cabecalho #modal-container #menu .nav ul a {
+#cabecalho #modal-container #menu .nav ul a,
+#cabecalho .nav ul a {
     padding: 15px 30px;
     font-size: 20px;
     font-weight: 500;
 }
 #cabecalho #modal-container #menu .nav ul a:hover,
-#cabecalho #modal-container #menu .nav ul a:focus-visible {
+#cabecalho #modal-container #menu .nav ul a:focus-visible,
+#cabecalho .nav ul a:hover,
+#cabecalho .nav ul a:focus-visible {
     color: var(--amarela);
 }
-#cabecalho #modal-container #menu .nav ul a:active {
+#cabecalho #modal-container #menu .nav ul a:active,
+#cabecalho .nav ul a#faca-parte:active {
     color: var(--laranja);
 }
-#cabecalho #modal-container #menu .nav ul a#faca-parte {
+#cabecalho #modal-container #menu .nav ul a#faca-parte,
+#cabecalho .nav ul a#faca-parte {
     border-radius: 25px;
     background-color: var(--amarela);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
@@ -87,17 +93,20 @@
     font-weight: 600;
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte:hover,
-#cabecalho #modal-container #menu .nav ul a#faca-parte:focus-visible {
+#cabecalho #modal-container #menu .nav ul a#faca-parte:focus-visible,
+#cabecalho .nav ul a#faca-parte:hover,
+#cabecalho .nav ul a#faca-parte:focus-visible {
     background-color: var(--laranja);
 }
-#cabecalho #modal-container #menu .nav ul a#faca-parte:active {
+#cabecalho #modal-container #menu .nav ul a#faca-parte:active,
+#cabecalho .nav ul a#faca-parte:active {
     background-color: white;
     color: var(--laranja);
 }
 
 /* Conteúdo */
 #conteudo #introducao {
-    background: url(../img/fundo-roxo.jpg) no-repeat;
+    background: url(../img/fundo-roxo-mobile.jpg) no-repeat;
     background-size: cover;
     padding: 8em 0 16em;
     display: flex;
@@ -134,7 +143,7 @@
     -webkit-background-clip: padding-box;
     -webkit-text-fill-color: var(--roxa-clara);
     box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
-    padding: .4em .1em 0 .15em;
+    padding: .37em .1em 0 .15em;
 }
 
 #conteudo #finalidades,
@@ -434,6 +443,7 @@
 #conteudo #mapeamento .textos a:hover,
 #conteudo #mapeamento .textos a:focus-visible {
     background-color: var(--laranja);
+    color: white;
 }
 #conteudo #mapeamento .textos a:active {
     background-color: white;
