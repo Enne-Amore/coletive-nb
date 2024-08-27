@@ -15,9 +15,41 @@
     #cabecalho .icone {
         display: none;
     }
+    #cabecalho .nav,
+    #cabecalho .nav ul {
+        display: flex;
+    }
     #cabecalho .nav ul a {
         font-size: 24px;
         padding: 15px 20px;
+    }
+    #cabecalho .nav ul .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    #cabecalho .nav ul .dropdown .icone {
+        display: flex;
+        color: var(--amarela);
+        font-size: 3.5em;
+        padding: 5px 20px 0px 10px;
+    }
+    #cabecalho .nav ul .dropdown .icone:hover {
+        color: var(--laranja);
+    }
+    #cabecalho .nav ul .dropdown:hover .dropdown-content {
+        display: flex;
+    }
+    #cabecalho .nav ul .dropdown .dropdown-content {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: radial-gradient(50% 50% at 50% 50%, var(--preta) 0%, black 100%);
+        box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+        border-radius: 30px;
+        padding: 1em;
+        margin-left: -50%;
+        z-index: 1;
+        animation: cima .2s ease-out;
     }
     #cabecalho .nav ul a#faca-parte {
         border-radius: 30px;
@@ -236,5 +268,71 @@
         right: 2%;
         padding: 1%;
         font-size: 4em;
+    }
+
+    #rodape {
+        padding: 70px 100px;
+        gap: 0em;
+    }
+    #rodape .container-logo-contatos {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #rodape .logo {
+        width: 350px;
+    }
+    #rodape .logo img {
+        border-radius: 30px;
+    }
+    #rodape .contatos {
+        align-items: flex-end;
+        gap: 70px;
+        z-index: 1;
+    }
+    #rodape .contatos .card-tell {
+        border-radius: 40px;
+        padding: 35px;
+        max-width: fit-content;
+    }
+    #rodape .contatos .card-tell .titulo img {
+        width: 35px;
+    }
+    #rodape .contatos .card-tell .titulo .texto {
+        font-size: 28px;
+        line-height: normal;
+    }
+    #rodape .contatos .card-tell .titulo .icone,
+    #rodape .contatos .card-tell .tells .tell .icone,
+    #rodape .tells-emergencia .tells .tell .icone {
+        font-size: 1.5em;
+    }
+    #rodape .contatos .card-tell .tells .tell {
+        font-size: 24px;
+        border-radius: 30px;
+        padding: .5em .8em;
+    }
+    #rodape .contatos .card-tell .tells .tell .texto.mobile {
+        display: none;
+    }
+    #rodape .contatos .card-tell .tells .tell .texto.desktop {
+        display: inline;
+    }
+    #rodape .tells-emergencia {
+        gap: .5em;
+        width: 98%;
+        margin-top: -28%;
+    }
+    #rodape .tells-emergencia .texto {
+        font-size: 24px;
+        width: 40%;
+    }
+    #rodape .tells-emergencia .tells .tell {
+        font-size: 20px;
+    }
+    #rodape .img {
+        width: 300px;
+        margin-top: 15%;
     }
 }

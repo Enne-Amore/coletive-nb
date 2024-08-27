@@ -81,7 +81,7 @@
     color: var(--amarela);
 }
 #cabecalho #modal-container #menu .nav ul a:active,
-#cabecalho .nav ul a#faca-parte:active {
+#cabecalho .nav ul a:active {
     color: var(--laranja);
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte,
@@ -97,11 +97,16 @@
 #cabecalho .nav ul a#faca-parte:hover,
 #cabecalho .nav ul a#faca-parte:focus-visible {
     background-color: var(--laranja);
+    color: white;
 }
 #cabecalho #modal-container #menu .nav ul a#faca-parte:active,
 #cabecalho .nav ul a#faca-parte:active {
     background-color: white;
     color: var(--laranja);
+}
+#cabecalho .nav,
+#cabecalho .nav ul {
+    display: none;
 }
 
 /* Conteúdo */
@@ -571,6 +576,13 @@
     background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 50%, var(--preta) 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
 }
+#rodape .container-logo-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
 #rodape .logo {
     width: 220px;
     height: auto;
@@ -595,6 +607,7 @@
     border-radius: 30px;
     border: 1.5px dashed #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+    background: rgba(255, 255, 255, 0.01);
     max-width: 300px;
 }
 #rodape .contatos .card-tell .titulo {
@@ -635,6 +648,9 @@
     width: 100%;
     border-radius: 30px;
     padding: .6em .8em;
+}
+#rodape .contatos .card-tell .tells .tell .texto.desktop {
+    display: none;
 }
 #rodape .tells-emergencia {
     display: flex;
