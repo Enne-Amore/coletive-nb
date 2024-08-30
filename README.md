@@ -2,10 +2,10 @@
  Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
 
 
-## 🪄 Funcionalidades
+## ⚡ Funcionalidades
 
  - Menu de navegação por páginas abrível e fechável para mobile
- - Barra horizontal de navegação por dentro da página para desktop
+ - Barra horizontal de navegação por dentro da página para desktop englobando uma opção de abrir uma lista de opções restantes
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
@@ -37,9 +37,11 @@
 ## 🌟 Referências De Uso
 
  - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
+ -[Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
+ -[Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
 
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é EnneFofe10@gmail.com 
+ Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
 
