@@ -1,6 +1,6 @@
 @charset 'UTF-8';
 
-@media screen and (orientation: landscape) { /* Desktop */
+@media screen and (orientation: landscape) {
     body {
         font-size: 1vw;
     }
@@ -123,7 +123,7 @@
     }
 
     #conteudo #parceires .parceires {
-        gap: 6em;
+        gap: 5em;
     }
     #conteudo #parceires .parceires .parceire {
         flex-direction: row;
@@ -214,7 +214,7 @@
     }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) {
+@media screen and (min-width: 1200px) and (orientation: landscape) { /* Desktop */
     #cabecalho {
         padding: 10px 60px;
         padding-left: 40px;
