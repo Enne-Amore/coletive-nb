@@ -1,17 +1,10 @@
 @charset 'UTF-8';
 
-@media screen and (min-width: 1200px) {
+@media screen and (orientation: landscape) { /* Desktop */
     body {
         font-size: 1vw;
     }
 
-    #cabecalho {
-        padding: 10px 60px;
-        padding-left: 40px;
-    }
-    #cabecalho .logo {
-        width: 315px;
-    }
     #cabecalho .icone {
         display: none;
     }
@@ -20,7 +13,6 @@
         display: flex;
     }
     #cabecalho .nav-desktop ul a {
-        font-size: 24px;
         padding: 15px 20px;
     }
     #cabecalho .nav-desktop ul .dropdown {
@@ -31,7 +23,6 @@
     #cabecalho .nav-desktop ul .dropdown .icone {
         display: flex;
         color: var(--amarela);
-        font-size: 3.5em;
         cursor: no-drop;
     }
     #cabecalho .nav-desktop ul .dropdown:hover .icone,
@@ -57,7 +48,6 @@
     }
     #cabecalho .nav-desktop ul a#faca-parte {
         border-radius: 30px;
-        padding: 15px 30px;
     }
 
     #conteudo #introducao {
@@ -67,22 +57,14 @@
         padding: 4em 0;
         gap: 10em;
     }
-    #conteudo #introducao .ilustracao {
-        width: 680px;
-    }
     #conteudo #introducao .frase-efeito {
-        font-size: 36px;
-        line-height: 60px;
         letter-spacing: 1.8px;
-        transform: translate(-20%, -22%);
     }
 
     #conteudo #finalidades,
     #conteudo #mapeamento, 
     #conteudo #conselho-municipal {
         align-items: flex-start;
-        padding: 60px 30px;
-        gap: 5em;
     }
     #conteudo #finalidades,
     #conteudo #conselho-municipal {
@@ -99,9 +81,184 @@
     #conteudo #finalidades .textos .titulo,
     #conteudo #mapeamento .textos .titulo,
     #conteudo #conselho-municipal .textos .titulo {
-        font-size: 32px;
         line-height: normal;
         max-width: 100%;
+    }
+    #conteudo #finalidades .img,
+    #conteudo #mapeamento .img,
+    #conteudo #conselho-municipal .img {
+        width: 500px;
+    }
+
+    #conteudo #atividades,
+    #conteudo #parceires {
+        gap: 6em;
+    }
+    #conteudo #atividades .titulo,
+    #conteudo #parceires .titulo {
+        padding: 28px 60px 20px 60px;
+        line-height: normal;
+        width: 90%;
+    }
+    #conteudo #atividades .lista .atividade hr {
+        width: 80%;
+    }
+    #conteudo #atividades .lista .atividade p {
+        border-radius: 0px 0px 50px 50px;
+        padding: 15px 25px 25px 25px;
+        margin: auto;
+    }
+    #conteudo #membres .ilustracoes .imgs,
+    #conteudo #atividades .ilustracoes .imgs {
+        gap: 10em;
+    }
+
+    #conteudo #membres {
+        gap: 1em;
+    }
+    #conteudo #membres .frase-efeito,
+    #conteudo #direitos .frase-efeito {
+        letter-spacing: 1.6px;
+        margin: auto 15%;
+    }
+
+    #conteudo #parceires .parceires {
+        gap: 6em;
+    }
+    #conteudo #parceires .parceires .parceire {
+        flex-direction: row;
+        align-items: center;
+        gap: 4em;
+    }
+    #conteudo #parceires .parceires .parceire:last-child {
+        flex-direction: row-reverse;
+    }
+    #conteudo #parceires .parceires .parceire .texto a,
+    #conteudo #mapeamento .textos a,
+    #conteudo #conselho-municipal .textos a {
+        gap: 10px;
+        width: fit-content;
+        margin: auto;
+    }
+
+    #conteudo #mapeamento .textos a,
+    #conteudo #conselho-municipal .textos a {
+        margin: .7em 0;
+        max-width: fit-content;
+    }
+
+    #conteudo #direitos {
+        gap: 5em;
+        padding: 100px 0 140px;
+    }
+    #conteudo #direitos .direitos {
+        width: 100%;
+    }
+    #conteudo #direitos .frase-efeito {
+        margin: auto 25%;
+    }
+    #conteudo #direitos .direitos .card {
+        flex-direction: row;
+        border-radius: 40px;
+        width: 575px;
+    }
+    #conteudo #direitos .direitos .card .texto {
+        width: 85%;
+        margin: auto 1em;
+    }
+
+    #conteudo #conselho-municipal .textos .titulo {
+        width: 100%;
+    }
+    #conteudo #conselho-municipal .textos a {
+        padding: 15px 35px;
+    }
+
+    #conteudo #topo {
+        right: 2%;
+        padding: 1%;
+        font-size: 4em;
+    }
+
+    #rodape {
+        gap: 0em;
+    }
+    #rodape .container-logo-contatos {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    #rodape .contatos {
+        align-items: flex-end;
+        z-index: 1;
+    }
+    #rodape .contatos .card-tell {
+        max-width: fit-content;
+    }
+    #rodape .contatos .card-tell .titulo .texto {
+        line-height: normal;
+    }
+    #rodape .contatos .card-tell .tells .tell .texto.mobile {
+        display: none;
+    }
+    #rodape .contatos .card-tell .tells .tell .texto.desktop {
+        display: inline;
+    }
+    #rodape .tells-emergencia {
+        gap: .5em;
+        width: 98%;
+    }
+    #rodape .tells-emergencia .texto {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) and (orientation: landscape) {
+    #cabecalho {
+        padding: 10px 60px;
+        padding-left: 40px;
+    }
+    #cabecalho .logo {
+        width: 315px;
+    }
+    #cabecalho .nav-desktop ul a {
+        font-size: 24px;
+        padding: 15px 20px;
+    }
+    #cabecalho .nav-desktop ul .dropdown {
+        padding: 6px 25px 0px 5px;
+    }
+    #cabecalho .nav-desktop ul .dropdown .icone {
+        font-size: 3.5em;
+    }
+    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+        border-radius: 30px;
+    }
+    #cabecalho .nav-desktop ul a#faca-parte {
+        border-radius: 30px;
+        padding: 15px 30px;
+    }
+
+    #conteudo #introducao .ilustracao {
+        width: 680px;
+    }
+    #conteudo #introducao .frase-efeito {
+        font-size: 36px;
+        line-height: 60px;
+        transform: translate(-20%, -22%);
+    }
+
+    #conteudo #finalidades,
+    #conteudo #mapeamento, 
+    #conteudo #conselho-municipal {
+        padding: 60px 30px;
+        gap: 5em;
+    }
+    #conteudo #finalidades .textos .titulo,
+    #conteudo #mapeamento .textos .titulo,
+    #conteudo #conselho-municipal .textos .titulo {
+        font-size: 32px;
     }
     #conteudo #finalidades .textos .lista {
         padding-left: 3em;
@@ -115,37 +272,19 @@
     #conteudo #finalidades .textos .lista li::before {
         left: -7%;
     }
-    #conteudo #finalidades .img,
-    #conteudo #mapeamento .img,
-    #conteudo #conselho-municipal .img {
-        width: 500px;
-    }
     #conteudo #finalidades .img img,
     #conteudo #mapeamento .img img,
     #conteudo #conselho-municipal .img img {
         border-radius: 40px;
     }
 
-    #conteudo #atividades,
-    #conteudo #parceires {
-        gap: 6em;
-    }
     #conteudo #atividades .titulo,
     #conteudo #parceires .titulo {
-        padding: 28px 60px 20px 60px;
         font-size: 32px;
-        line-height: normal;
-        width: 90%;
-    }
-    #conteudo #atividades .lista .atividade hr {
-        width: 80%;
     }
     #conteudo #atividades .lista .atividade p {
-        border-radius: 0px 0px 50px 50px;
         font-size: 24px;
         line-height: 40px;
-        padding: 15px 25px 25px 25px;
-        margin: auto;
         width: 50%;
     }
     #conteudo #atividades .lista .atividade:nth-child(odd) p {
@@ -163,7 +302,6 @@
     }
     #conteudo #membres .ilustracoes .imgs,
     #conteudo #atividades .ilustracoes .imgs {
-        gap: 10em;
         padding-left: calc(100vw - 940px);
         padding-right: calc(100vw - 940px);
     }
@@ -179,28 +317,14 @@
 
     #conteudo #membres {
         padding: 50px 0px 100px 0px;
-        gap: 1em;
     }
     #conteudo #membres .frase-efeito,
     #conteudo #direitos .frase-efeito {
         font-size: 32px;
         line-height: 60px;
         letter-spacing: 1.6px;
-        text-transform: uppercase;
-        margin: auto 15%;
     }
 
-    #conteudo #parceires .parceires {
-        gap: 6em;
-    }
-    #conteudo #parceires .parceires .parceire {
-        flex-direction: row;
-        align-items: center;
-        gap: 4em;
-    }
-    #conteudo #parceires .parceires .parceire:last-child {
-        flex-direction: row-reverse;
-    }
     #conteudo #parceires .parceires .parceire .img {
         width: 320px;
     }
@@ -216,12 +340,9 @@
     #conteudo #parceires .parceires .parceire .texto a,
     #conteudo #mapeamento .textos a,
     #conteudo #conselho-municipal .textos a {
-        gap: 10px;
         border-radius: 40px;
         font-size: 26px;
         line-height: normal;
-        width: fit-content;
-        margin: auto;
     }
     #conteudo #parceires .parceires .parceire .texto a .icone,
     #conteudo #mapeamento .textos a .icone,
@@ -229,24 +350,8 @@
         font-size: 1.2em;
     }
 
-    #conteudo #mapeamento .textos a,
-    #conteudo #conselho-municipal .textos a {
-        margin: .7em 0;
-        max-width: fit-content;
-    }
-
-    #conteudo #direitos {
-        gap: 5em;
-        margin: 100px auto 120px;
-    }
-    #conteudo #direitos .direitos {
-        width: 100%;
-    }
-    #conteudo #direitos .frase-efeito {
-        margin: auto 25%;
-    }
+    
     #conteudo #direitos .direitos .card {
-        flex-direction: row;
         border-radius: 40px;
         width: 575px;
     }
@@ -264,35 +369,13 @@
     #conteudo #direitos .direitos .card .texto {
         font-size: 24px;
         line-height: 40px;
-        width: 85%;
-        margin: auto 1em;
     }
     #conteudo #direitos .direitos hr {
         width: 70%;
     }
 
-    #conteudo #conselho-municipal .textos .titulo {
-        width: 100%;
-    }
-    #conteudo #conselho-municipal .textos a {
-        padding: 15px 35px;
-    }
-
-    #conteudo #topo {
-        right: 2%;
-        padding: 1%;
-        font-size: 4em;
-    }
-
     #rodape {
-        padding: 70px 100px;
-        gap: 0em;
-    }
-    #rodape .container-logo-contatos {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        width: 100%;
+        padding: 70px 100px 50px;
     }
     #rodape .logo {
         width: 350px;
@@ -301,14 +384,11 @@
         border-radius: 30px;
     }
     #rodape .contatos {
-        align-items: flex-end;
         gap: 70px;
-        z-index: 1;
     }
     #rodape .contatos .card-tell {
         border-radius: 40px;
         padding: 35px;
-        max-width: fit-content;
     }
     #rodape .contatos .card-tell .titulo img {
         width: 35px;
@@ -325,28 +405,120 @@
     #rodape .contatos .card-tell .tells .tell {
         font-size: 24px;
         border-radius: 30px;
-        padding: .5em .8em;
-    }
-    #rodape .contatos .card-tell .tells .tell .texto.mobile {
-        display: none;
-    }
-    #rodape .contatos .card-tell .tells .tell .texto.desktop {
-        display: inline;
     }
     #rodape .tells-emergencia {
-        gap: .5em;
-        width: 98%;
         margin-top: -28%;
     }
     #rodape .tells-emergencia .texto {
         font-size: 24px;
-        width: 40%;
     }
     #rodape .tells-emergencia .tells .tell {
         font-size: 20px;
     }
     #rodape .img {
-        width: 300px;
         margin-top: 15%;
+    }
+}
+
+@media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
+    #cabecalho .nav-desktop ul a {
+        padding: 10px 10px;
+    }
+    #cabecalho .nav-desktop ul .dropdown {
+        padding: 2px 15px 0px 5px;
+    }
+    #cabecalho .nav-desktop ul .dropdown .icone {
+        font-size: 5em;
+    }
+    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+        border-radius: 20px;
+    }
+    #cabecalho .nav-desktop ul a#faca-parte {
+        padding: 10px 20px;
+    }
+
+    #conteudo #introducao .frase-efeito {
+        transform: translate(-15%, -2%);
+    }
+
+    #conteudo #finalidades,
+    #conteudo #mapeamento, 
+    #conteudo #conselho-municipal {
+        padding: 45px 30px;
+        gap: 4em;
+    }
+    #conteudo #finalidades .textos .lista {
+        padding-left: 4em;
+    }
+    #conteudo #finalidades .textos .lista li::before {
+        left: -9%;
+    }
+    #conteudo #finalidades .img img,
+    #conteudo #mapeamento .img img,
+    #conteudo #conselho-municipal .img img {
+        border-radius: 40px;
+    }
+
+    #conteudo #atividades,
+    #conteudo #parceires,
+    #conteudo #direitos {
+        padding: 70px 0;
+    }
+    #conteudo #atividades .lista .atividade p {
+        width: 60%;
+    }
+    #conteudo #atividades .lista .atividade:nth-child(odd) p {
+        transform: translateX(-40px);
+    }
+    #conteudo #atividades .lista .atividade:nth-child(even) p {
+        transform: translateX(40px);
+    }
+    #conteudo #atividades .ilustracoes {
+        margin-top: -1em;
+    }
+    #conteudo #membres .ilustracoes .imgs,
+    #conteudo #atividades .ilustracoes .imgs {
+        padding-left: calc(100vw - 550px);
+        padding-right: calc(100vw - 550px);
+    }
+    #conteudo #membres .ilustracoes .aviso,
+    #conteudo #atividades .ilustracoes .aviso {
+        margin-top: 2em;
+    }
+
+    #conteudo #membres {
+        padding: 45px 0px 70px 0px;
+    }
+
+    #conteudo #parceires .parceires .parceire .texto {
+        width: 430px;
+    }
+
+    #conteudo #direitos .direitos {
+        gap: 40px;
+    }
+    #conteudo #direitos .direitos .card {
+        width: 555px;
+    }
+    #conteudo #direitos .direitos .card .img {
+        width: 200px;
+        height: 140px;
+    }
+    #conteudo #direitos .direitos hr {
+        width: 80%;
+    }
+
+    #rodape {
+        padding: 60px 40px 10px;
+    }
+    #rodape .contatos {
+        gap: 40px;
+    }
+    #rodape .tells-emergencia {
+        margin-top: -35%;
+    }
+    #rodape .img {
+        width: 250px;
+        margin-top: 16%;
     }
 }

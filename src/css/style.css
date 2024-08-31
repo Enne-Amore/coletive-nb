@@ -225,10 +225,11 @@
     flex-direction: column;
     align-items: center;
     gap: 8em;
-    margin: 100px auto;
+    padding: 100px 0;
+    background-color: white;
 }
 #conteudo #atividades {
-    margin-bottom: 110px;
+    padding-bottom: 110px;
 }
 #conteudo #atividades .titulo,
 #conteudo #parceires .titulo {
@@ -466,7 +467,7 @@
 }
 
 #conteudo #direitos {
-    margin-top: 90px;
+    padding-top: 90px;
 }
 #conteudo #direitos .frase-efeito {
     margin: auto 8%;
@@ -525,7 +526,7 @@
 #conteudo #direitos .direitos hr {
     border-color: var(--roxa-clara);
     box-shadow: 0px 0px 6px 0px rgba(106, 78, 166, 0.05), 0px 0px 6px 0px rgba(0, 0, 0, 0.10);
-    width: 100%;
+    width: 105%;
 }
 
 #conteudo #conselho-municipal {

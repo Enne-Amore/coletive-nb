@@ -19,6 +19,7 @@
 }
 
 body {
+    background-color: var(--roxa-clara);
     color: white;
     font: 2vw var(--padrao);
     max-width: 100vw;
