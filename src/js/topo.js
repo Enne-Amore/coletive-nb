@@ -19,7 +19,7 @@ document.addEventListener('scroll', ocultar)
 
 // Funcção de ocultar
 function ocultar() {
-    if (innerWidth <= 1200) {
+    if (innerWidth <= 1200 && innerWidth < innerHeight) { // celular em pé
         if (window.scrollY > 6000) {
             topo.style.display = 'flex'
             
@@ -27,7 +27,15 @@ function ocultar() {
             topo.style.display = 'none'
         }
 
-    } else {
+    } if (innerWidth <= 1200 && innerWidth > innerHeight) { // celular deitado
+        if (window.scrollY > 4000) {
+            topo.style.display = 'flex'
+            
+        } else {
+            topo.style.display = 'none'
+        }
+
+    } else { // desktop
         if (window.scrollY > 5000) {
             topo.style.display = 'flex'
             

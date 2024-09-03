@@ -310,18 +310,18 @@
 #conteudo #membres .ilustracoes .imgs,
 #conteudo #atividades .ilustracoes .imgs {
     display: flex;
-    gap: 5em;
+    gap: 8em;
     width: max-content;
     height: auto;
-    padding-left: calc(100vw - 335px);
-    padding-right: calc(100vw - 335px);
+    padding-left: calc(100vw - 88.5vw);
+    padding-right: calc(100vw - 88.5vw);
     overflow-x: auto;
 }
 #conteudo #membres .ilustracoes .imgs figure,
 #conteudo #atividades .ilustracoes .imgs figure {
-    border-radius: 35px;
+    border-radius: 4.5em;
     overflow: hidden;
-    width: 283px;
+    width: 77vw;
     height: max-content;
     z-index: 1;
 }
