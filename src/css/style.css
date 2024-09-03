@@ -152,7 +152,7 @@
     -webkit-background-clip: padding-box;
     -webkit-text-fill-color: var(--roxa-clara);
     box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.05);
-    padding: 6.5px 3px 0 5px;
+    padding: .37em .1em 0 .15em;
 }
 
 #conteudo #finalidades,
