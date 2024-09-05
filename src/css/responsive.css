@@ -203,7 +203,7 @@
         width: 98%;
     }
     #rodape .tells-emergencia .texto {
-        width: 40%;
+        max-width: 27vw;
     }
 }
 
@@ -220,7 +220,7 @@
         padding: 15px 20px;
     }
     #cabecalho .nav-desktop ul .dropdown {
-        padding: 6px 25px 0px 5px;
+        padding: .2em 1.5em 0em .1em;
     }
     #cabecalho .nav-desktop ul .dropdown .icone {
         font-size: 3.5em;
@@ -240,6 +240,9 @@
         font-size: 36px;
         line-height: 60px;
         transform: translate(-20%, -22%);
+    }
+    #conteudo #introducao .frase-efeito strong {
+        padding-top: .17em;
     }
 
     #conteudo #finalidades,
@@ -406,7 +409,7 @@
         border-radius: 30px;
     }
     #rodape .tells-emergencia {
-        margin-top: -28%;
+        margin-top: -345px;
     }
     #rodape .tells-emergencia .texto {
         font-size: 24px;
