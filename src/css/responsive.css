@@ -112,13 +112,16 @@
         gap: 10em;
     }
 
-    #conteudo #membres {
-        gap: 1em;
-    }
     #conteudo #membres .frase-efeito,
     #conteudo #direitos .frase-efeito {
         letter-spacing: 1.6px;
         margin: auto 15%;
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs {
+        gap: 5em;
+    }
+    #conteudo #membres .diretories .ilustracoes .aviso {
+        display: none;
     }
 
     #conteudo #parceires .parceires {
@@ -189,8 +192,15 @@
     #rodape .contatos .card-tell {
         max-width: fit-content;
     }
+    #rodape .contatos .card-tell .titulo {
+        align-items: flex-end;
+        gap: 8px;
+    }
     #rodape .contatos .card-tell .titulo .texto {
         line-height: normal;
+    }
+    #rodape .contatos .card-tell .tells .tell {
+        gap: 8px;
     }
     #rodape .contatos .card-tell .tells .tell .texto.mobile {
         display: none;
@@ -294,7 +304,7 @@
     }
     #conteudo #membres .ilustracoes hr,
     #conteudo #atividades .ilustracoes hr {
-        transform: translateY(550%);
+        transform: translateY(490%);
     }
     #conteudo #membres .ilustracoes .imgs,
     #conteudo #atividades .ilustracoes .imgs {
@@ -303,7 +313,7 @@
     }
     #conteudo #membres .ilustracoes .imgs figure,
     #conteudo #atividades .ilustracoes .imgs figure {
-        border-radius: 2.5em;
+        border-radius: 2.7em;
         width: 33vw;
     }
     #conteudo #membres .ilustracoes .aviso,
@@ -312,13 +322,33 @@
     }
 
     #conteudo #membres {
-        padding: 50px 0px 100px 0px;
+        padding: 50px 0px 120px 0px;
+        gap: 80px;
     }
     #conteudo #membres .frase-efeito,
     #conteudo #direitos .frase-efeito {
         font-size: 32px;
         line-height: 60px;
         letter-spacing: 1.6px;
+    }
+    #conteudo #membres .diretories {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    #conteudo #membres .diretories .ilustracoes hr {
+        transform: translateY(550%);
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs {
+        padding-left: calc(100vw - 90vw);
+        padding-right: calc(100vw - 90vw);
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs figure {
+        width: 23vw;
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+        font-size: 24px;
+        bottom: 2.4vh;
     }
 
     #conteudo #parceires .parceires .parceire .img {
@@ -423,6 +453,9 @@
 }
 
 @media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
+    #cabecalho .logo {
+        width: 215px;
+    }
     #cabecalho .nav-desktop ul a {
         padding: 10px 10px;
     }
@@ -439,7 +472,11 @@
         padding: 10px 20px;
     }
 
+    #conteudo #introducao .ilustracao {
+        width: 335px;
+    }
     #conteudo #introducao .frase-efeito {
+        font-size: 28px;
         transform: translate(-15%, -2%);
     }
 
@@ -478,6 +515,10 @@
     #conteudo #atividades .ilustracoes {
         margin-top: -1em;
     }
+    #conteudo #membres .ilustracoes hr,
+    #conteudo #atividades .ilustracoes hr {
+        transform: translateY(32vh);
+    }
     #conteudo #membres .ilustracoes .imgs,
     #conteudo #atividades .ilustracoes .imgs {
         padding-left: calc(100vw - 70vw);
@@ -495,6 +536,21 @@
 
     #conteudo #membres {
         padding: 45px 0px 70px 0px;
+        gap: 10em;
+    }
+    #conteudo #membres .diretories .ilustracoes hr {
+        transform: translateY(35vh);
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs {
+        padding-left: calc(100vw - 95.5vw);
+        padding-right: calc(100vw - 95.5vw);
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs figure {
+        width: 220px;
+    }
+    #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+        font-size: 16px;
+        bottom: 2.4vh;
     }
 
     #conteudo #parceires .parceires .parceire .texto {
@@ -533,5 +589,19 @@
     #rodape .img {
         width: 250px;
         margin-top: 16%;
+    }
+}
+
+@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
+    #cabecalho .nav-desktop ul .dropdown {
+        padding: 0em 1.5em 0em .1em;
+    }
+
+    #conteudo #membres .ilustracoes hr,
+    #conteudo #atividades .ilustracoes hr {
+        transform: translateY(550%);
+    }
+    #conteudo #membres .diretories .ilustracoes hr {
+        transform: translateY(650%);
     }
 }

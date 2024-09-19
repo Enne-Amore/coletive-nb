@@ -11,7 +11,8 @@
     box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
 }
 #cabecalho .logo {
-    width: 215px;
+    width: 60vw;
+    max-width: 300px;
     height: auto;
 }
 #cabecalho .icone {
@@ -124,7 +125,7 @@
     gap: 4em;
 }
 #conteudo #introducao .ilustracao {
-    width: 335px;
+    width: 90vw;
     height: auto;
 }
 #conteudo #introducao .ilustracao img {
@@ -135,9 +136,9 @@
     text-align: center;
     text-shadow: 0px 4px 4px rgba(106, 78, 166, 0.05), 0px 4px 4px rgba(36, 37, 38, 0.10);
     font-family: var(--titulo);
-    font-size: 28px;
+    font-size: 3.8em;
     font-weight: 400;
-    line-height: 45px;
+    line-height: 1.7em;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     background: linear-gradient(106deg, var(--roxa-clara) 0%, var(--roxa-escura) 97.93%);
@@ -294,7 +295,7 @@
     border: 16px solid var(--amarela);
     width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05);
-    transform: translateY(340%);
+    transform: translateY(13.5vh);
 }
 #conteudo #membres .ilustracoes .imgs-container,
 #conteudo #atividades .ilustracoes .imgs-container {
@@ -347,6 +348,7 @@
     flex-direction: column;
     justify-content: center;
     align-self: stretch;
+    gap: 100px;
     padding: 40px 0px 100px 0px;
     background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
@@ -369,6 +371,25 @@
 }
 #conteudo #membres .ilustracoes hr {
     border-color: var(--roxa-clara);
+}
+#conteudo #membres .diretories .ilustracoes hr {
+    transform: translateY(19.5vh);
+}
+#conteudo #membres .diretories .ilustracoes .imgs {
+    padding-left: calc(100vw - 85vw);
+    padding-right: calc(100vw - 85vw);
+}
+#conteudo #membres .diretories .ilustracoes .imgs figure {
+    position: relative;
+    width: 70vw;
+}
+#conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+    position: absolute;
+    font-family: var(--texto);
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    bottom: 1.5vh;
 }
 
 #conteudo #parceires .parceires,
@@ -712,7 +733,8 @@
     background: rgba(255, 255, 255, 0.30);
 }
 #rodape .img {
-    width: 315px;
+    width: 80vw;
+    max-width: 350px;
     height: auto;
 }
 #rodape .img img {
