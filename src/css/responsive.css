@@ -119,6 +119,7 @@
     }
     #conteudo #membres .diretories .ilustracoes .imgs {
         gap: 5em;
+        overflow-x: hidden;
     }
     #conteudo #membres .diretories .ilustracoes .aviso {
         display: none;
@@ -542,8 +543,8 @@
         transform: translateY(35vh);
     }
     #conteudo #membres .diretories .ilustracoes .imgs {
-        padding-left: calc(100vw - 95.5vw);
-        padding-right: calc(100vw - 95.5vw);
+        padding-left: calc(100vw - 96vw);
+        padding-right: calc(100vw - 96vw);
     }
     #conteudo #membres .diretories .ilustracoes .imgs figure {
         width: 220px;
