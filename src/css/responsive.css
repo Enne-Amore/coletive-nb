@@ -317,6 +317,14 @@
         border-radius: 2.7em;
         width: 33vw;
     }
+    #conteudo #membres .ilustracoes .aviso.mobile,
+    #conteudo #atividades .ilustracoes .aviso.mobile {
+        display: none;
+    }
+    #conteudo #membres .ilustracoes .aviso.desktop,
+    #conteudo #atividades .ilustracoes .aviso.desktop {
+        display: flex;
+    }
     #conteudo #membres .ilustracoes .aviso,
     #conteudo #atividades .ilustracoes .aviso {
         font-size: 18px;

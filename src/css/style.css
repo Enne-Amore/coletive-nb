@@ -342,6 +342,10 @@
     font-weight: 400;
     margin-top: 3em;
 }
+#conteudo #membres .ilustracoes .aviso.desktop,
+#conteudo #atividades .ilustracoes .aviso.desktop {
+    display: none;
+}
 
 #conteudo #membres {
     display: flex;
