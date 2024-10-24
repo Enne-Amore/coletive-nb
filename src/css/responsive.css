@@ -18,9 +18,10 @@
     #cabecalho .nav-desktop ul .dropdown {
         position: relative;
         display: inline-block;
+        margin: auto 1em;
     }
     #cabecalho .nav-desktop ul .dropdown .icone {
-        display: flex;
+        display: inline-block;
         color: var(--amarela);
         cursor: default;
     }
@@ -41,7 +42,7 @@
         border-radius: 30px;
         border: 1.5px dashed white;
         padding: 1em;
-        margin-left: -70%;
+        margin-left: -100%;
         z-index: 1;
         animation: cima .2s ease-out;
     }
@@ -230,11 +231,8 @@
         font-size: 24px;
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop ul .dropdown {
-        padding: .2em 1.5em 0em .1em;
-    }
     #cabecalho .nav-desktop ul .dropdown .icone {
-        font-size: 3.5em;
+        font-size: 2.8em;
     }
     #cabecalho .nav-desktop ul .dropdown .dropdown-content {
         border-radius: 30px;
@@ -374,10 +372,9 @@
     #conteudo #parceires .parceires .parceire .texto a .icone,
     #conteudo #mapeamento .textos a .icone,
     #conteudo #conselho-municipal .textos a .icone {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
-    
     #conteudo #direitos .direitos .card {
         border-radius: 40px;
         width: 575px;
@@ -403,7 +400,7 @@
 
     #conteudo #topo {
         right: 2%;
-        padding: 1%;
+        padding: 1% 1.5%;
         font-size: 4em;
     }
 
@@ -433,7 +430,7 @@
     #rodape .contatos .card-tell .titulo .icone,
     #rodape .contatos .card-tell .tells .tell .icone,
     #rodape .tells-emergencia .tells .tell .icone {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
     #rodape .contatos .card-tell .tells .tell {
         font-size: 24px;
@@ -459,9 +456,6 @@
     }
     #cabecalho .nav-desktop ul a {
         padding: 10px 10px;
-    }
-    #cabecalho .nav-desktop ul .dropdown {
-        padding: 2px 15px 0px 5px;
     }
     #cabecalho .nav-desktop ul .dropdown .icone {
         font-size: 5em;
