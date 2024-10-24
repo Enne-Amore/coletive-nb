@@ -1,37 +1,44 @@
+// declaração de variáveis
 const sliders = document.querySelectorAll('.imgs-container')
 let isDown = false
 let startX
 let scrollLeft
 
-sliders.forEach((slider) => {
-    slider.addEventListener('mousedown', (e) => {
+// seleção de carrosséis
+for (let i = 0; i <= 1; i++) {
+    sliders[i].addEventListener('mousedown', (e) => {
         isDown = true
-        scrollLeft = slider.scrollLeft
-        startX = e.pageX - slider.offsetLeft
-        slider.style.cursor = 'grabbing'
+        
+        // realizar movimento horizontal
+        scrollLeft = sliders[i].scrollLeft
+        startX = e.pageX - sliders[i].offsetLeft
+        
+        sliders[i].style.cursor = 'grabbing'
     })
     
-    slider.addEventListener('mouseleave', () => {
+    sliders[i].addEventListener('mouseleave', () => {
         isDown = false
-        scrollLeft = slider.scrollLeft
-        startX = e.pageX - slider.offsetLeft
-        slider.style.cursor = 'grabbing'
+        
+        sliders[i].style.cursor = 'grabbing'
     })
     
-    slider.addEventListener('mouseup', () => {
+    sliders[i].addEventListener('mouseup', () => {
         isDown = false
-        slider.style.cursor = 'grab'
+        
+        sliders[i].style.cursor = 'grab'
     })
     
-    slider.addEventListener('mousemove', (e) => {
-        if (!isDown) {
+    sliders[i].addEventListener('mousemove', (e) => {
+        if (isDown === false) { // não fazer nada se o clique não estiver pressionado
             return
 
-        } else {
+        } else { // movimentar o scroll se o clique estiver pressionado
             e.preventDefault()
-            const x = e.pageX - slider.offsetLeft
-            const walk = (x - startX) * 2
-            slider.scrollLeft = scrollLeft - walk
+            
+            // realizar aceleração do movimento horizontal
+            const x = e.pageX - sliders[i].offsetLeft
+            const walk = (x - startX) * 1
+            sliders[i].scrollLeft = scrollLeft - walk
         }
-    })        
-})
+    })
+}

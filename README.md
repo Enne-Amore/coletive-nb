@@ -9,6 +9,7 @@
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
+ - Scroll horizontal arrastando através do clique do mouse nos carrosséis de imagem
 
 
 ## ✅ Demonstração

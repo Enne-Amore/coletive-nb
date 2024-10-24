@@ -303,7 +303,6 @@
     width: 100%;
     height: auto;
     overflow-x: auto;
-    cursor: grabbing;
 }
 #conteudo #membres .ilustracoes .imgs-container::-webkit-scrollbar,
 #conteudo #atividades .ilustracoes .imgs-container::-webkit-scrollbar {
@@ -344,10 +343,6 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 3em;
-}
-#conteudo #membres .ilustracoes .aviso.desktop,
-#conteudo #atividades .ilustracoes .aviso.desktop {
-    display: none;
 }
 
 #conteudo #membres {
@@ -397,6 +392,7 @@
     width: 100%;
     text-align: center;
     bottom: 1.5vh;
+    user-select: none;
 }
 
 #conteudo #parceires .parceires,
