@@ -330,6 +330,8 @@
 #conteudo #atividades .ilustracoes .imgs figure img {
     border-radius: 35px;
     box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    pointer-events: none;
+    user-select: none;
 }
 #conteudo #membres .ilustracoes .aviso,
 #conteudo #atividades .ilustracoes .aviso {
@@ -341,10 +343,6 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 3em;
-}
-#conteudo #membres .ilustracoes .aviso.desktop,
-#conteudo #atividades .ilustracoes .aviso.desktop {
-    display: none;
 }
 
 #conteudo #membres {
@@ -394,6 +392,7 @@
     width: 100%;
     text-align: center;
     bottom: 1.5vh;
+    user-select: none;
 }
 
 #conteudo #parceires .parceires,
