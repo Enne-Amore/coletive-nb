@@ -234,7 +234,7 @@
     }
     #cabecalho .nav-desktop ul .dropdown .dropdown-content {
         border-radius: 30px;
-        margin-left: -120%;
+        margin-left: -150%;
     }
     #cabecalho .nav-desktop ul a.faca-parte {
         border-radius: 30px;
@@ -313,6 +313,10 @@
     #conteudo #atividades .ilustracoes .imgs figure {
         border-radius: 2.7em;
         width: 33vw;
+    }
+    #conteudo #membres .ilustracoes .imgs figure img,
+    #conteudo #atividades .ilustracoes .imgs figure img {
+        pointer-events: none;
     }
     #conteudo #membres .ilustracoes .aviso,
     #conteudo #atividades .ilustracoes .aviso {
@@ -404,7 +408,7 @@
 
     #conteudo #topo {
         right: 2%;
-        padding: 1.4% 1.9%;
+        padding: 1.4% 2%;
         font-size: 3.3em;
     }
 
@@ -432,7 +436,7 @@
         line-height: normal;
     }
     #rodape .contatos .card-tell .titulo .icone {
-        font-size: .8em;
+        font-size: .75em;
     }
     #rodape .contatos .card-tell .tells .tell .icone,
     #rodape .tells-emergencia .tells .tell .icone {
@@ -608,7 +612,7 @@
 
 @media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
     #cabecalho .nav-desktop ul .dropdown {
-        padding: 0em 1.5em 0em .1em;
+        padding-right: 1em;
     }
 
     #conteudo #membres .ilustracoes hr,
