@@ -128,7 +128,8 @@
     width: 90vw;
     height: auto;
 }
-#conteudo #introducao .ilustracao img {
+#conteudo #introducao .ilustracao img,
+#rodape .img img {
     background: none;
     filter: drop-shadow(0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10));
     pointer-events: none;
@@ -345,6 +346,7 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 3em;
+    user-select: none;
 }
 #conteudo #membres .ilustracoes .aviso .icone,
 #conteudo #atividades .ilustracoes .aviso .icone {
@@ -686,7 +688,7 @@
 #rodape .contatos .card-tell .titulo .icone {
     font-size: 1.4em;
     background-color: black;
-    color: var(--laranja);
+    color: var(--amarela);
     padding: .6em .5em;
     border-radius: 50%;
 }
@@ -758,8 +760,4 @@
     width: 80vw;
     max-width: 350px;
     height: auto;
-}
-#rodape .img img {
-    background: none;
-    filter: drop-shadow(0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10));
 }
