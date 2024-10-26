@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 25px;
     padding-left: 10px;
     box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
 }
@@ -16,7 +16,7 @@
     height: auto;
 }
 #cabecalho .icone {
-    font-size: 7em;
+    font-size: 5.5em;
     cursor: pointer;
 }
 #cabecalho #modal-container {
@@ -128,9 +128,12 @@
     width: 90vw;
     height: auto;
 }
-#conteudo #introducao .ilustracao img {
+#conteudo #introducao .ilustracao img,
+#rodape .img img {
     background: none;
     filter: drop-shadow(0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10));
+    pointer-events: none;
+    user-select: none;
 }
 #conteudo #introducao .frase-efeito {
     text-align: center;
@@ -343,6 +346,12 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: 3em;
+    user-select: none;
+}
+#conteudo #membres .ilustracoes .aviso .icone,
+#conteudo #atividades .ilustracoes .aviso .icone {
+    font-size: 1.3em;
+    margin-bottom: -1px;
 }
 
 #conteudo #membres {
@@ -456,6 +465,7 @@
     font-size: 22px;
     font-weight: 600;
     line-height: 32px;
+    user-select: none;
 }
 #conteudo #parceires .parceires .parceire .texto a:hover,
 #conteudo #parceires .parceires .parceire .texto a:focus-visible,
@@ -476,7 +486,7 @@
 #conteudo #parceires .parceires .parceire .texto a .icone,
 #conteudo #mapeamento .textos a .icone,
 #conteudo #conselho-municipal .textos a .icone {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 #conteudo #mapeamento .textos a {
@@ -516,6 +526,7 @@
     background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
     box-shadow: 4px 4px 4px 0px rgba(242, 229, 48, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
     width: 280px;
+    user-select: none;
 }
 #conteudo #direitos .direitos .card:hover,
 #conteudo #direitos .direitos .card:focus-visible {
@@ -544,6 +555,7 @@
     border-radius: 35px;
     box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
     transition: .3s ease-out;
+    pointer-events: none;
 }
 #conteudo #direitos .direitos .card .texto {
     color: var(--preta);
@@ -577,20 +589,20 @@
 }
 #conteudo #conselho-municipal .textos a {
     margin: .9em auto 1em;
-    padding: 15px 20px;
+    padding: 15px 25px;
     max-width: 290px;
 }
 
 #conteudo #topo {
     position: fixed;
-    right: 3%;
+    right: 4.5%;
     bottom: 6%;
     background-color: var(--roxa-clara);
     box-shadow: 2px 2px 10px rgba(106, 78, 166, 0.05), 2px 2px 10px rgba(36, 37, 38, 0.10);
     color: white;
     border-radius: 50%;
-    padding: 3%;
-    font-size: 7em;
+    padding: 5% 7.5%;
+    font-size: 6em;
     cursor: pointer;
     transition-duration: .4s;
     z-index: 2;
@@ -644,7 +656,7 @@
 }
 #rodape .contatos .card-tell {
     display: flex;
-    padding: 25px;
+    padding: 25px 20px;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
@@ -663,17 +675,22 @@
 }
 #rodape .contatos .card-tell .titulo .texto {
     text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
-    text-align: end;
+    text-align: right;
     font-family: var(--titulo);
     font-size: 20px;
     font-weight: 400;
-    line-height: 25px;
-    transform: translateY(10%);
 }
 #rodape .contatos .card-tell .titulo img {
-    width: 30px;
+    width: 32px;
     height: auto;
     background: none;
+}
+#rodape .contatos .card-tell .titulo .icone {
+    font-size: 1.4em;
+    background-color: black;
+    color: var(--amarela);
+    padding: .6em .5em;
+    border-radius: 50%;
 }
 #rodape .contatos .card-tell .tells {
     display: flex;
@@ -685,7 +702,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     text-align: right;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     font-size: 18px;
@@ -696,6 +713,10 @@
 }
 #rodape .contatos .card-tell .tells .tell .texto.desktop {
     display: none;
+}
+#rodape .contatos .card-tell .tells .tell .icone,
+#rodape .tells-emergencia .tells .tell .icone {
+    font-size: 1.2em;
 }
 #rodape .tells-emergencia {
     display: flex;
@@ -719,7 +740,7 @@
 #rodape .tells-emergencia .tells .tell {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     border-radius: 30px;
     font-size: 16px;
     padding: .6em .8em;
@@ -739,8 +760,4 @@
     width: 80vw;
     max-width: 350px;
     height: auto;
-}
-#rodape .img img {
-    background: none;
-    filter: drop-shadow(0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10));
 }

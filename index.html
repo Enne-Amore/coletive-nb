@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="src/css/responsive.css">
     <!-- Fontes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JavaScript -->
     <script src="src/js/menu.js" defer></script>
     <script src="src/js/topo.js" defer></script>
@@ -26,9 +27,7 @@
             <img src="src/img/logo-escura.jpg" alt="Logo: Coletive Não-Binárie">
         </figure>
 
-        <span class="material-symbols-outlined sr-only icone" id="menu-icon" aria-hidden="true" aria-label="Ícone de menu de navegação" tabindex="0">
-            menu
-        </span>
+        <i class="fa-solid fa-bars icone" id="menu-icon" aria-hidden="true" aria-label="Ícone de menu de navegação" tabindex="0"></i>
 
         <dialog id="modal-container">
             <div id="transparencia"></div>
@@ -87,9 +86,10 @@
                 </a>
 
                 <div class="dropdown" id="dropdown" tabindex="0">
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de mais opções">
+                    <span class="material-symbols-outlined sr-only icone">
                         keyboard_arrow_down
                     </span>
+                    <i class="fa-solid fa-angle-down icone" aria-hidden="true" aria-label="Ícone de mais opções"></i>
 
                     <div class="dropdown-content">
                         <a href="#parceires" aria-label="Ir à seção de parceires">
@@ -238,9 +238,7 @@
 
                 <span class="aviso">
                     Arraste para o lado
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de menu de navegação">
-                        swipe_left
-                    </span>
+                    <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
                 </span>
             </article>
         </section>
@@ -292,9 +290,7 @@
     
                     <span class="aviso">
                         Arraste para o lado
-                        <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de arraste">
-                            swipe_left
-                        </span>
+                        <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
                     </span>
                 </article>
             </section>
@@ -343,9 +339,7 @@
     
                     <span class="aviso">
                         Arraste para o lado
-                        <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de arraste">
-                            swipe_left
-                        </span>
+                        <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
                     </span>
                 </article>
             </section>
@@ -374,9 +368,7 @@
                                 Saber Mais Sobre <strong>ABRANB</strong>
                             </span>
 
-                            <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de plataforma externa">
-                                open_in_new
-                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
                         </a>
                     </div>
                 </article>
@@ -400,9 +392,7 @@
                                 Saber Mais Sobre <strong>Fundo Brasil</strong>
                             </span>
 
-                            <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de plataforma externa">
-                                open_in_new
-                            </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
                         </a>
                     </div>
                 </article>
@@ -420,9 +410,7 @@
                 <a href="https://forms.gle/6xWbZWccebKZFtEH9" target="_blank" rel="noopener noreferrer" id="btn-mapeamento">
                     <span>Mapeie-se e Faça Parte</span>
 
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de plataforma externa">
-                        open_in_new
-                    </span>
+                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
                 </a>
             </div>
 
@@ -484,9 +472,7 @@
                 <a href="https://www.instagram.com/conselholgbtjp/" target="_blank" rel="noopener noreferrer">
                     <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
 
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de plataforma externa">
-                        open_in_new
-                    </span>
+                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
                 </a>
             </div>
 
@@ -499,9 +485,7 @@
             </figure>
         </aside>
 
-        <span class="material-symbols-outlined sr-only" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0">
-            shift
-        </span>
+        <i class="fa-solid fa-up-long" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0"></i>
     </main>
 
     <footer id="rodape">
@@ -520,9 +504,7 @@
 
                     <ul class="tells">
                         <a href="mailto:coletivenaobinariepb@gmail.com" aria-label="Email do Coletive Não-Binárie" target="_blank" rel="external" class="tell">
-                            <span class="material-symbols-outlined icone sr-only" aria-hidden="true" aria-label="Ícone de email">
-                                mail
-                            </span>
+                            <i class="fa-solid fa-envelope icone" aria-hidden="true" aria-label="Ícone de email"></i>
             
                             <span class="texto mobile">
                                 coletivenaobinariepb @gmail.com
@@ -534,10 +516,8 @@
                         </a>
 
                         <a href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Acesse o Instagram do Coletive Não-Binárie" target="_blank" rel="external" class="tell">
-                            <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de Instagram">
-                                photo_camera
-                            </span>
-            
+                            <i class="fa-brands fa-instagram icone"aria-hidden="true" aria-label="Ícone do Instagram"></i>
+
                             <span class="texto">
                                 @coletivenaobinariepb
                             </span>
@@ -549,16 +529,12 @@
                     <h2 class="titulo">
                         <span class="texto">Desenvolvedore Web</span>
 
-                        <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de código web">
-                            code
-                        </span>
+                        <i class="fa-solid fa-code icone" aria-hidden="true" aria-label="Ícone de código web"></i>
                     </h2>
 
                     <ul class="tells">
                         <a href="https://www.linkedin.com/in/enne-jim-pessoa/" aria-label="Acesse o perfil do LinkedIn de desenvolvedore do website" target="_blank" rel="external" class="tell">
-                            <span class="material-symbols-outlined icone sr-only" aria-hidden="true" aria-label="Ícone de perfil profissional">
-                                account_circle
-                            </span>
+                            <i class="fa-brands fa-linkedin icone" aria-hidden="true" aria-label="Ícone do Linkedin"></i>
             
                             <span class="texto">
                                 Enne Jim Pessoa
@@ -566,9 +542,7 @@
                         </a>
 
                         <a href="mailto:Enne.Pessoa@gmail.com" aria-label="Email de desenvolvedore do website" target="_blank" rel="external" class="tell">
-                            <span class="material-symbols-outlined icone sr-only" aria-hidden="true" aria-label="Ícone de telefone de ligar">
-                                mail
-                            </span>
+                            <i class="fa-solid fa-envelope icone" aria-hidden="true" aria-label="Ícone de email"></i>
             
                             <span class="texto">
                                 Enne.Pessoa@gmail.com
@@ -586,9 +560,7 @@
 
             <ul class="tells">
                 <a href="tel:100" class="tell">
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de telefone">
-                        call
-                    </span>
+                    <i class="fa-solid fa-phone icone" aria-hidden="true" aria-label="Ícone de telefone"></i>
                     
                     <span>
                         Direitos Humanos <strong>Nacional (100)</strong>
@@ -596,9 +568,7 @@
                 </a>
 
                 <a href="tel:155" class="tell">
-                    <span class="material-symbols-outlined sr-only icone" aria-hidden="true" aria-label="Ícone de telefone">
-                        call
-                    </span>
+                    <i class="fa-solid fa-phone icone" aria-hidden="true" aria-label="Ícone de telefone"></i>
                     
                     <span>
                         Direitos Humanos <strong>Estadual (155)</strong>
