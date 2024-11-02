@@ -4,31 +4,30 @@ let isDown = false
 let startX
 let scrollLeft
 
-// seleção de carrosséis
-for (let i = 0; i <= 1; i++) {
-    sliders[i].addEventListener('mousedown', (e) => {
+sliders.forEach((slider) => {
+    slider.addEventListener('mousedown', (e) => {
         isDown = true
         
         // realizar movimento horizontal
-        scrollLeft = sliders[i].scrollLeft
-        startX = e.pageX - sliders[i].offsetLeft
+        scrollLeft = slider.scrollLeft
+        startX = e.pageX - slider.offsetLeft
         
-        sliders[i].style.cursor = 'grabbing'
+        slider.style.cursor = 'grabbing'
     })
     
-    sliders[i].addEventListener('mouseleave', () => {
+    slider.addEventListener('mouseleave', () => {
         isDown = false
         
-        sliders[i].style.cursor = 'grabbing'
+        slider.style.cursor = 'grabbing'
     })
     
-    sliders[i].addEventListener('mouseup', () => {
+    slider.addEventListener('mouseup', () => {
         isDown = false
         
-        sliders[i].style.cursor = 'grab'
+        slider.style.cursor = 'grab'
     })
     
-    sliders[i].addEventListener('mousemove', (e) => {
+    slider.addEventListener('mousemove', (e) => {
         if (isDown === false) { // não fazer nada se o clique não estiver pressionado
             return
 
@@ -36,9 +35,9 @@ for (let i = 0; i <= 1; i++) {
             e.preventDefault()
             
             // realizar aceleração do movimento horizontal
-            const x = e.pageX - sliders[i].offsetLeft
+            const x = e.pageX - slider.offsetLeft
             const walk = (x - startX) * 1
-            sliders[i].scrollLeft = scrollLeft - walk
+            slider.scrollLeft = scrollLeft - walk
         }
     })
-}
+})
