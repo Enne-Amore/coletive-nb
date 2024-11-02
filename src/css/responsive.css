@@ -117,13 +117,6 @@
         letter-spacing: 1.6px;
         margin: auto 15%;
     }
-    #conteudo #membres .diretories .ilustracoes .imgs {
-        gap: 5em;
-        overflow-x: hidden;
-    }
-    #conteudo #membres .diretories .ilustracoes .aviso {
-        display: none;
-    }
 
     #conteudo #parceires .parceires {
         gap: 5em;
@@ -347,10 +340,11 @@
         transform: translateY(550%);
     }
     #conteudo #membres .diretories .ilustracoes .imgs {
-        padding-left: calc(100vw - 90vw);
-        padding-right: calc(100vw - 90vw);
+        padding-left: calc(100vw - 62vw);
+        padding-right: calc(100vw - 62vw);
     }
     #conteudo #membres .diretories .ilustracoes .imgs figure {
+        border-radius: 2.9em;
         width: 23vw;
     }
     #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
@@ -551,8 +545,8 @@
         transform: translateY(35vh);
     }
     #conteudo #membres .diretories .ilustracoes .imgs {
-        padding-left: calc(100vw - 96vw);
-        padding-right: calc(100vw - 96vw);
+        padding-left: calc(100vw - 64vw);
+        padding-right: calc(100vw - 64vw);
     }
     #conteudo #membres .diretories .ilustracoes .imgs figure {
         width: 220px;
