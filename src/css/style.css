@@ -276,7 +276,7 @@
     font-size: 18px;
     font-style: normal;
     line-height: 30px;
-    padding: 10px 15px 20px 15px;
+    padding: 10px 15px 20px;
     margin: auto;
     width: 85%;
 }
@@ -297,7 +297,7 @@
     border: 16px solid var(--amarela);
     width: 100%;
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05);
-    transform: translateY(13.5vh);
+    transform: translateY(350%);
 }
 #conteudo #membres .ilustracoes .imgs-container,
 #conteudo #atividades .ilustracoes .imgs-container {
@@ -357,7 +357,7 @@
     justify-content: center;
     align-self: stretch;
     gap: 100px;
-    padding: 40px 0px 100px 0px;
+    padding: 40px 0px 100px;
     background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
     box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
 }
@@ -381,7 +381,7 @@
     border-color: var(--roxa-clara);
 }
 #conteudo #membres .diretories .ilustracoes hr {
-    transform: translateY(19.5vh);
+    transform: translateY(480%);
 }
 #conteudo #membres .diretories .ilustracoes .imgs {
     padding-left: calc(100vw - 85vw);
