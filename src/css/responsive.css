@@ -40,7 +40,7 @@
         background: radial-gradient(50% 50% at 50% 50%, var(--cinza) 0%, var(--preta) 100%);
         box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
         border-radius: 30px;
-        border: 1.5px dashed white;
+        border: 1.5px dashed var(--branca);
         padding: 1em;
         z-index: 1;
         animation: cima .2s ease-out;

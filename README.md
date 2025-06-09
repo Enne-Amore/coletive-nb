@@ -34,7 +34,9 @@
 | Roxa Clara  | `#6A4EA6`   |
 | Amarela     | `#F2E530`   |
 | Laranja     | `#F2C029`   |
-| Preta       | `#242526`   |
+| Preta       | `#040008`   |
+| Cinza       | `#242325`   |
+| Branca      | `#FFFFFD`   |
 
 
 ## 🌟 Referências De Uso

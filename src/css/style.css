@@ -55,7 +55,7 @@
     font-size: 24px;
     font-family: var(--titulo);
     font-weight: 400;
-    color: white;
+    color: var(--branca);
 }
 #cabecalho #modal-container #menu hr {
     border-color: var(--amarela);
@@ -100,12 +100,12 @@
 #cabecalho .nav-desktop ul a.faca-parte:hover,
 #cabecalho .nav-desktop ul a.faca-parte:focus-visible {
     background-color: var(--laranja);
-    color: white;
+    color: var(--branca);
     box-shadow: 0px 4px 4px 0px rgba(242, 192, 41, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
 }
 #cabecalho #modal-container #menu .nav ul a.faca-parte:active,
 #cabecalho .nav-desktop ul a.faca-parte:active {
-    background-color: white;
+    background-color: var(--branca);
     color: var(--laranja);
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
 }
@@ -233,7 +233,7 @@
     align-items: center;
     gap: 8em;
     padding: 100px 0;
-    background-color: white;
+    background-color: var(--branca);
 }
 #conteudo #atividades {
     padding-bottom: 110px;
@@ -470,7 +470,7 @@
 #conteudo #conselho-municipal .textos a:hover,
 #conteudo #conselho-municipal .textos a:focus-visible {
     background-color: var(--roxa-clara);
-    color: white;
+    color: var(--branca);
 }
 #conteudo #parceires .parceires .parceire .texto a:active,
 #conteudo #conselho-municipal .textos a:active {
@@ -497,10 +497,10 @@
 #conteudo #mapeamento .textos a:hover,
 #conteudo #mapeamento .textos a:focus-visible {
     background-color: var(--laranja);
-    color: white;
+    color: var(--branca);
 }
 #conteudo #mapeamento .textos a:active {
-    background-color: white;
+    background-color: var(--branca);
     color: var(--laranja);
 }
 
@@ -537,7 +537,7 @@
 }
 #conteudo #direitos .direitos .card:hover .texto,
 #conteudo #direitos .direitos .card:focus-visible .texto {
-    color: white;
+    color: var(--branca);
 }
 #conteudo #direitos .direitos .card:active {
     background: linear-gradient(100deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
@@ -597,7 +597,7 @@
     bottom: 6%;
     background-color: var(--roxa-clara);
     box-shadow: 2px 2px 10px rgba(106, 78, 166, 0.05), 2px 2px 10px rgba(36, 37, 38, 0.10);
-    color: white;
+    color: var(--branca);
     border-radius: 50%;
     padding: 5% 7.5%;
     font-size: 6em;
@@ -612,7 +612,7 @@
     box-shadow: 2px 2px 10px rgba(113, 60, 166, 0.05), 2px 2px 10px rgba(36, 37, 38, 0.10);
 }
 #conteudo #topo:active {
-    background-color: white;
+    background-color: var(--branca);
     color: var(--roxa-escura);
     box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
 }
