@@ -14,7 +14,7 @@
 
 ## ✅ Demonstração
 
- [Clique aqui para acessar o meu site](https://enne-amore.github.io/coletive-nb/)
+ [Clique aqui para acessar o website](https://enne-amore.github.io/coletive-nb/)
 
 
 ## 🎞️ Pré-visualização
@@ -24,20 +24,24 @@
 
 ## 🚀 Tecnologias Utilizadas
 
- - HTML
- - CSS
- - JavaScript
+  <p align="left">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML" alt="HTML" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS" alt="CSS" width="40" height="40"/>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>
+  </p>
 
 
-## 🌈 Documentação De Cores
+## 🌈 Documentação de Cores
 
-| Cor                 | Hexadecimal                                                             |
-| ------------------- | ----------------------------------------------------------------------- |
-| Roxa Escura         | ![#713CA6](https://via.placeholder.com/10/713CA6?text=+) #713CA6        |
-| Roxa Clara          | ![#6A4EA6](https://via.placeholder.com/10/6A4EA6?text=+) #6A4EA6        |
-| Amarela             | ![#F2E530](https://via.placeholder.com/10/F2E530?text=+) #F2E530        |
-| Laranja             | ![#F2C029](https://via.placeholder.com/10/F2C029?text=+) #F2C029        |
-| Preta               | ![#242526](https://via.placeholder.com/10/242526?text=+) #242526        |
+| Cor         | Hexadecimal |
+| ----------- | ----------- |
+| Roxa Escura | `#713CA6`   |
+| Roxa Clara  | `#6A4EA6`   |
+| Amarela     | `#F2E530`   |
+| Laranja     | `#F2C029`   |
+| Preta       | `#040008`   |
+| Cinza       | `#242325`   |
+| Branca      | `#FFFFFD`   |
 
 
 ## 🌟 Referências De Uso
