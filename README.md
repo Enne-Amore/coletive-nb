@@ -32,6 +32,27 @@
   </p>
 
 
+## 🛠️ Instalação Local
+
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/coletive-nb.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
+
+
 ## 🌈 Documentação de Cores
 
  | Cor         | Hexadecimal |
@@ -47,15 +68,15 @@
 
 ## 🔤 Fontes Usadas
 
- - **Geometos Rounded**
+ - **Geometos Rounded**  
    Exemplo de uso:
    `font-family: "titulo";` ou 
    `font-family: var(--titulo);`
- - **Open Dyslexic Alta**
+ - **Open Dyslexic Alta**  
    Exemplo de uso:
    `font-family: "texto";` ou 
    `font-family: var(--texto);`
- - **Arial, Helvetica, Sans-Serif**
+ - **Arial, Helvetica, Sans-Serif**  
    Exemplo de uso:
    `font-family: Arial, Helvetica, sans-serif;` ou 
    `font-family: var(--padrao);`
