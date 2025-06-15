@@ -110,7 +110,7 @@
 
 ## 🌟 Referências de Uso
 
- - [Família de ícones utilizada](https://fontawesome.com)
+ - [Família de ícones utilizada](https://fontawesome.com/icons)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
 
