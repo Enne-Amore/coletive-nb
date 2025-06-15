@@ -32,6 +32,32 @@
   </p>
 
 
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ coletive-nb/
+ ├── css/                    # Arquivos CSS
+ │   ├── reset.css       
+ │   ├── responsive.css  
+ │   ├── style.css       
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── guia-de-estilo/ 
+ │   ├── prototipos-de-tela/
+ ├── fonts/                  # Arquivos das fontes utilizadas  
+ │   ├── geometos_rounded/ 
+ │   ├── open_dyslexic/
+ ├── img/                    # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── btn-mapeamento.js  
+ │   ├── ilustracoes.js 
+ │   ├── menu.js 
+ │   ├── topo.js 
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE
+ ├── README.md
+ ```
+
+
 ## 🛠️ Instalação Local
 
  1. **Clone o repositório**
