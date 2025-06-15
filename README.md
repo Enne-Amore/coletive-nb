@@ -20,7 +20,7 @@
 
 ## 🎞️ Pré-visualização
 
- <img src="src/img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+ <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## 🚀 Tecnologias Utilizadas
