@@ -1,4 +1,5 @@
 # 💜 Coletive Não-Binárie
+ 
  Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
 
 
@@ -44,7 +45,7 @@
 | Branca      | `#FFFFFD`   |
 
 
-## 🌟 Referências De Uso
+## 🌟 Referências de Uso
 
  - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
@@ -53,5 +54,5 @@
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
+ Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
 
