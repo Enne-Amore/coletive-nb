@@ -1,13 +1,13 @@
 @charset 'UTF-8';
 
-/* Fonte do site */
+/* Fontes do site */
 @font-face {
-    font-family: 'titulo';
+    font-family: "titulo";
     src: url(../fonts/geometos_rounded/Geometos\ Rounded.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: 'texto';
+    font-family: "texto";
     src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
 }
 
@@ -63,7 +63,7 @@ img {
     --preta: #040008;
     --cinza: #242325;
     --branca: #FFFFFD;
-    --titulo: 'titulo', sans-serif;
+    --titulo: "titulo", sans-serif;
     --padrao: "Open Sans", sans-serif;
     --texto: "texto", sans-serif;
 }

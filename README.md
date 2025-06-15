@@ -34,15 +34,31 @@
 
 ## 🌈 Documentação de Cores
 
-| Cor         | Hexadecimal |
-| ----------- | ----------- |
-| Roxa Escura | `#713CA6`   |
-| Roxa Clara  | `#6A4EA6`   |
-| Amarela     | `#F2E530`   |
-| Laranja     | `#F2C029`   |
-| Preta       | `#040008`   |
-| Cinza       | `#242325`   |
-| Branca      | `#FFFFFD`   |
+ | Cor         | Hexadecimal |
+ | ----------- | ----------- |
+ | Roxa Escura | `#713CA6`   |
+ | Roxa Clara  | `#6A4EA6`   |
+ | Amarela     | `#F2E530`   |
+ | Laranja     | `#F2C029`   |
+ | Preta       | `#040008`   |
+ | Cinza       | `#242325`   |
+ | Branca      | `#FFFFFD`   |
+
+
+## 🔤 Fontes Usadas
+
+ - **Geometos Rounded**
+   Exemplo de uso:
+   `font-family: "titulo";` ou 
+   `font-family: var(--titulo);`
+ - **Open Dyslexic Alta**
+   Exemplo de uso:
+   `font-family: "texto";` ou 
+   `font-family: var(--texto);`
+ - **Arial, Helvetica, Sans-Serif**
+   Exemplo de uso:
+   `font-family: Arial, Helvetica, sans-serif;` ou 
+   `font-family: var(--padrao);`
 
 
 ## 🌟 Referências de Uso
