@@ -1,4 +1,5 @@
 # 💜 Coletive Não-Binárie
+ 
  Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
 
 
@@ -19,7 +20,7 @@
 
 ## 🎞️ Pré-visualização
 
- <img src="src/img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+ <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -31,27 +32,90 @@
   </p>
 
 
+## 📂 Estrutura do Projeto
+
+ ```plaintext
+ coletive-nb/
+ ├── css/                    # Arquivos CSS
+ │   ├── reset.css       
+ │   ├── responsive.css  
+ │   ├── style.css       
+ ├── docs/                   # Arquivos de documentação do projeto
+ │   ├── guia-de-estilo/ 
+ │   ├── prototipos-de-tela/
+ ├── fonts/                  # Arquivos das fontes utilizadas  
+ │   ├── geometos_rounded/ 
+ │   ├── open_dyslexic/
+ ├── img/                    # Imagens utilizadas 
+ ├── js/                     # Arquivos JavaScript
+ │   ├── btn-mapeamento.js  
+ │   ├── ilustracoes.js 
+ │   ├── menu.js 
+ │   ├── topo.js 
+ ├── index.html              # Arquivo principal de renderização
+ ├── LICENSE
+ ├── README.md
+ ```
+
+
+## 🛠️ Instalação Local
+
+ 1. **Clone o repositório**
+ 
+ No terminal, rode o seguinte comando:
+ 
+ ```bash
+ git clone https://github.com/Enne-Amore/coletive-nb.git
+ ```
+ 
+ 2. **Entre no arquivo "index.html"**
+ 
+ 3. **Rode o arquivo principal de renderização:**
+ 
+ Clique com o botão direito do mouse e selecione a seguinte opção:
+ 
+ ```bash
+ Open with Live Server
+ ```
+
+
 ## 🌈 Documentação de Cores
 
-| Cor         | Hexadecimal |
-| ----------- | ----------- |
-| Roxa Escura | `#713CA6`   |
-| Roxa Clara  | `#6A4EA6`   |
-| Amarela     | `#F2E530`   |
-| Laranja     | `#F2C029`   |
-| Preta       | `#040008`   |
-| Cinza       | `#242325`   |
-| Branca      | `#FFFFFD`   |
+ | Cor         | Hexadecimal |
+ | ----------- | ----------- |
+ | Roxa Escura | `#713CA6`   |
+ | Roxa Clara  | `#6A4EA6`   |
+ | Amarela     | `#F2E530`   |
+ | Laranja     | `#F2C029`   |
+ | Preta       | `#040008`   |
+ | Cinza       | `#242325`   |
+ | Branca      | `#FFFFFD`   |
 
 
-## 🌟 Referências De Uso
+## 🔤 Fontes Usadas
 
- - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
+ - **Geometos Rounded**  
+   Exemplo de uso:
+   `font-family: "titulo";` ou 
+   `font-family: var(--titulo);`
+ - **Open Dyslexic Alta**  
+   Exemplo de uso:
+   `font-family: "texto";` ou 
+   `font-family: var(--texto);`
+ - **Arial, Helvetica, Sans-Serif**  
+   Exemplo de uso:
+   `font-family: Arial, Helvetica, sans-serif;` ou 
+   `font-family: var(--padrao);`
+
+
+## 🌟 Referências de Uso
+
+ - [Família de ícones utilizada](https://fontawesome.com/icons)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
 
 
 ## 🔧 Suporte
 
- Para me contatar como suporte, o meu email é Enne.Pessoa@gmail.com 
+ Para me contatar como suporte, o meu email é [Enne.Pessoa@gmail.com](mailto:Enne.Pessoa@gmail.com)
 

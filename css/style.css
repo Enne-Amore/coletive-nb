@@ -1,0 +1,762 @@
+@charset 'UTF-8';
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: var(--preta);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    padding-left: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#cabecalho .logo {
+    width: 60vw;
+    max-width: 300px;
+    height: auto;
+}
+#cabecalho .icone {
+    font-size: 5.5em;
+    cursor: pointer;
+}
+#cabecalho #modal-container {
+    background-color: transparent;
+    display: none;
+    width: max-content;
+    height: max-content;
+    z-index: 3;
+    border: 0;
+}
+#cabecalho #modal-container #transparencia {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    backdrop-filter: blur(2px);
+    animation: fade .1s ease-out;
+}
+#cabecalho #modal-container #menu {
+    position: fixed;
+    top: 0;
+    background: radial-gradient(50% 50% at 50% 50%, var(--cinza) 0%, var(--preta) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    padding: 5.5em 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    width: 65vw;
+    height: 100vh;
+    animation: esquerda .35s ease-out .1s both;
+}
+#cabecalho #modal-container #menu h2 {
+    font-size: 24px;
+    font-family: var(--titulo);
+    font-weight: 400;
+    color: var(--branca);
+}
+#cabecalho #modal-container #menu hr {
+    border-color: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.25) inset;
+    width: 100%;
+    margin: 1em auto .9em;
+}
+#cabecalho #modal-container #menu .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+#cabecalho #modal-container #menu .nav ul a,
+#cabecalho .nav-desktop ul a {
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#cabecalho #modal-container #menu .nav ul a:hover,
+#cabecalho #modal-container #menu .nav ul a:focus-visible,
+#cabecalho .nav-desktop ul a:hover,
+#cabecalho .nav-desktop ul a:focus-visible {
+    color: var(--amarela);
+    text-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+}
+#cabecalho #modal-container #menu .nav ul a:active,
+#cabecalho .nav-desktop ul a:active {
+    color: var(--laranja);
+    text-shadow: 0px 4px 4px 0px rgba(242, 192, 41, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+}
+#cabecalho #modal-container #menu .nav ul a.faca-parte,
+#cabecalho .nav-desktop ul a.faca-parte {
+    border-radius: 25px;
+    background-color: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+    color: var(--cinza);
+    font-weight: 600;
+}
+#cabecalho #modal-container #menu .nav ul a.faca-parte:hover,
+#cabecalho #modal-container #menu .nav ul a.faca-parte:focus-visible,
+#cabecalho .nav-desktop ul a.faca-parte:hover,
+#cabecalho .nav-desktop ul a.faca-parte:focus-visible {
+    background-color: var(--laranja);
+    color: var(--branca);
+    box-shadow: 0px 4px 4px 0px rgba(242, 192, 41, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+}
+#cabecalho #modal-container #menu .nav ul a.faca-parte:active,
+#cabecalho .nav-desktop ul a.faca-parte:active {
+    background-color: var(--branca);
+    color: var(--laranja);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+}
+#cabecalho .nav-desktop,
+#cabecalho .nav-desktop ul {
+    display: none;
+}
+
+/* Conteúdo */
+#conteudo #introducao {
+    background: url(../img/fundo-roxo-mobile.jpg) no-repeat;
+    background-size: cover;
+    padding: 8em 0 16em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+#conteudo #introducao .ilustracao {
+    width: 90vw;
+    height: auto;
+}
+#conteudo #introducao .ilustracao img,
+#rodape .img img {
+    background: none;
+    filter: drop-shadow(0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10));
+    pointer-events: none;
+}
+#conteudo #introducao .frase-efeito {
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(106, 78, 166, 0.05), 0px 4px 4px rgba(36, 37, 38, 0.10);
+    font-family: var(--titulo);
+    font-size: 3.8em;
+    font-weight: 400;
+    line-height: 1.7em;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    background: linear-gradient(106deg, var(--roxa-clara) 0%, var(--roxa-escura) 97.93%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#conteudo #introducao .frase-efeito strong {
+    font-weight: 400;
+    background: var(--amarela);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -webkit-text-fill-color: var(--roxa-clara);
+    box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.05);
+    padding: .37em .1em 0 .15em;
+}
+
+#conteudo #finalidades,
+#conteudo #mapeamento,
+#conteudo #conselho-municipal {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 30px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 6em;
+    align-self: stretch;
+    background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(113, 60, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #finalidades .textos,
+#conteudo #mapeamento .textos,
+#conteudo #conselho-municipal .textos {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+#conteudo #finalidades .textos .titulo,
+#conteudo #mapeamento .textos .titulo,
+#conteudo #conselho-municipal .textos .titulo {
+    font-size: 24px;
+    font-family: var(--titulo);
+    font-weight: 400;
+    line-height: 35px;
+}
+#conteudo #finalidades .textos .lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 4.5em;
+}
+#conteudo #finalidades .textos .lista li,
+#conteudo #mapeamento .textos p,
+#conteudo #conselho-municipal .textos p {
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+    font-family: var(--texto);
+    line-height: 35px;
+}
+#conteudo #finalidades .textos .lista li::before {
+    content: "⭐";
+    position: absolute;
+    left: -12%;
+}
+#conteudo #finalidades .textos .lista li strong,
+#conteudo #mapeamento .textos p strong {
+    font-weight: bolder;
+    color: var(--amarela);
+}
+#conteudo #finalidades .img,
+#conteudo #mapeamento .img,
+#conteudo #conselho-municipal .img {
+    width: 315px;
+    height: auto;
+}
+#conteudo #finalidades .img img,
+#conteudo #mapeamento .img img,
+#conteudo #conselho-municipal .img img {
+    border-radius: 35px;
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+
+#conteudo #atividades,
+#conteudo #parceires,
+#conteudo #direitos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8em;
+    padding: 100px 0;
+    background-color: var(--branca);
+}
+#conteudo #atividades {
+    padding-bottom: 110px;
+}
+#conteudo #atividades .titulo,
+#conteudo #parceires .titulo {
+    padding: 22px 40px 15px 40px;
+    background: linear-gradient(90deg, rgba(113, 60, 166, 0.00) 0%, var(--roxa-escura) 50%, rgba(113, 60, 166, 0.00) 100%);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
+    font-family: var(--titulo);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    width: 90%;
+}
+#conteudo #atividades .lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+#conteudo #atividades .lista .atividade hr {
+    width: 90%;
+    height: 10px;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.05);
+}
+#conteudo #atividades .lista .atividade p {
+    border-radius: 0px 0px 40px 40px;
+    background: var(--amarela);
+    box-shadow: 0px 4px 4px 0px rgba(235, 242, 29, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.05);
+    color: var(--roxa-escura);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(113, 60, 166, 0.05), 0px 4px 4px rgba(36, 37, 38, 0.05);
+    font-family: var(--texto);
+    font-size: 18px;
+    font-style: normal;
+    line-height: 30px;
+    padding: 10px 15px 20px;
+    margin: auto;
+    width: 85%;
+}
+#conteudo #atividades .lista .atividade p strong {
+    font-weight: bolder;
+}
+#conteudo #atividades .ilustracoes {
+    margin-top: -1em;
+}
+#conteudo #membres .ilustracoes,
+#conteudo #atividades .ilustracoes {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#conteudo #membres .ilustracoes hr,
+#conteudo #atividades .ilustracoes hr {
+    border: 16px solid var(--amarela);
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05);
+    transform: translateY(350%);
+}
+#conteudo #membres .ilustracoes .imgs-container,
+#conteudo #atividades .ilustracoes .imgs-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
+}
+#conteudo #membres .ilustracoes .imgs-container::-webkit-scrollbar,
+#conteudo #atividades .ilustracoes .imgs-container::-webkit-scrollbar {
+    height: 0;
+}
+#conteudo #membres .ilustracoes .imgs,
+#conteudo #atividades .ilustracoes .imgs {
+    display: flex;
+    gap: 8em;
+    width: max-content;
+    height: auto;
+    padding-left: calc(100vw - 88.5vw);
+    padding-right: calc(100vw - 88.5vw);
+    overflow-x: auto;
+}
+#conteudo #membres .ilustracoes .imgs figure,
+#conteudo #atividades .ilustracoes .imgs figure {
+    border-radius: 4.5em;
+    overflow: hidden;
+    width: 77vw;
+    height: max-content;
+    z-index: 1;
+}
+#conteudo #membres .ilustracoes .imgs figure img,
+#conteudo #atividades .ilustracoes .imgs figure img {
+    border-radius: 35px;
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #membres .ilustracoes .aviso,
+#conteudo #atividades .ilustracoes .aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    color: var(--cinza);
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 3em;
+    user-select: none;
+}
+#conteudo #membres .ilustracoes .aviso .icone,
+#conteudo #atividades .ilustracoes .aviso .icone {
+    font-size: 1.3em;
+    margin-bottom: -1px;
+}
+
+#conteudo #membres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: stretch;
+    gap: 100px;
+    padding: 40px 0px 100px;
+    background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #membres .frase-efeito,
+#conteudo #direitos .frase-efeito {
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(106, 78, 166, 0.05), 0px 4px 4px rgba(36, 37, 38, 0.10);
+    font-family: var(--titulo);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    background: linear-gradient(91deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto 5%;
+}
+#conteudo #membres .ilustracoes hr {
+    border-color: var(--roxa-clara);
+}
+#conteudo #membres .diretories .ilustracoes hr {
+    transform: translateY(480%);
+}
+#conteudo #membres .diretories .ilustracoes .imgs {
+    padding-left: calc(100vw - 85vw);
+    padding-right: calc(100vw - 85vw);
+}
+#conteudo #membres .diretories .ilustracoes .imgs figure {
+    position: relative;
+    width: 70vw;
+}
+#conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
+    position: absolute;
+    font-family: var(--texto);
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
+    bottom: 1.5vh;
+    user-select: none;
+}
+
+#conteudo #parceires .parceires,
+#conteudo #parceires .parceires .parceire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8em;
+}
+#conteudo #parceires .parceires .parceire {
+    gap: 5em;
+}
+#conteudo #parceires .parceires .parceire .img {
+    width: 250px;
+    height: auto;
+}
+#conteudo #parceires .parceires .parceire .img img {
+    border-radius: 35px;
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #parceires .parceires .parceire .texto {
+    display: flex;
+    width: 315px;
+    padding: 18px 25px 30px 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 30px;
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(242, 229, 48, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #parceires .parceires .parceire .texto p {
+    color: var(--cinza);
+    font-family: var(--texto);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 35px;
+}
+#conteudo #parceires .parceires .parceire .texto p strong,
+#conteudo #conselho-municipal .textos p strong {
+    font-weight: bolder;
+    color: var(--roxa-clara);
+}
+#conteudo #parceires .parceires .parceire .texto a,
+#conteudo #mapeamento .textos a,
+#conteudo #conselho-municipal .textos a {
+    display: flex;
+    padding: 15px 35px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    align-self: stretch;
+    border-radius: 30px;
+    border: 2px solid var(--roxa-clara);
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 4px 4px 4px 0px rgba(106, 78, 166, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    color: var(--roxa-clara);
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    user-select: none;
+}
+#conteudo #parceires .parceires .parceire .texto a:hover,
+#conteudo #parceires .parceires .parceire .texto a:focus-visible,
+#conteudo #conselho-municipal .textos a:hover,
+#conteudo #conselho-municipal .textos a:focus-visible {
+    background-color: var(--roxa-clara);
+    color: var(--branca);
+}
+#conteudo #parceires .parceires .parceire .texto a:active,
+#conteudo #conselho-municipal .textos a:active {
+    background-color: var(--roxa-escura);
+    box-shadow: 4px 4px 4px 0px rgba(113, 60, 166, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #parceires .parceires .parceire .texto a strong,
+#conteudo #conselho-municipal .textos a strong {
+    font-weight: 800;
+}
+#conteudo #parceires .parceires .parceire .texto a .icone,
+#conteudo #mapeamento .textos a .icone,
+#conteudo #conselho-municipal .textos a .icone {
+    font-size: 1.2em;
+}
+
+#conteudo #mapeamento .textos a {
+    border: none;
+    background-color: var(--amarela);
+    color: var(--cinza);
+    margin: .9em auto 1em;
+    max-width: 260px;
+}
+#conteudo #mapeamento .textos a:hover,
+#conteudo #mapeamento .textos a:focus-visible {
+    background-color: var(--laranja);
+    color: var(--branca);
+}
+#conteudo #mapeamento .textos a:active {
+    background-color: var(--branca);
+    color: var(--laranja);
+}
+
+#conteudo #direitos {
+    padding-top: 90px;
+}
+#conteudo #direitos .frase-efeito {
+    margin: auto 8%;
+}
+#conteudo #direitos .direitos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#conteudo #direitos .direitos .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(242, 229, 48, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    width: 280px;
+    user-select: none;
+}
+#conteudo #direitos .direitos .card:hover,
+#conteudo #direitos .direitos .card:focus-visible {
+    background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(106, 78, 166, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #direitos .direitos .card:hover .img img,
+#conteudo #direitos .direitos .card:focus-visible .img img {
+    transform: scale(1.2);
+}
+#conteudo #direitos .direitos .card:hover .texto,
+#conteudo #direitos .direitos .card:focus-visible .texto {
+    color: var(--branca);
+}
+#conteudo #direitos .direitos .card:active {
+    background: linear-gradient(100deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
+    box-shadow: 4px 4px 4px 0px rgba(113, 60, 166, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #direitos .direitos .card .img {
+    width: 280px;
+    height: auto;
+    border-radius: 35px;
+    overflow: hidden;
+}
+#conteudo #direitos .direitos .card .img img {
+    border-radius: 35px;
+    box-shadow: 0px 4px 4px 0px rgba(106, 78, 166, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    transition: .3s ease-out;
+    pointer-events: none;
+}
+#conteudo #direitos .direitos .card .texto {
+    color: var(--cinza);
+    text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    width: 85%;
+    margin: .6em auto 1em;
+    transition: .2s ease-out;
+}
+#conteudo #direitos .direitos hr {
+    border-color: var(--roxa-clara);
+    box-shadow: 0px 0px 6px 0px rgba(106, 78, 166, 0.05), 0px 0px 6px 0px rgba(36, 37, 38, 0.10);
+    width: 105%;
+}
+
+#conteudo #conselho-municipal {
+    background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(242, 229, 48, 0.05), 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#conteudo #conselho-municipal .textos .titulo {
+    background: linear-gradient(90deg, var(--roxa-escura) -0.06%, var(--roxa-clara) 100.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 70%;
+}
+#conteudo #conselho-municipal .textos p {
+    color: var(--cinza);
+}
+#conteudo #conselho-municipal .textos a {
+    margin: .9em auto 1em;
+    padding: 15px 25px;
+    max-width: 290px;
+}
+
+#conteudo #topo {
+    position: fixed;
+    right: 4.5%;
+    bottom: 6%;
+    background-color: var(--roxa-clara);
+    box-shadow: 2px 2px 10px rgba(106, 78, 166, 0.05), 2px 2px 10px rgba(36, 37, 38, 0.10);
+    color: var(--branca);
+    border-radius: 50%;
+    padding: 5% 7.5%;
+    font-size: 6em;
+    cursor: pointer;
+    transition-duration: .4s;
+    z-index: 2;
+    animation: fade .5s ease;
+}
+#conteudo #topo:hover,
+#conteudo #topo:focus-visible {
+    background-color: var(--roxa-escura);
+    box-shadow: 2px 2px 10px rgba(113, 60, 166, 0.05), 2px 2px 10px rgba(36, 37, 38, 0.10);
+}
+#conteudo #topo:active {
+    background-color: var(--branca);
+    color: var(--roxa-escura);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
+}
+#conteudo #topo:focus-visible {
+    outline: auto;
+}
+
+/* Rodapé */
+#rodape {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 21px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 50%, var(--cinza) 100%);
+    box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#rodape .container-logo-contatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
+#rodape .logo {
+    width: 220px;
+    height: auto;
+}
+#rodape .logo img {
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+}
+#rodape .contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#rodape .contatos .card-tell {
+    display: flex;
+    padding: 25px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 5px;
+    border-radius: 30px;
+    border: 1.5px dashed #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(36, 37, 38, 0.10);
+    background: rgba(255, 255, 255, 0.01);
+    max-width: 300px;
+}
+#rodape .contatos .card-tell .titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+#rodape .contatos .card-tell .titulo .texto {
+    text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
+    text-align: right;
+    font-family: var(--titulo);
+    font-size: 20px;
+    font-weight: 400;
+}
+#rodape .contatos .card-tell .titulo img {
+    width: 32px;
+    height: auto;
+    background: none;
+    pointer-events: none;
+}
+#rodape .contatos .card-tell .titulo .icone {
+    font-size: 1.4em;
+    background-color: var(--preta);
+    color: var(--amarela);
+    padding: .6em .5em;
+    border-radius: 50%;
+}
+#rodape .contatos .card-tell .tells {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#rodape .contatos .card-tell .tells .tell {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+    text-align: right;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    border-radius: 30px;
+    padding: .6em .8em;
+}
+#rodape .contatos .card-tell .tells .tell .texto.desktop {
+    display: none;
+}
+#rodape .contatos .card-tell .tells .tell .icone,
+#rodape .tells-emergencia .tells .tell .icone {
+    font-size: 1.2em;
+}
+#rodape .tells-emergencia {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 298px;
+}
+#rodape .tells-emergencia .texto {
+    text-shadow: 0px 4px 4px rgba(36, 37, 38, 0.10);
+    font-family: var(--texto);
+    font-size: 18px;
+    font-weight: 400;
+}
+#rodape .tells-emergencia .texto strong,
+#rodape .tells-emergencia .tells .tell strong {
+    color: var(--amarela);
+}
+#rodape .tells-emergencia .tells {
+    width: max-content;
+}
+#rodape .tells-emergencia .tells .tell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: .6em .8em;
+}
+#rodape .tells-emergencia .tells .tell:hover,
+#rodape .tells-emergencia .tells .tell:focus-visible,
+#rodape .contatos .card-tell .tells .tell:hover,
+#rodape .contatos .card-tell .tells .tell:focus-visible {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0px 4px 4px 0px rgba(255, 255, 255, 0.01);
+}
+#rodape .tells-emergencia .tells .tell:active,
+#rodape .contatos .card-tell .tells .tell:active {
+    background: rgba(255, 255, 255, 0.30);
+}
+#rodape .img {
+    width: 80vw;
+    max-width: 350px;
+    height: auto;
+}
