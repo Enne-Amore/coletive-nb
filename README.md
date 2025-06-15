@@ -110,7 +110,7 @@
 
 ## 🌟 Referências de Uso
 
- - [Ícones do Google](https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200)
+ - [Família de ícones utilizada](https://fontawesome.com)
  - [Fonte de Texto: Geometos Rounded](https://www.dafont.com/pt/geometos-rounded.font)
  - [Fonte de Texto: Open Dyslexic](https://www.dafont.com/pt/open-dyslexic.font)
 
