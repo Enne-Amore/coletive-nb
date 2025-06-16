@@ -53,7 +53,7 @@
  │   ├── menu.js 
  │   ├── topo.js 
  ├── index.html              # Arquivo principal de renderização
- ├── LICENSE
+ ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
  ```
 
