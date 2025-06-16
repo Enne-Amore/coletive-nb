@@ -3,6 +3,16 @@
  Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
 
 
+## 🌐 Aplicação Hospedada
+
+ [Clique aqui para acessar o website](https://enne-amore.github.io/coletive-nb/)
+
+
+## 🎞️ Pré-visualização
+
+ <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
+
+
 ## ⚡ Funcionalidades
 
  - Menu de navegação por páginas abrível e fechável para mobile
@@ -11,16 +21,6 @@
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
  - Scroll horizontal arrastando através do clique do mouse nos carrosséis de imagem
-
-
-## ✅ Demonstração
-
- [Clique aqui para acessar o website](https://enne-amore.github.io/coletive-nb/)
-
-
-## 🎞️ Pré-visualização
-
- <img src="img/preview.gif" alt="Pré-visualização do site" width="340" height="200">
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -53,7 +53,7 @@
  │   ├── menu.js 
  │   ├── topo.js 
  ├── index.html              # Arquivo principal de renderização
- ├── LICENSE
+ ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
  ```
 
@@ -79,7 +79,7 @@
  ```
 
 
-## 🌈 Documentação de Cores
+## 🌈 Cores
 
  | Cor         | Hexadecimal |
  | ----------- | ----------- |
@@ -92,18 +92,18 @@
  | Branca      | `#FFFFFD`   |
 
 
-## 🔤 Fontes Usadas
+## 🔤 Fontes Tipográficas
 
  - **Geometos Rounded**  
-   Exemplo de uso:
+   Exemplo de uso:  
    `font-family: "titulo";` ou 
    `font-family: var(--titulo);`
  - **Open Dyslexic Alta**  
-   Exemplo de uso:
+   Exemplo de uso:  
    `font-family: "texto";` ou 
    `font-family: var(--texto);`
  - **Arial, Helvetica, Sans-Serif**  
-   Exemplo de uso:
+   Exemplo de uso:  
    `font-family: Arial, Helvetica, sans-serif;` ou 
    `font-family: var(--padrao);`
 
