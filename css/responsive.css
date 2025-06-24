@@ -330,6 +330,7 @@
         font-size: 32px;
         line-height: 60px;
         letter-spacing: 1.6px;
+        margin: auto 22%;
     }
     #conteudo #membres .diretories {
         display: flex;
