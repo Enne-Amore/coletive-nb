@@ -50,10 +50,6 @@ img {
     user-select: none;
 }
 
-:focus {
-    outline: 0;
-}
-
 /* Variáveis CSS */
 :root {
     --roxa-escura: #713CA6;
