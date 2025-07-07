@@ -96,15 +96,15 @@
 
  - **Geometos Rounded**  
    Exemplo de uso:  
-   `font-family: "titulo";` ou 
+   `font-family: "Geometos Rounded";` ou 
    `font-family: var(--titulo);`
  - **Open Dyslexic Alta**  
    Exemplo de uso:  
-   `font-family: "texto";` ou 
+   `font-family: "Open Dyslexic Alta";` ou 
    `font-family: var(--texto);`
- - **Arial, Helvetica, Sans-Serif**  
+ - **Open Sans**  
    Exemplo de uso:  
-   `font-family: Arial, Helvetica, sans-serif;` ou 
+   `font-family: "Open Sans";` ou 
    `font-family: var(--padrao);`
 
 

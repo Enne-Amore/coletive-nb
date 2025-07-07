@@ -1,13 +1,13 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* Fontes do site */
 @font-face {
-    font-family: "titulo";
+    font-family: "Geometos Rounded";
     src: url(../fonts/geometos_rounded/Geometos\ Rounded.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: "texto";
+    font-family: "Open Dyslexic Alta";
     src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
 }
 
@@ -59,9 +59,9 @@ img {
     --preta: #040008;
     --cinza: #242325;
     --branca: #FFFFFD;
-    --titulo: "titulo", sans-serif;
+    --titulo: "Geometos Rounded", sans-serif;
     --padrao: "Open Sans", sans-serif;
-    --texto: "texto", sans-serif;
+    --texto: "Open Dyslexic Alta", sans-serif;
 }
 
 /* Estilização da barrinha de rolagem */

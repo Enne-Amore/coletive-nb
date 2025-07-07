@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 /* Cabeçalho */
 #cabecalho {
@@ -100,7 +100,7 @@
 #cabecalho .nav-desktop ul a.faca-parte:hover,
 #cabecalho .nav-desktop ul a.faca-parte:focus-visible {
     background-color: var(--laranja);
-    color: var(--branca);
+    color: var(--preta);
     box-shadow: 0px 4px 4px 0px rgba(242, 192, 41, 0.05), 0px 4px 4px 0px rgba(255, 255, 255, 0.10);
 }
 #cabecalho #modal-container #menu .nav ul a.faca-parte:active,
@@ -116,7 +116,7 @@
 
 /* Conteúdo */
 #conteudo #introducao {
-    background: url(../img/fundo-roxo-mobile.jpg) no-repeat;
+    background: url(../img/fundo-roxo-mobile.png) no-repeat;
     background-size: cover;
     padding: 8em 0 16em;
     display: flex;
@@ -455,7 +455,7 @@
     align-self: stretch;
     border-radius: 30px;
     border: 2px solid var(--roxa-clara);
-    background: rgba(255, 255, 255, 0.20);
+    background: #ffffff33;
     box-shadow: 4px 4px 4px 0px rgba(106, 78, 166, 0.05), 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
     color: var(--roxa-clara);
     text-align: center;
@@ -497,7 +497,7 @@
 #conteudo #mapeamento .textos a:hover,
 #conteudo #mapeamento .textos a:focus-visible {
     background-color: var(--laranja);
-    color: var(--branca);
+    color: var(--preta);
 }
 #conteudo #mapeamento .textos a:active {
     background-color: var(--branca);
