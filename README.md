@@ -1,6 +1,6 @@
 # 💜 Coletive Não-Binárie
  
- Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
+ Website exclusivo sobre o Coletive Não-Binárie e suas atividades, finalidades, membres, etc
 
 
 ## 🌐 Aplicação Hospedada
