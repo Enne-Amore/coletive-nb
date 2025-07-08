@@ -29,7 +29,7 @@
     
     #conteudo #atividades .titulo,
     #conteudo #parceires .titulo {
-        background: linear-gradient(90deg, rgba(242, 192, 41, 0.00) 0%, var(--laranja) 50%, rgba(242, 192, 41, 0.00) 100%);
+        background: linear-gradient(90deg, #F2C02900 0%, var(--laranja) 50%, #F2C02900 100%);
         color: var(--preta);
     }
     
@@ -44,7 +44,7 @@
 
     #conteudo #membres,
     #conteudo #conselho-municipal {
-        background: linear-gradient(0deg, rgba(36, 35, 37, 0.70) 0%, rgba(36, 35, 37, 0.70) 100%), linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+        background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%), linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
     }
     
     #conteudo #membres .frase-efeito,

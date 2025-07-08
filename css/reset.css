@@ -46,7 +46,7 @@ button {
 img {
     width: 100%;
     height: 100%;
-    background: radial-gradient(50% 50% at 50% 50%, rgba(106, 78, 166, 0.50) 0%, rgba(106, 78, 166, 0.00) 100%), rgba(211, 211, 211, 0.10) -9px 0px / 117.857% 100% no-repeat;
+    background: radial-gradient(50% 50% at 50% 50%, #6A4EA680 0%, #6A4EA600 100%), #D3D3D31A -9px 0px / 117.857% 100% no-repeat;
     user-select: none;
 }
 
@@ -84,11 +84,11 @@ img {
 
 /* Animações dos elementos */
 @keyframes aparecer {
-    0% {
+    from {
         transform: translateX(-5px);
         opacity: 0;
     }
-    100% {
+    to {
         transform: translateX(0px);
         opacity: 1;
     }
