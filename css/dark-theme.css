@@ -1,4 +1,8 @@
 @media screen and (prefers-color-scheme: dark) {
+    ::-webkit-scrollbar-track {
+        background-color: var(--preta);
+    }
+
     #conteudo #introducao {
         background-image: url(../img/fundo-amarelo-mobile.png);
     }
