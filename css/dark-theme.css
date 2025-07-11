@@ -2,6 +2,12 @@
     ::-webkit-scrollbar-track {
         background-color: var(--preta);
     }
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--amarela);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: var(--laranja);
+    }
 
     #conteudo {
         background: linear-gradient(180deg, #211E23 0%, var(--cinza) 100%);

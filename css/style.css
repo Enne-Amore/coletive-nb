@@ -172,6 +172,7 @@
     -webkit-text-fill-color: var(--roxa-clara);
     box-shadow: 0px 4px 4px 0px #EBF21D0D, 0px 4px 4px 0px #2425260D;
     padding: .37em .1em 0 .15em;
+    border-radius: 1px;
 }
 
 #conteudo #finalidades,
@@ -219,7 +220,6 @@
 #conteudo #mapeamento .textos p,
 #conteudo #conselho-municipal .textos p {
     position: relative;
-    list-style: none;
     font-size: 20px;
     font-family: var(--texto);
     line-height: 35px;
@@ -273,7 +273,6 @@
     width: 90%;
 }
 #conteudo #atividades .lista {
-    list-style: none;
     display: flex;
     flex-direction: column;
     gap: 6em;
@@ -707,7 +706,7 @@
     pointer-events: none;
 }
 #rodape .contatos .card-tell .titulo .icone {
-    font-size: 1.4em;
+    font-size: 1.8em;
     background-color: var(--preta);
     color: var(--amarela);
     padding: .6em .5em;

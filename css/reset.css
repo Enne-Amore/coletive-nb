@@ -77,13 +77,10 @@ img {
     background-color: var(--branca);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--amarela);
+    background-color: var(--roxa-clara);
     border-radius: 1em;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--roxa-clara);
-}
-::-webkit-scrollbar-thumb:active {
     background-color: var(--roxa-escura);
 }
 
