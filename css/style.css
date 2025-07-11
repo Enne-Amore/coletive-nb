@@ -51,7 +51,7 @@
     height: 100vh;
     animation: esquerda .35s ease-out .1s both;
 }
-#cabecalho #modal-container #menu h2 {
+#cabecalho #modal-container #menu .titulo {
     font-size: 24px;
     font-family: var(--titulo);
     font-weight: 400;
