@@ -11,11 +11,15 @@
         background-image: url(../img/fundo-amarelo-mobile.png);
     }
 
-    #conteudo #introducao .frase-efeito {
-        background: linear-gradient(106deg, var(--laranja) 0%, var(--amarela) 97.93%);
+    #conteudo #introducao .frase-efeito,
+    #conteudo #membres .frase-efeito,
+    #conteudo #direitos .frase-efeito,
+    #conteudo #conselho-municipal .textos .titulo {
+        background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        text-shadow: 4px 4px 4px #ECE35A08, 4px 4px 4px #2423250D;
     }
 
     #conteudo #introducao .frase-efeito strong {
@@ -49,15 +53,6 @@
     #conteudo #membres,
     #conteudo #conselho-municipal {
         background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%), linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
-    }
-    
-    #conteudo #membres .frase-efeito,
-    #conteudo #direitos .frase-efeito,
-    #conteudo #conselho-municipal .textos .titulo {
-        background: linear-gradient(91deg, var(--laranja) 0%, var(--amarela) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
     
     #conteudo #membres .ilustracoes .aviso,

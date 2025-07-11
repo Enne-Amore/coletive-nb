@@ -56,7 +56,11 @@
     font-size: 24px;
     font-family: var(--titulo);
     font-weight: 400;
-    color: var(--branca);
+    text-shadow: 4px 4px 4px #ECE35A08, 4px 4px 4px #2423250D;
+    background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #cabecalho #modal-container #menu hr {
     border-color: var(--amarela);
@@ -188,6 +192,13 @@
     display: flex;
     flex-direction: column;
     gap: .5em;
+}
+#conteudo #finalidades .textos .titulo,
+#conteudo #mapeamento .textos .titulo {
+    background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #conteudo #finalidades .textos .titulo,
 #conteudo #mapeamento .textos .titulo,
