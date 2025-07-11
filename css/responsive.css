@@ -9,31 +9,34 @@
         display: none;
     }
     #cabecalho .nav-desktop,
-    #cabecalho .nav-desktop ul {
+    #cabecalho .nav-desktop .menu {
         display: flex;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu li {
+        padding: 15px 0;
+    }
+    #cabecalho .nav-desktop .menu li a {
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         position: relative;
         display: inline-block;
         margin: auto;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .icone {
         display: inline-block;
         color: var(--amarela);
         padding: 0 15px;
         border-radius: 1em;
         cursor: default;
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .icone {
+    #cabecalho .nav-desktop .menu .dropdown:hover .icone {
         color: var(--laranja);
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-content {
         display: flex;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -46,8 +49,10 @@
         z-index: 1;
         animation: cima .2s ease-out;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu li.link-principal a {
         border-radius: 30px;
+        padding: 15px 30px;
+        color: var(--cinza);
     }
 
     #conteudo #introducao {
@@ -218,18 +223,18 @@
     #cabecalho .logo {
         width: 315px;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu a {
         font-size: 24px;
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .icone {
         font-size: 2.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         border-radius: 30px;
         margin-left: -150%;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu a.link-principal {
         border-radius: 30px;
         padding: 15px 30px;
     }
@@ -459,20 +464,20 @@
     #cabecalho .logo {
         width: 215px;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu a {
         padding: 10px 10px;
     }
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         margin-right: 2.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .icone {
         font-size: 3.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         border-radius: 20px;
         margin-left: -200%;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu a.link-principal {
         padding: 10px 20px;
     }
 
@@ -616,8 +621,8 @@
     #cabecalho #modal-container #menu h2 {
         font-size: 28px;
     }
-    #cabecalho #modal-container #menu .nav ul a,
-    #cabecalho .nav-desktop ul a {
+    #cabecalho #modal-container #menu .nav .menu a,
+    #cabecalho .nav-desktop .menu a {
         font-size: 24px;
     }
 
@@ -816,7 +821,7 @@
 }
 
 @media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         padding-right: 1em;
     }
 

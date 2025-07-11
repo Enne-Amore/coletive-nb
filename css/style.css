@@ -63,54 +63,60 @@
     width: 100%;
     margin: 1em auto .9em;
 }
-#cabecalho #modal-container #menu .nav ul {
+#cabecalho #modal-container #menu .nav .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1em;
 }
-#cabecalho #modal-container #menu .nav ul a,
-#cabecalho .nav-desktop ul a {
-    padding: 15px 30px;
+#cabecalho #modal-container #menu .nav .menu li,
+#cabecalho .nav-desktop .menu li {
     font-size: 20px;
     font-weight: 500;
-    border-radius: 25px;
 }
-#cabecalho #modal-container #menu .nav ul a:hover,
-#cabecalho #modal-container #menu .nav ul a:focus-visible,
-#cabecalho .nav-desktop ul a:hover,
-#cabecalho .nav-desktop ul a:focus-visible {
+#cabecalho #modal-container #menu .nav .menu li,
+#cabecalho #modal-container #menu .nav .menu li a,
+#cabecalho .nav-desktop .menu li,
+#cabecalho .nav-desktop .menu li a {
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#cabecalho #modal-container #menu .nav .menu li:hover a,
+#cabecalho #modal-container #menu .nav .menu a:focus-visible,
+#cabecalho .nav-desktop .menu li:hover a,
+#cabecalho .nav-desktop .menu a:focus-visible {
     color: var(--amarela);
     text-shadow: 0px 4px 4px 0px #F2E5300D, 0px 4px 4px 0px #ffffff1A;
 }
-#cabecalho #modal-container #menu .nav ul a:active,
-#cabecalho .nav-desktop ul a:active {
+#cabecalho #modal-container #menu .nav .menu li:active a,
+#cabecalho .nav-desktop .menu li:active a {
     color: var(--laranja);
     text-shadow: 0px 4px 4px 0px #F2C0290D, 0px 4px 4px 0px #ffffff1A;
 }
-#cabecalho #modal-container #menu .nav ul a.faca-parte,
-#cabecalho .nav-desktop ul a.faca-parte {
+#cabecalho #modal-container #menu .nav .menu a.link-principal,
+#cabecalho .nav-desktop .menu li.link-principal {
     background-color: var(--amarela);
     box-shadow: 0px 4px 4px 0px #F2E5300D, 0px 4px 4px 0px #ffffff1A;
     color: var(--cinza);
     font-weight: 600;
 }
-#cabecalho #modal-container #menu .nav ul a.faca-parte:hover,
-#cabecalho #modal-container #menu .nav ul a.faca-parte:focus-visible,
-#cabecalho .nav-desktop ul a.faca-parte:hover,
-#cabecalho .nav-desktop ul a.faca-parte:focus-visible {
+#cabecalho #modal-container #menu .nav .menu a.link-principal:hover,
+#cabecalho #modal-container #menu .nav .menu a.link-principal:focus-visible,
+#cabecalho .nav-desktop .menu li.link-principal:hover a,
+#cabecalho .nav-desktop .menu li.link-principal a:focus-visible {
     background-color: var(--laranja);
     color: var(--preta);
     box-shadow: 0px 4px 4px 0px #F2C0290D, 0px 4px 4px 0px #ffffff1A;
 }
-#cabecalho #modal-container #menu .nav ul a.faca-parte:active,
-#cabecalho .nav-desktop ul a.faca-parte:active {
+#cabecalho #modal-container #menu .nav .menu a.link-principal:active,
+#cabecalho .nav-desktop .menu li.link-principal:active a {
     background-color: var(--branca);
     color: var(--laranja);
     box-shadow: 0px 4px 4px 0px #ffffff1A;
 }
 #cabecalho .nav-desktop,
-#cabecalho .nav-desktop ul {
+#cabecalho .nav-desktop .menu {
     display: none;
 }
 
