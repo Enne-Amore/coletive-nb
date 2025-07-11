@@ -7,13 +7,6 @@ topo.addEventListener("click", function(){
     document.getElementsByTagName('a')[7].focus()
 })
 
-// Voltar ao topo usando o teclado
-topo.addEventListener('keypress', (tecla) => {
-    if (tecla.key === "Enter") {
-        tecla.target.click()
-    }
-})
-
 // Aplicando a função de ocultar
 document.addEventListener('scroll', ocultar)
 

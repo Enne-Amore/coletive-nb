@@ -11,13 +11,6 @@ menu_icon.addEventListener('click', () => {
     }
 })
 
-// Acesso ao menu usando o teclado
-menu_icon.addEventListener('keypress', (tecla) => {
-    if (tecla.key === 'Enter') {
-        tecla.target.click()
-    }
-})
-
 // Sair do menu
 // Chamada da tag por ID
 const transparencia = window.document.querySelector('#transparencia')
