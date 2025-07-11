@@ -16,6 +16,7 @@
     height: auto;
 }
 #cabecalho .icone {
+    color: var(--branca);
     font-size: 5.5em;
     cursor: pointer;
 }
@@ -121,6 +122,10 @@
 }
 
 /* Conteúdo */
+#conteudo {
+    background-color: var(--branca);
+}
+
 #conteudo #introducao {
     background: url(../img/fundo-roxo-mobile.png) no-repeat;
     background-size: cover;
@@ -239,7 +244,6 @@
     align-items: center;
     gap: 8em;
     padding: 100px 0;
-    background-color: var(--branca);
 }
 #conteudo #atividades {
     padding-bottom: 110px;
