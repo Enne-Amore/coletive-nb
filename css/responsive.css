@@ -57,6 +57,7 @@
     }
 
     #conteudo #introducao {
+        background-image: url(../img/fundo-roxo-desktop.png);
         flex-direction: row;
         justify-content: center;
         padding: 4em 0;

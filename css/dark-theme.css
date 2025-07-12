@@ -130,9 +130,3 @@
         }
     }
 }
-
-@media screen and (prefers-color-scheme: light) and (orientation: landscape) { /* Light desktop */
-    #conteudo #introducao {
-        background-image: url(../img/fundo-roxo-desktop.png);
-    }
-}
