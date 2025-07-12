@@ -15,7 +15,7 @@
     max-width: 300px;
     height: auto;
 }
-#cabecalho .icone {
+#cabecalho .menu-icon {
     color: var(--branca);
     font-size: 5.5em;
     cursor: pointer;
@@ -121,8 +121,55 @@
     color: var(--laranja);
     box-shadow: 0px 4px 4px 0px #ffffff1A;
 }
-#cabecalho .nav-desktop,
-#cabecalho .nav-desktop .menu {
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color input {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
+    background-color: #fffffD0D;
+    padding: 12px;
+    cursor: pointer;
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
+    font-size: 1em;
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label {
+    padding-left: 20px;
+    padding-right: 15px;
+    border-radius: 30px 0px 0px 30px;
+    border: 2px solid var(--amarela);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label .fa-sun {
+    color: var(--amarela);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light input:checked ~ label {
+    background-color: var(--amarela);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light input:checked ~ label .fa-sun {
+    color: var(--cinza);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label {
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 0px 30px 30px 0px;
+    border: 2px solid var(--roxa-clara);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label .fa-moon {
+    color: var(--roxa-clara);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark input:checked ~ label {
+    background-color: var(--roxa-clara);
+}
+#cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark input:checked ~ label .fa-moon {
+    color: var(--branca);
+}
+#cabecalho .nav-desktop {
     display: none;
 }
 

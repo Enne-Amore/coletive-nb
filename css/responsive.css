@@ -5,7 +5,7 @@
         font-size: 1vw;
     }
 
-    #cabecalho .icone {
+    #cabecalho .menu-icon {
         display: none;
     }
     #cabecalho .nav-desktop,
@@ -23,14 +23,14 @@
         display: inline-block;
         margin: auto;
     }
-    #cabecalho .nav-desktop .menu .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         display: inline-block;
         color: var(--amarela);
         padding: 0 15px;
         border-radius: 1em;
         cursor: default;
     }
-    #cabecalho .nav-desktop .menu .dropdown:hover .icone {
+    #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-icon {
         color: var(--laranja);
     }
     #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-content {
@@ -39,6 +39,7 @@
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         display: none;
         flex-direction: column;
+        align-items: center;
         position: absolute;
         left: 80%;
         background: radial-gradient(50% 50% at 50% 50%, var(--cinza) 0%, var(--preta) 100%);
@@ -227,7 +228,7 @@
         font-size: 24px;
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop .menu .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         font-size: 2.4em;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
@@ -470,7 +471,7 @@
     #cabecalho .nav-desktop .menu .dropdown {
         margin-right: 2.4em;
     }
-    #cabecalho .nav-desktop .menu .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         font-size: 3.4em;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
@@ -615,7 +616,7 @@
         padding: 10px 40px;
         padding-left: 20px;
     }
-    #cabecalho .icone {
+    #cabecalho .menu-icon {
         font-size: 4.5em;
     }
     #cabecalho #modal-container #menu h2 {

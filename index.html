@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JavaScript -->
     <script src="js/menu.js" defer></script>
+    <script src="js/tema-cores.js" defer></script>
     <script src="js/topo.js" defer></script>
     <script src="js/ilustracoes.js" defer></script>
     <script src="js/btn-mapeamento.js" defer></script>
@@ -35,7 +36,7 @@
         </figure>
 
         <!-- Mobile menu -->
-        <button class="fa-solid fa-bars icone" id="menu-icon" aria-label="Ícone de menu de navegação, clique para abrir o menu"></button>
+        <button class="fa-solid fa-bars menu-icon" id="menu-icon" aria-label="Ícone de menu de navegação, clique para abrir o menu"></button>
 
         <dialog id="modal-container">
             <div id="transparencia"></div>
@@ -115,7 +116,7 @@
                 </li>
 
                 <ul class="dropdown" id="dropdown">
-                    <button class="fa-solid fa-angle-down icone" aria-label="Ícone de mais opções" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-content" id="dropdown-icon" tabindex="0"></button>
+                    <button class="fa-solid fa-angle-down dropdown-icon" aria-label="Abrir mais opções de menu" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-content" id="dropdown-icon"></button>
 
                     <div class="dropdown-content" id="dropdown-content" role="menu">
                         <li>
@@ -134,6 +135,24 @@
                             <a href="#rodape" aria-label="Ir à seção de nossos contatos">
                                 Contatos
                             </a>
+                        </li>
+
+                        <li class="btn-colors">
+                            <div class="btn-color light">
+                                <input type="radio" name="tema" id="btn-light" value="light" aria-label="Alterar tema de cores para claro">
+
+                                <label for="btn-light" title="Tema claro">
+                                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                                </label>
+                            </div>
+
+                            <div class="btn-color dark">
+                                <input type="radio" name="tema" id="btn-dark" value="dark" aria-label="Alterar tema de cores para escuro">
+
+                                <label for="btn-dark" title="Tema escuro">
+                                    <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                                </label>
+                            </div>
                         </li>
                     </div>
                 </ul>
@@ -553,7 +572,7 @@
             </figure>
         </aside>
 
-        <button class="fa-solid fa-up-long" id="topo" aria-label="Ícone de cima, clique para voltar ao topo da página"></button>
+        <button class="fa-solid fa-up-long" id="topo" aria-label="Ícone de cima, clique para voltar ao topo da página" title="Voltar ao topo da página"></button>
     </main>
 
     <footer id="rodape">
