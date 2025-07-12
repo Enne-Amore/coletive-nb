@@ -50,6 +50,16 @@
         z-index: 1;
         animation: cima .2s ease-out;
     }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
+        margin: .5em auto;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
+        padding: 12px;
+        cursor: pointer;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
+        font-size: 1em;
+    }
     #cabecalho .nav-desktop .menu li.link-principal a {
         border-radius: 30px;
         padding: 15px 30px;
