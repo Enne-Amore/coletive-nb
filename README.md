@@ -1,6 +1,6 @@
 # 💜 Coletive Não-Binárie
  
- Website exclusivo sobre o Coletive Não-binárie e suas atividades, finalidades, membres, etc
+ Website exclusivo sobre o Coletive Não-Binárie e suas atividades, finalidades, membres, etc
 
 
 ## 🌐 Aplicação Hospedada
@@ -37,21 +37,23 @@
  ```plaintext
  coletive-nb/
  ├── css/                    # Arquivos CSS
- │   ├── reset.css       
- │   ├── responsive.css  
- │   ├── style.css       
+ │   ├── dark-theme.css
+ │   ├── reset.css
+ │   ├── responsive.css
+ │   ├── style.css
  ├── docs/                   # Arquivos de documentação do projeto
- │   ├── guia-de-estilo/ 
+ │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
  ├── fonts/                  # Arquivos das fontes utilizadas  
- │   ├── geometos_rounded/ 
+ │   ├── geometos_rounded/
  │   ├── open_dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
- │   ├── btn-mapeamento.js  
- │   ├── ilustracoes.js 
- │   ├── menu.js 
- │   ├── topo.js 
+ │   ├── btn-mapeamento.js 
+ │   ├── ilustracoes.js
+ │   ├── menu.js
+ │   ├── tema-cores.js
+ │   ├── topo.js
  ├── index.html              # Arquivo principal de renderização
  ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
@@ -96,15 +98,15 @@
 
  - **Geometos Rounded**  
    Exemplo de uso:  
-   `font-family: "titulo";` ou 
+   `font-family: "Geometos Rounded";` ou 
    `font-family: var(--titulo);`
  - **Open Dyslexic Alta**  
    Exemplo de uso:  
-   `font-family: "texto";` ou 
+   `font-family: "Open Dyslexic Alta";` ou 
    `font-family: var(--texto);`
- - **Arial, Helvetica, Sans-Serif**  
+ - **Open Sans**  
    Exemplo de uso:  
-   `font-family: Arial, Helvetica, sans-serif;` ou 
+   `font-family: "Open Sans";` ou 
    `font-family: var(--padrao);`
 
 

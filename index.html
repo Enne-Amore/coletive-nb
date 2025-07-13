@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Enne Jim Pessoa">
     <meta name="keywords" content="coletive, não-binárie, lgbt, direitos, acesso, público">
-    <meta name="descrition" content="Conheça a formação de não-bináries da Paraíba a caminho de promover os nossos direitos">
+    <meta name="description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
+    <meta property="og:image" content="./img/logo-completa-mobile.png">
+    <meta property="og:image:alt" content="Logo do Coletive Não-Binárie">
+    <meta property="og:title" content="Coletive Não-Binárie">
+    <meta property="og:description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
     <title>Coletive Não-Binárie</title>
     <link rel="shortcut icon" href="img/logo-icone/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
     <link rel="stylesheet" href="css/responsive.css">
     <!-- Fontes -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- JavaScript -->
     <script src="js/menu.js" defer></script>
+    <script src="js/tema-cores.js" defer></script>
     <script src="js/topo.js" defer></script>
     <script src="js/ilustracoes.js" defer></script>
     <script src="js/btn-mapeamento.js" defer></script>
@@ -27,88 +35,133 @@
             <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie">
         </figure>
 
-        <i class="fa-solid fa-bars icone" id="menu-icon" aria-hidden="true" aria-label="Ícone de menu de navegação" tabindex="0"></i>
+        <!-- Mobile menu -->
+        <button class="fa-solid fa-bars menu-icon" id="menu-icon" aria-label="Ícone de menu de navegação, clique para abrir o menu"></button>
 
         <dialog id="modal-container">
             <div id="transparencia"></div>
 
             <section id="menu">
-                <h2>Navegação</h2>
+                <h3 class="titulo">Navegação</h3>
                 
                 <hr>
 
                 <nav class="nav">
-                    <ul>
-                        <a href="#finalidades" aria-label="Ir à seção de finalidades">
-                            Finalidades
-                        </a>
+                    <ul class="menu">
+                        <li>
+                            <a href="#finalidades" aria-label="Ir à seção de finalidades">
+                                Finalidades
+                            </a>
+                        </li>
 
-                        <a href="#atividades" aria-label="Ir à seção de atividades">
-                            Atividades
-                        </a>
+                        <li>
+                            <a href="#atividades" aria-label="Ir à seção de atividades">
+                                Atividades
+                            </a>
+                        </li>
                         
-                        <a href="#membres" aria-label="Ir à seção de membres">
-                            Membres
-                        </a>
+                        <li>
+                            <a href="#membres" aria-label="Ir à seção de membres">
+                                Membres
+                            </a>
+                        </li>
                         
-                        <a href="#parceires" aria-label="Ir à seção de parceires">
-                            Parceires
-                        </a>
+                        <li>
+                            <a href="#parceires" aria-label="Ir à seção de parceires">
+                                Parceires
+                            </a>
+                        </li>
 
-                        <a href="#direitos" aria-label="Ir à seção de direitos">
-                            Direitos
-                        </a>
+                        <li>
+                            <a href="#direitos" aria-label="Ir à seção de direitos">
+                                Direitos
+                            </a>
+                        </li>
 
-                        <a href="#rodape" aria-label="Ir à seção de nossos contatos">
-                            Contatos
-                        </a>
+                        <li>
+                            <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+                                Contatos
+                            </a>
+                        </li>
 
-                        <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento e faça parte do movimento" class="faca-parte">
-                            Faça Parte
-                        </a>
+                        <li>
+                            <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento" class="link-principal">
+                                Mapeie-se
+                            </a>
+                        </li>
                     </ul>
                 </nav>
+
+                <div class="btn-colors">
+                    <div class="btn-color light">
+                        <input type="radio" name="tema" id="btn-light" value="light" aria-label="Alterar tema de cores para claro">
+
+                        <label for="btn-light" title="Tema claro">
+                            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                        </label>
+                    </div>
+
+                    <div class="btn-color dark">
+                        <input type="radio" name="tema" id="btn-dark" value="dark" aria-label="Alterar tema de cores para escuro">
+
+                        <label for="btn-dark" title="Tema escuro">
+                            <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                        </label>
+                    </div>
+                </div>
             </section>
         </dialog>
 
+        <!-- Desktop menu -->
         <nav class="nav-desktop">
-            <ul>
-                <a href="#finalidades" aria-label="Ir à seção de finalidades">
-                    Finalidades
-                </a>
+            <ul class="menu">
+                <li>
+                    <a href="#finalidades" aria-label="Ir à seção de finalidades">
+                        Finalidades
+                    </a>
+                </li>
 
-                <a href="#atividades" aria-label="Ir à seção de atividades">
-                    Atividades
-                </a>
-                
-                <a href="#membres" aria-label="Ir à seção de membres">
-                    Membres
-                </a>
+                <li>
+                    <a href="#atividades" aria-label="Ir à seção de atividades">
+                        Atividades
+                    </a>
+                </li>
 
-                <div class="dropdown" id="dropdown" tabindex="0">
-                    <span class="material-symbols-outlined sr-only icone">
-                        keyboard_arrow_down
-                    </span>
-                    <i class="fa-solid fa-angle-down icone" aria-hidden="true" aria-label="Ícone de mais opções"></i>
+                <li>
+                    <a href="#membres" aria-label="Ir à seção de membres">
+                        Membres
+                    </a>
+                </li>
 
-                    <div class="dropdown-content">
-                        <a href="#parceires" aria-label="Ir à seção de parceires">
-                            Parceires
-                        </a>
+                <ul class="dropdown" id="dropdown">
+                    <button class="fa-solid fa-angle-down dropdown-icon" aria-label="Abrir mais opções de menu" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-content" id="dropdown-icon"></button>
 
-                        <a href="#direitos" aria-label="Ir à seção de direitos">
-                            Direitos
-                        </a>
+                    <div class="dropdown-content" id="dropdown-content" role="menu">
+                        <li>
+                            <a href="#parceires" aria-label="Ir à seção de parceires">
+                                Parceires
+                            </a>
+                        </li>
 
-                        <a href="#rodape" aria-label="Ir à seção de nossos contatos">
-                            Contatos
-                        </a>
+                        <li>
+                            <a href="#direitos" aria-label="Ir à seção de direitos">
+                                Direitos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+                                Contatos
+                            </a>
+                        </li>
                     </div>
-                </div>
+                </ul>
 
-                <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento e faça parte do movimento" class="faca-parte">
-                    Faça Parte
-                </a>
+                <li class="link-principal">
+                    <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento">
+                        Mapeie-se
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -126,7 +179,7 @@
 
         <section id="finalidades">
             <div class="textos">
-                <h1 class="titulo">Nossas Finalidades</h1>
+                <h2 class="titulo">Nossas Finalidades</h2>
                 
                 <ul class="lista">
                    <li>
@@ -153,7 +206,7 @@
         </section>
 
         <section id="atividades">
-            <h1 class="titulo">Nossas Atividades</h1>
+            <h2 class="titulo">Nossas Atividades</h2>
 
             <ul class="lista">
                 <li class="atividade">
@@ -201,44 +254,52 @@
                 <hr>
 
                 <div class="imgs-container">
-                    <div class="imgs">
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="img/espaco-lgbtpedrinho-cnb-desktop.png" type="image/png">
-            
-                                <img src="img/espaco-lgbtpedrinho-cnb-mobile.png" alt="Coletive Não-Binárie unido com o Espaço LGBTPedrinho">
-                            </picture>
-                        </figure>
+                    <ul class="imgs">
+                        <li>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/espaco-lgbtpedrinho-cnb-desktop.png" type="image/png">
+                                    
+                                    <img src="img/espaco-lgbtpedrinho-cnb-mobile.png" alt="Coletive Não-Binárie unido com o Espaço LGBTPedrinho">
+                                </picture>
+                            </figure>
+                        </li>
                     
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="img/roda-dialogo-cnb-desktop.png" type="image/png">
-            
-                                <img src="img/roda-dialogo-cnb-mobile.png" alt="Roda de diálogo">
-                            </picture>
-                        </figure>
+                        <li>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/roda-dialogo-cnb-desktop.png" type="image/png">
+                                    
+                                    <img src="img/roda-dialogo-cnb-mobile.png" alt="Roda de diálogo">
+                                </picture>
+                            </figure>
+                        </li>
                     
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="img/panfletos-desktop.png" type="image/png">
-            
-                                <img src="img/panfletos-mobile.png" alt="Panfletos do Coletive Não-Binárie">
-                            </picture>
-                        </figure>
+                        <li>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/panfletos-desktop.png" type="image/png">
+                                    
+                                    <img src="img/panfletos-mobile.png" alt="Panfletos do Coletive Não-Binárie">
+                                </picture>
+                            </figure>
+                        </li>
 
-                        <figure>
-                            <picture>
-                                <source media="(min-width: 1200px)" srcset="img/cartaz-desktop.png" type="image/png">
-            
-                                <img src="img/cartaz-mobile.png" alt="Cartaz do Coletive Não-Binárie">
-                            </picture>
-                        </figure>
-                    </div>
+                        <li>
+                            <figure>
+                                <picture>
+                                    <source media="(min-width: 1200px)" srcset="img/cartaz-desktop.png" type="image/png">
+                                    
+                                    <img src="img/cartaz-mobile.png" alt="Cartaz do Coletive Não-Binárie">
+                                </picture>
+                            </figure>
+                        </li>
+                    </ul>
                 </div>
 
                 <span class="aviso">
                     Arraste para o lado
-                    <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
+                    <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
                 </span>
             </article>
         </section>
@@ -253,44 +314,52 @@
                     <hr>
     
                     <div class="imgs-container">
-                        <div class="imgs">
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/membres-unides-desktop.png" type="image/png">
-                
-                                    <img src="img/membres-unides-mobile.png" alt="Membres do Coletive Não-Binárie unides">
-                                </picture>
-                            </figure>
+                        <ul class="imgs">
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/membres-unides-desktop.png" type="image/png">
+
+                                        <img src="img/membres-unides-mobile.png" alt="Membres do Coletive Não-Binárie unides">
+                                    </picture>
+                                </figure>
+                            </li>
                         
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/nbs-conversando-1-desktop.png" type="image/png">
-                
-                                    <img src="img/nbs-conversando-1-mobile.png" alt="Roda de diálogo entre es membres">
-                                </picture>
-                            </figure>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-1-desktop.png" type="image/png">
+
+                                        <img src="img/nbs-conversando-1-mobile.png" alt="Roda de diálogo entre es membres">
+                                    </picture>
+                                </figure>
+                            </li>
                         
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/nbs-conversando-2-desktop.png" type="image/png">
-                
-                                    <img src="img/nbs-conversando-2-mobile.png" alt="Roda de diálogo entre es membres">
-                                </picture>
-                            </figure>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-2-desktop.png" type="image/png">
+
+                                        <img src="img/nbs-conversando-2-mobile.png" alt="Roda de diálogo entre es membres">
+                                    </picture>
+                                </figure>
+                            </li>
     
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/nbs-conversando-3-desktop.png" type="image/png">
-    
-                                    <img src="img/nbs-conversando-3-mobile.png" alt="Roda de diálogo entre es membres">
-                                </picture>
-                            </figure>
-                        </div>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-3-desktop.png" type="image/png">
+
+                                        <img src="img/nbs-conversando-3-mobile.png" alt="Roda de diálogo entre es membres">
+                                    </picture>
+                                </figure>
+                            </li>
+                        </ul>
                     </div>
     
                     <span class="aviso">
                         Arraste para o lado
-                        <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
+                        <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
                     </span>
                 </article>
             </section>
@@ -304,59 +373,67 @@
                     <hr>
     
                     <div class="imgs-container">
-                        <div class="imgs">
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/yuri-diretoria-desktop.png" type="image/png">
-                
-                                    <img src="img/yuri-diretoria-mobile.png" alt="Foto de diretore">
-                                </picture>
+                        <ul class="imgs">
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/yuri-diretoria-desktop.png" type="image/png">
 
-                                <figcaption> Yuri Kariri </figcaption>
-                            </figure>
+                                        <img src="img/yuri-diretoria-mobile.png" alt="Foto de diretore">
+                                    </picture>
+
+                                    <figcaption> Yuri Kariri </figcaption>
+                                </figure>
+                            </li>
                         
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/selme-diretoria-desktop.png" type="image/png">
-                
-                                    <img src="img/selme-diretoria-mobile.png" alt="Foto de diretore">
-                                </picture>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/selme-diretoria-desktop.png" type="image/png">
 
-                                <figcaption> Selme Cabral </figcaption>
-                            </figure>
+                                        <img src="img/selme-diretoria-mobile.png" alt="Foto de diretore">
+                                    </picture>
+
+                                    <figcaption> Selme Cabral </figcaption>
+                                </figure>
+                            </li>
                         
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/d'angelles-diretoria-desktop.png" type="image/png">
-                
-                                    <img src="img/d'angelles-diretoria-mobile.png" alt="Foto de diretore">
-                                </picture>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/d'angelles-diretoria-desktop.png" type="image/png">
 
-                                <figcaption> D'Angelles Coutinho </figcaption>
-                            </figure>
+                                        <img src="img/d'angelles-diretoria-mobile.png" alt="Foto de diretore">
+                                    </picture>
+
+                                    <figcaption> D'Angelles Coutinho </figcaption>
+                                </figure>
+                            </li>
                         
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/lobo-diretoria-desktop.png" type="image/png">
-                
-                                    <img src="img/lobo-diretoria-mobile.png" alt="Foto de diretore">
-                                </picture>
+                            <li>
+                                <figure>
+                                    <picture>
+                                        <source media="(min-width: 1200px)" srcset="img/lobo-diretoria-desktop.png" type="image/png">
 
-                                <figcaption> Índigo Lobo </figcaption>
-                            </figure>
-                        </div>
+                                        <img src="img/lobo-diretoria-mobile.png" alt="Foto de diretore">
+                                    </picture>
+
+                                    <figcaption> Índigo Lobo </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
                     </div>
     
                     <span class="aviso">
                         Arraste para o lado
-                        <i class="fa-solid fa-left-right icone" aria-hidden="true" aria-label="Ícone de arraste"></i>
+                        <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
                     </span>
                 </article>
             </section>
         </section>
 
         <section id="parceires">
-            <h1 class="titulo">Conheça Nosses Parceires</h1>
+            <h2 class="titulo">Conheça Nosses Parceires</h2>
 
             <div class="parceires">
                 <article class="parceire">
@@ -378,7 +455,7 @@
                                 Saber Mais Sobre <strong>ABRANB</strong>
                             </span>
 
-                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
+                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
                         </a>
                     </div>
                 </article>
@@ -397,12 +474,12 @@
                             O <strong>Fundo Brasil</strong> nos apoiou em um dos nossos projetos com recurso ao passar no edital.
                         </p>
 
-                        <a href="https://www.fundobrasil.org.br/" aria-label="Ir à página do Fundo Brasil" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.fundobrasil.org.br/" aria-label="Ir à página inicial do Fundo Brasil" target="_blank" rel="noopener noreferrer">
                             <span>
                                 Saber Mais Sobre <strong>Fundo Brasil</strong>
                             </span>
 
-                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
+                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
                         </a>
                     </div>
                 </article>
@@ -411,16 +488,16 @@
 
         <section id="mapeamento">
             <div class="textos">
-                <h1 class="titulo">Vem somar com a gente!</h1>
+                <h2 class="titulo">Vem somar com a gente!</h2>
 
                 <p>
-                    Estamos <strong>mapeando membres da comunidade não-binária</strong> que moram em <strong>Paraíba</strong> para a <strong>promoção dos nossos direitos</strong> enquanto cidadães.
+                    Estamos <strong>mapeando membres da comunidade não-binária</strong> que moram na <strong>Paraíba</strong> para ajudar a fortalecer a <strong>promoção dos nossos direitos</strong> enquanto cidadães não-bináries, e <strong>você pode contribuir com a nossa rede</strong>. Vamos juntes!
                 </p>
 
-                <a href="https://forms.gle/6xWbZWccebKZFtEH9" aria-label="Ir ao formulário de mapeamento" target="_blank" rel="noopener noreferrer" id="btn-mapeamento">
-                    <span>Mapeie-se e Faça Parte</span>
+                <a href="https://forms.gle/6xWbZWccebKZFtEH9" aria-label="Ir ao formulário de mapeamento no Google Forms" target="_blank" rel="noopener noreferrer" id="btn-mapeamento">
+                    <span>Mapeie-se</span>
 
-                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -473,7 +550,7 @@
 
         <aside id="conselho-municipal">
             <div class="textos">
-                <h1 class="titulo">E Falando em direitos ...</h1>
+                <h2 class="titulo">E Falando em direitos ...</h2>
 
                 <p>
                     Fazemos parte do <strong>Conselho Municipal LGBTQIAPNb+ de João Pessoa</strong>, então podemos participar do controle e da implementação de políticas públicas para a nossa população.
@@ -482,7 +559,7 @@
                 <a href="https://www.instagram.com/conselholgbtjp/" aria-label="Ir ao perfil do Conselho no Instagram" target="_blank" rel="noopener noreferrer">
                     <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
 
-                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true" aria-label="Ícone de plataforma externa"></i>
+                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
                 </a>
             </div>
 
@@ -495,7 +572,7 @@
             </figure>
         </aside>
 
-        <i class="fa-solid fa-up-long" id="topo" aria-hidden="true" aria-label="Volte ao topo da página clicando aqui" tabindex="0"></i>
+        <button class="fa-solid fa-up-long" id="topo" aria-label="Ícone de cima, clique para voltar ao topo da página" title="Voltar ao topo da página"></button>
     </main>
 
     <footer id="rodape">
@@ -506,58 +583,64 @@
 
             <section class="contatos">
                 <article class="card-tell">
-                    <h2 class="titulo">
+                    <h3 class="titulo">
                         <span class="texto">Nossos Contatos</span>
             
                         <img src="img/logo-icone/favicon-32x32.png" alt="Ícone do Coletive Não-Binárie">
-                    </h2>
+                    </h3>
 
                     <ul class="tells">
-                        <a href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Ir ao perfil do Coletive Não-Binárie no Instagram" target="_blank" rel="external" class="tell">
-                            <i class="fa-brands fa-instagram icone"aria-hidden="true" aria-label="Ícone do Instagram"></i>
+                        <li>
+                            <a href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Ir ao perfil do Coletive Não-Binárie no Instagram" target="_blank" rel="noopener noreferrer" class="tell">
+                                <i class="fa-brands fa-instagram icone"aria-hidden="true"></i>
 
-                            <span class="texto">
-                                @coletivenaobinariepb
-                            </span>
-                        </a>
+                                <span class="texto">
+                                    @coletivenaobinariepb
+                                </span>
+                            </a>
+                        </li>
                         
-                        <a href="mailto:coletivenaobinariepb@gmail.com" aria-label="Email do Coletive Não-Binárie" target="_blank" rel="external" class="tell">
-                            <i class="fa-solid fa-envelope icone" aria-hidden="true" aria-label="Ícone de email"></i>
-            
-                            <span class="texto mobile">
-                                coletivenaobinariepb @gmail.com
-                            </span>
-
-                            <span class="texto desktop">
-                                coletivenaobinariepb@gmail.com
-                            </span>
-                        </a>
+                        <li>
+                            <a href="mailto:coletivenaobinariepb@gmail.com" aria-label="Email do Coletive Não-Binárie para contatar" target="_blank" rel="noopener noreferrer" class="tell">
+                                <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
+                                <span class="texto mobile">
+                                    coletivenaobinariepb @gmail.com
+                                </span>
+                                <span class="texto desktop">
+                                    coletivenaobinariepb@gmail.com
+                                </span>
+                            </a>
+                        </li>
                     </ul>
                 </article>
 
                 <article class="card-tell">
-                    <h2 class="titulo">
+                    <h3 class="titulo">
                         <span class="texto">Desenvolvedore Web</span>
 
-                        <i class="fa-solid fa-code icone" aria-hidden="true" aria-label="Ícone de código web"></i>
-                    </h2>
+                        <i class="fa-solid fa-code icone" aria-hidden="true"></i>
+                    </h3>
 
                     <ul class="tells">
-                        <a href="https://www.linkedin.com/in/enne-jim-pessoa/" aria-label="Ir ao perfil de Enne no Linkedin" target="_blank" rel="external" class="tell">
-                            <i class="fa-brands fa-linkedin icone" aria-hidden="true" aria-label="Ícone do Linkedin"></i>
-            
-                            <span class="texto">
-                                Enne Jim Pessoa
-                            </span>
-                        </a>
+                        <li>
+                            <a href="https://www.linkedin.com/in/enne-jim-pessoa/" aria-label="Ir ao perfil de Enne no LinkedIn" target="_blank" rel="noopener noreferrer" class="tell">
+                                <i class="fa-brands fa-linkedin icone" aria-hidden="true"></i>
 
-                        <a href="mailto:Enne.Pessoa@gmail.com" aria-label="Email de Enne" target="_blank" rel="external" class="tell">
-                            <i class="fa-solid fa-envelope icone" aria-hidden="true" aria-label="Ícone de email"></i>
-            
-                            <span class="texto">
-                                Enne.Pessoa@gmail.com
-                            </span>
-                        </a>
+                                <span class="texto">
+                                    Enne Jim Pessoa
+                                </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:Enne.Pessoa@gmail.com" aria-label="Email de Enne para contatar" target="_blank" rel="noopener noreferrer" class="tell">
+                                <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
+
+                                <span class="texto">
+                                    Enne.Pessoa@gmail.com
+                                </span>
+                            </a>
+                        </li>
                     </ul>
                 </article>
             </section>
@@ -569,21 +652,25 @@
             </p>
 
             <ul class="tells">
-                <a href="tel:100" class="tell">
-                    <i class="fa-solid fa-phone icone" aria-hidden="true" aria-label="Ícone de telefone"></i>
-                    
-                    <span>
-                        Direitos Humanos <strong>Nacional (100)</strong>
-                    </span>
-                </a>
+                <li>
+                    <a href="tel:100" aria-label="ligar para 100" class="tell">
+                        <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
 
-                <a href="tel:155" class="tell">
-                    <i class="fa-solid fa-phone icone" aria-hidden="true" aria-label="Ícone de telefone"></i>
-                    
-                    <span>
-                        Direitos Humanos <strong>Estadual (155)</strong>
-                    </span>
-                </a>
+                        <span>
+                            Direitos Humanos <strong>Nacional (100)</strong>
+                        </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:155" aria-label="ligar para 155" class="tell">
+                        <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+
+                        <span>
+                            Direitos Humanos <strong>Estadual (155)</strong>
+                        </span>
+                    </a>
+                </li>
             </ul>
         </article>
 

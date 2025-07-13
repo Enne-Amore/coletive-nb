@@ -1,56 +1,73 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 @media screen and (orientation: landscape) {
     body {
         font-size: 1vw;
     }
 
-    #cabecalho .icone {
+    #cabecalho .menu-icon {
         display: none;
     }
     #cabecalho .nav-desktop,
-    #cabecalho .nav-desktop ul {
+    #cabecalho .nav-desktop .menu {
         display: flex;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu li {
+        padding: 15px 0;
+    }
+    #cabecalho .nav-desktop .menu li a {
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         position: relative;
         display: inline-block;
-        margin: auto 1em;
+        margin: auto;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         display: inline-block;
         color: var(--amarela);
+        padding: 0 15px;
+        border-radius: 1em;
         cursor: default;
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .icone,
-    #cabecalho .nav-desktop ul .dropdown:focus-visible .icone {
+    #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-icon {
         color: var(--laranja);
     }
-    #cabecalho .nav-desktop ul .dropdown:hover .dropdown-content,
-    #cabecalho .nav-desktop ul .dropdown:focus-visible .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-content {
         display: flex;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         display: none;
         flex-direction: column;
+        align-items: center;
         position: absolute;
+        left: 80%;
         background: radial-gradient(50% 50% at 50% 50%, var(--cinza) 0%, var(--preta) 100%);
-        box-shadow: 4px 4px 4px 0px rgba(36, 37, 38, 0.10);
+        box-shadow: 4px 4px 4px 0px #2425261A;
         border-radius: 30px;
         border: 1.5px dashed var(--branca);
         padding: 1em;
         z-index: 1;
         animation: cima .2s ease-out;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
+        margin: .5em auto;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
+        padding: 12px;
+        cursor: pointer;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
+        font-size: 1em;
+    }
+    #cabecalho .nav-desktop .menu li.link-principal a {
         border-radius: 30px;
+        padding: 15px 30px;
+        color: var(--cinza);
     }
 
     #conteudo #introducao {
-        background-image: url(../img/fundo-roxo-desktop.jpg);
+        background-image: url(../img/fundo-roxo-desktop.png);
         flex-direction: row;
         justify-content: center;
         padding: 4em 0;
@@ -218,18 +235,18 @@
     #cabecalho .logo {
         width: 315px;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu a {
         font-size: 24px;
         padding: 15px 20px;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         font-size: 2.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         border-radius: 30px;
         margin-left: -150%;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu a.link-principal {
         border-radius: 30px;
         padding: 15px 30px;
     }
@@ -431,7 +448,7 @@
         line-height: normal;
     }
     #rodape .contatos .card-tell .titulo .icone {
-        font-size: .75em;
+        font-size: .95em;
     }
     #rodape .contatos .card-tell .tells .tell .icone,
     #rodape .tells-emergencia .tells .tell .icone {
@@ -459,20 +476,20 @@
     #cabecalho .logo {
         width: 215px;
     }
-    #cabecalho .nav-desktop ul a {
+    #cabecalho .nav-desktop .menu a {
         padding: 10px 10px;
     }
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         margin-right: 2.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .icone {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
         font-size: 3.4em;
     }
-    #cabecalho .nav-desktop ul .dropdown .dropdown-content {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         border-radius: 20px;
         margin-left: -200%;
     }
-    #cabecalho .nav-desktop ul a.faca-parte {
+    #cabecalho .nav-desktop .menu a.link-principal {
         padding: 10px 20px;
     }
 
@@ -610,14 +627,14 @@
         padding: 10px 40px;
         padding-left: 20px;
     }
-    #cabecalho .icone {
+    #cabecalho .menu-icon {
         font-size: 4.5em;
     }
     #cabecalho #modal-container #menu h2 {
         font-size: 28px;
     }
-    #cabecalho #modal-container #menu .nav ul a,
-    #cabecalho .nav-desktop ul a {
+    #cabecalho #modal-container #menu .nav .menu a,
+    #cabecalho .nav-desktop .menu a {
         font-size: 24px;
     }
 
@@ -816,7 +833,7 @@
 }
 
 @media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
-    #cabecalho .nav-desktop ul .dropdown {
+    #cabecalho .nav-desktop .menu .dropdown {
         padding-right: 1em;
     }
 

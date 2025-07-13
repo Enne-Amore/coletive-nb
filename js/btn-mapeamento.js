@@ -1,5 +1,5 @@
 // Chamada do botão
-const btn_faca_parte = document.querySelectorAll('.faca-parte')
+const btn_faca_parte = document.querySelectorAll('.link-principal')
 
 btn_faca_parte.forEach((btn) => {
     btn.addEventListener('click', () => {
