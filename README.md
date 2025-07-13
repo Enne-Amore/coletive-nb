@@ -37,21 +37,23 @@
  ```plaintext
  coletive-nb/
  ├── css/                    # Arquivos CSS
- │   ├── reset.css       
- │   ├── responsive.css  
- │   ├── style.css       
+ │   ├── dark-theme.css
+ │   ├── reset.css
+ │   ├── responsive.css
+ │   ├── style.css
  ├── docs/                   # Arquivos de documentação do projeto
- │   ├── guia-de-estilo/ 
+ │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
  ├── fonts/                  # Arquivos das fontes utilizadas  
- │   ├── geometos_rounded/ 
+ │   ├── geometos_rounded/
  │   ├── open_dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
- │   ├── btn-mapeamento.js  
- │   ├── ilustracoes.js 
- │   ├── menu.js 
- │   ├── topo.js 
+ │   ├── btn-mapeamento.js 
+ │   ├── ilustracoes.js
+ │   ├── menu.js
+ │   ├── tema-cores.js
+ │   ├── topo.js
  ├── index.html              # Arquivo principal de renderização
  ├── LICENSE                 # Arquivo de licença do projeto
  ├── README.md
