@@ -136,7 +136,7 @@
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
     background-color: #fffffD0D;
-    padding: 25px 0 15px;
+    padding: 3.5em 0 2.2em;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
     font-size: 3em;
@@ -560,7 +560,6 @@
     font-weight: 800;
 }
 #conteudo #parceires .parceires .parceire .texto a .icone,
-#conteudo #mapeamento .textos a .icone,
 #conteudo #conselho-municipal .textos a .icone {
     font-size: 1.2em;
 }
@@ -571,6 +570,7 @@
     color: var(--cinza);
     margin: .9em auto 1em;
     max-width: 260px;
+    gap: 12px;
 }
 #conteudo #mapeamento .textos a:hover,
 #conteudo #mapeamento .textos a:focus-visible {
@@ -580,6 +580,9 @@
 #conteudo #mapeamento .textos a:active {
     background-color: var(--branca);
     color: var(--laranja);
+}
+#conteudo #mapeamento .textos a .icone {
+    font-size: 1em;
 }
 
 #conteudo #direitos {
