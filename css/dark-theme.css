@@ -8,124 +8,121 @@
     background-color: var(--laranja);
 }
 
-.dark-mode {
+.dark-mode #conteudo {
+    background: linear-gradient(180deg, #211E23 0%, var(--cinza) 100%);
+}
 
-    #conteudo {
-        background: linear-gradient(180deg, #211E23 0%, var(--cinza) 100%);
-    }
+.dark-mode #conteudo #introducao {
+    background-image: url(../img/fundo-amarelo-mobile.png);
+}
 
-    #conteudo #introducao {
-        background-image: url(../img/fundo-amarelo-mobile.png);
-    }
+.dark-mode #conteudo #introducao .frase-efeito,
+.dark-mode #conteudo #membres .frase-efeito,
+.dark-mode #conteudo #direitos .frase-efeito,
+.dark-mode #conteudo #conselho-municipal .textos .titulo {
+    background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 4px #ECE35A08, 4px 4px 4px #2423250D;
+}
 
-    #conteudo #introducao .frase-efeito,
-    #conteudo #membres .frase-efeito,
-    #conteudo #direitos .frase-efeito,
-    #conteudo #conselho-municipal .textos .titulo {
-        background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-shadow: 4px 4px 4px #ECE35A08, 4px 4px 4px #2423250D;
-    }
+.dark-mode #conteudo #introducao .frase-efeito strong {
+    background: var(--roxa-escura);
+    background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    -webkit-text-fill-color: var(--amarela);
+}
 
-    #conteudo #introducao .frase-efeito strong {
-        background: var(--roxa-escura);
-        background-clip: padding-box;
-        -webkit-background-clip: padding-box;
-        -webkit-text-fill-color: var(--amarela);
-    }
+.dark-mode #conteudo #atividades,
+.dark-mode #conteudo #parceires,
+.dark-mode #conteudo #direitos {
+    background-color: var(--cinza);
+}
 
-    #conteudo #atividades,
-    #conteudo #parceires,
-    #conteudo #direitos {
-        background-color: var(--cinza);
-    }
-    
-    #conteudo #atividades .titulo,
-    #conteudo #parceires .titulo {
-        background: linear-gradient(90deg, #F2C02900 0%, var(--laranja) 50%, #F2C02900 100%);
-        color: var(--preta);
-    }
-    
-    #conteudo #atividades .lista .atividade hr {
-        background: linear-gradient(90deg, var(--laranja) 0%, var(--amarela) 100%);
-    }
+.dark-mode #conteudo #atividades .titulo,
+.dark-mode #conteudo #parceires .titulo {
+    background: linear-gradient(90deg, #F2C02900 0%, var(--laranja) 50%, #F2C02900 100%);
+    color: var(--preta);
+}
 
-    #conteudo #atividades .lista .atividade p {
-        background-color: var(--roxa-escura);
-        color: var(--amarela);
-    }
+.dark-mode #conteudo #atividades .lista .atividade hr {
+    background: linear-gradient(90deg, var(--laranja) 0%, var(--amarela) 100%);
+}
 
-    #conteudo #membres,
-    #conteudo #conselho-municipal {
-        background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%), linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
-    }
-    
-    #conteudo #membres .ilustracoes .aviso,
-    #conteudo #atividades .ilustracoes .aviso {
-        color: var(--branca);
-    }
+.dark-mode #conteudo #atividades .lista .atividade p {
+    background-color: var(--roxa-escura);
+    color: var(--amarela);
+}
 
-    #conteudo #parceires .parceires .parceire .texto {
-        background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
-    }
-    
-    #conteudo #parceires .parceires .parceire .texto p,
-    #conteudo #conselho-municipal .textos p {
-        color: var(--branca);
-    }
+.dark-mode #conteudo #membres,
+.dark-mode #conteudo #conselho-municipal {
+    background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%), linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+}
 
-    #conteudo #parceires .parceires .parceire .texto p strong,
-    #conteudo #conselho-municipal .textos p strong {
-        color: var(--amarela);
-    }
+.dark-mode #conteudo #membres .ilustracoes .aviso,
+.dark-mode #conteudo #atividades .ilustracoes .aviso {
+    color: var(--branca);
+}
 
-    #conteudo #parceires .parceires .parceire .texto a,
-    #conteudo #conselho-municipal .textos a {
-        background-color: #24232533;
-        border-color: var(--amarela);
-        color: var(--amarela);
-    }
-    #conteudo #parceires .parceires .parceire .texto a:hover,
-    #conteudo #parceires .parceires .parceire .texto a:focus-visible,
-    #conteudo #conselho-municipal .textos a:hover,
-    #conteudo #conselho-municipal .textos a:focus-visible {
-        background-color: var(--amarela);
-        color: var(--cinza);
-    }
-    #conteudo #parceires .parceires .parceire .texto a:active,
-    #conteudo #conselho-municipal .textos a:active {
-        background-color: var(--laranja);
-        border-color: var(--laranja);
-    }
+.dark-mode #conteudo #parceires .parceires .parceire .texto {
+    background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
+}
 
-    #conteudo #direitos .direitos .card {
-        background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
-    }
-    #conteudo #direitos .direitos .card:hover,
-    #conteudo #direitos .direitos .card:focus-visible {
-        background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
-    }
-    #conteudo #direitos .direitos .card:hover .texto,
-    #conteudo #direitos .direitos .card:focus-visible .texto {
-        color: var(--preta);
-    }
-    #conteudo #direitos .direitos .card:active {
-        background: linear-gradient(100deg, var(--amarela) 0%, var(--laranja) 100%);
-    }
+.dark-mode #conteudo #parceires .parceires .parceire .texto p,
+.dark-mode #conteudo #conselho-municipal .textos p {
+    color: var(--branca);
+}
 
-    #conteudo #direitos .direitos .card .texto {
-        color: var(--branca);
-    }
+.dark-mode #conteudo #parceires .parceires .parceire .texto p strong,
+.dark-mode #conteudo #conselho-municipal .textos p strong {
+    color: var(--amarela);
+}
 
-    #conteudo #direitos .direitos hr {
-        border-color: var(--amarela);
-    }
+.dark-mode #conteudo #parceires .parceires .parceire .texto a,
+.dark-mode #conteudo #conselho-municipal .textos a {
+    background-color: #24232533;
+    border-color: var(--amarela);
+    color: var(--amarela);
+}
+.dark-mode #conteudo #parceires .parceires .parceire .texto a:hover,
+.dark-mode #conteudo #parceires .parceires .parceire .texto a:focus-visible,
+.dark-mode #conteudo #conselho-municipal .textos a:hover,
+.dark-mode #conteudo #conselho-municipal .textos a:focus-visible {
+    background-color: var(--amarela);
+    color: var(--cinza);
+}
+.dark-mode #conteudo #parceires .parceires .parceire .texto a:active,
+.dark-mode #conteudo #conselho-municipal .textos a:active {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+}
 
-    @media screen and (orientation: landscape) { /* Dark desktop */
-        #conteudo #introducao {
-            background-image: url(../img/fundo-amarelo-desktop.png);
-        }
+.dark-mode #conteudo #direitos .direitos .card {
+    background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
+}
+.dark-mode #conteudo #direitos .direitos .card:hover,
+.dark-mode #conteudo #direitos .direitos .card:focus-visible {
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+}
+.dark-mode #conteudo #direitos .direitos .card:hover .texto,
+.dark-mode #conteudo #direitos .direitos .card:focus-visible .texto {
+    color: var(--preta);
+}
+.dark-mode #conteudo #direitos .direitos .card:active {
+    background: linear-gradient(100deg, var(--amarela) 0%, var(--laranja) 100%);
+}
+
+.dark-mode #conteudo #direitos .direitos .card .texto {
+    color: var(--branca);
+}
+
+.dark-mode #conteudo #direitos .direitos hr {
+    border-color: var(--amarela);
+}
+
+@media screen and (orientation: landscape) { /* Dark desktop */
+    .dark-mode #conteudo #introducao {
+        background-image: url(../img/fundo-amarelo-desktop.png);
     }
 }
