@@ -87,7 +87,8 @@
  | ----------- | ----------- |
  | Roxa Escura | `#713CA6`   |
  | Roxa Clara  | `#6A4EA6`   |
- | Amarela     | `#F2E530`   |
+ | Amarela 1   | `#F2E530`   |
+ | Amarela 2   | `#ECE35A`   |
  | Laranja     | `#F2C029`   |
  | Preta       | `#040008`   |
  | Cinza       | `#242325`   |
