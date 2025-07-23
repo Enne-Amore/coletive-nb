@@ -93,19 +93,19 @@
                     </ul>
                 </nav>
 
-                <div class="btn-colors">
+                <div class="btn-colors" role="radiogroup" aria-label="Escolha de tema de cores">
                     <div class="btn-color light">
-                        <input type="radio" name="tema" id="btn-light" value="light" aria-label="Alterar tema de cores para claro">
+                        <input type="radio" name="mobile-theme" id="mobile-light" value="light" aria-label="Alterar tema de cores para claro">
 
-                        <label for="btn-light" title="Tema claro">
+                        <label for="mobile-light" title="Tema claro">
                             <i class="fa-solid fa-sun" aria-hidden="true"></i>
                         </label>
                     </div>
 
                     <div class="btn-color dark">
-                        <input type="radio" name="tema" id="btn-dark" value="dark" aria-label="Alterar tema de cores para escuro">
+                        <input type="radio" name="mobile-theme" id="mobile-dark" value="dark" aria-label="Alterar tema de cores para escuro">
 
-                        <label for="btn-dark" title="Tema escuro">
+                        <label for="mobile-dark" title="Tema escuro">
                             <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
                         </label>
                     </div>
@@ -154,6 +154,24 @@
                             <a href="#rodape" aria-label="Ir à seção de nossos contatos">
                                 Contatos
                             </a>
+                        </li>
+
+                        <li class="btn-colors" role="radiogroup" aria-label="Escolha de tema de cores">
+                            <div class="btn-color light">
+                                <input type="radio" name="desktop-theme" id="desktop-light" value="light">
+
+                                <label for="desktop-light" title="Tema claro" aria-label="Alterar tema de cores para claro" tabindex="0">
+                                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                                </label>
+                            </div>
+
+                            <div class="btn-color dark">
+                                <input type="radio" name="desktop-theme" id="desktop-dark" value="dark">
+
+                                <label for="desktop-dark" title="Tema escuro" aria-label="Alterar tema de cores para escuro" tabindex="0">
+                                    <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                                </label>
+                            </div>
                         </li>
                     </div>
                 </ul>
