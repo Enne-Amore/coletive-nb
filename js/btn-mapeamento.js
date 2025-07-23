@@ -1,7 +1,7 @@
 // Chamada do botão
-const btn_faca_parte = document.querySelectorAll('.link-principal')
+const link_principal = document.querySelectorAll('.link-principal')
 
-btn_faca_parte.forEach((btn) => {
+link_principal.forEach((btn) => {
     btn.addEventListener('click', () => {
         // Chamada da seção
         const btn_mapeamento = document.getElementById('btn-mapeamento')
