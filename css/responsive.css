@@ -56,9 +56,16 @@
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
         padding: 12px;
         cursor: pointer;
+        transition: .2s;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
         font-size: 1em;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover {
+        background-color: #F2E5301A;
+    }
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover {
+        background-color: #6A4EA633;
     }
     #cabecalho .nav-desktop .menu li.link-principal a {
         border-radius: 30px;
