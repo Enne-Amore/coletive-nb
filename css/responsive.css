@@ -61,10 +61,12 @@
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
         font-size: 1em;
     }
-    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover,
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:focus-visible {
         background-color: #F2E5301A;
     }
-    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover,
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:focus-visible {
         background-color: #6A4EA633;
     }
     #cabecalho .nav-desktop .menu li.link-principal a {
