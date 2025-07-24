@@ -637,7 +637,7 @@
     #cabecalho .menu-icon {
         font-size: 4.5em;
     }
-    #cabecalho #modal-container #menu h2 {
+    #cabecalho #modal-container #menu .titulo {
         font-size: 28px;
     }
     #cabecalho #modal-container #menu .nav .menu a,
