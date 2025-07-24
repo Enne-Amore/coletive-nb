@@ -8,6 +8,8 @@ const nav = document.querySelectorAll('.nav .menu a')
 menu_icon.addEventListener('click', () => {
     if (modal_container.style.display = 'none') {
         modal_container.style.display = 'block'
+        modal_container.showModal();
+        modal_container.setAttribute('aria-modal', 'true');
     }
 })
 
@@ -19,11 +21,15 @@ const transparencia = window.document.querySelector('#transparencia')
 if (innerWidth <= 1200) {
     transparencia.addEventListener('click', () => {
         modal_container.style.display = 'none'
+        modal_container.close();
+        modal_container.setAttribute('aria-modal', 'false');
     })
     
     nav.forEach((a) => {
         a.addEventListener('click', () => {
             modal_container.style.display = 'none'
+            modal_container.close();
+            modal_container.setAttribute('aria-modal', 'false');
         })
     })
 }

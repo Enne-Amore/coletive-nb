@@ -12,10 +12,10 @@
     #cabecalho .nav-desktop .menu {
         display: flex;
     }
-    #cabecalho .nav-desktop .menu li {
+    #cabecalho .nav-desktop .menu .link {
         padding: 15px 0;
     }
-    #cabecalho .nav-desktop .menu li a {
+    #cabecalho .nav-desktop .menu .link a {
         padding: 15px 20px;
     }
     #cabecalho .nav-desktop .menu .dropdown {
@@ -51,15 +51,16 @@
         animation: cima .2s ease-out;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
-        margin: .5em auto;
+        margin: 1.5em auto;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label {
         padding: 12px;
+        padding-top: 16px;
         cursor: pointer;
         transition: .2s;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color label .fa-solid {
-        font-size: 1em;
+        font-size: 1.4em;
     }
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover,
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:focus-visible {
@@ -69,9 +70,10 @@
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:focus-visible {
         background-color: #6A4EA633;
     }
-    #cabecalho .nav-desktop .menu li.link-principal a {
-        border-radius: 30px;
-        padding: 15px 30px;
+    #cabecalho .nav-desktop .menu .link-principal {
+        padding: 15px 0;
+    }
+    #cabecalho .nav-desktop .menu .link-principal a {
         color: var(--cinza);
     }
 
@@ -254,10 +256,6 @@
     #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
         border-radius: 30px;
         margin-left: -150%;
-    }
-    #cabecalho .nav-desktop .menu a.link-principal {
-        border-radius: 30px;
-        padding: 15px 30px;
     }
 
     #conteudo #introducao .ilustracao {
@@ -498,7 +496,7 @@
         border-radius: 20px;
         margin-left: -200%;
     }
-    #cabecalho .nav-desktop .menu a.link-principal {
+    #cabecalho .nav-desktop .menu .link-principal a {
         padding: 10px 20px;
     }
 
