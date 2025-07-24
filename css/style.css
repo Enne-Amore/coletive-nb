@@ -79,50 +79,59 @@
     align-items: center;
     gap: 1em;
 }
-#cabecalho #modal-container #menu .nav .menu li,
-#cabecalho .nav-desktop .menu li {
+#cabecalho #modal-container #menu .nav .menu .link,
+#cabecalho #modal-container #menu .nav .menu .link-principal,
+#cabecalho .nav-desktop .menu .link,
+#cabecalho .nav-desktop .menu .link-principal {
     font-size: 20px;
     font-weight: 500;
 }
-#cabecalho #modal-container #menu .nav .menu li,
-#cabecalho #modal-container #menu .nav .menu li a,
-#cabecalho .nav-desktop .menu li,
-#cabecalho .nav-desktop .menu li a {
+#cabecalho #modal-container #menu .nav .menu .link,
+#cabecalho #modal-container #menu .nav .menu .link a,
+#cabecalho #modal-container #menu .nav .menu .link-principal,
+#cabecalho .nav-desktop .menu .link,
+#cabecalho .nav-desktop .menu .link a,
+#cabecalho .nav-desktop .menu .link-principal,
+#cabecalho .nav-desktop .menu .link-principal a {
     padding: 15px 30px;
     border-radius: 30px;
     cursor: pointer;
 }
-#cabecalho #modal-container #menu .nav .menu li:hover a,
-#cabecalho #modal-container #menu .nav .menu a:focus-visible,
-#cabecalho .nav-desktop .menu li:hover a,
-#cabecalho .nav-desktop .menu a:focus-visible {
+#cabecalho #modal-container #menu .nav .menu .link:hover a,
+#cabecalho #modal-container #menu .nav .menu .link a:focus-visible,
+#cabecalho .nav-desktop .menu .link:hover a,
+#cabecalho .nav-desktop .menu .link a:focus-visible {
     color: var(--amarela);
     text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
 }
-#cabecalho #modal-container #menu .nav .menu li:active a,
-#cabecalho .nav-desktop .menu li:active a {
+#cabecalho #modal-container #menu .nav .menu .link:active a,
+#cabecalho .nav-desktop .menu .link:active a {
     color: var(--laranja);
     text-shadow: 4px 4px 4px var(--sombra-laranja), 4px 4px 4px var(--sombra-cinza);
 }
-#cabecalho #modal-container #menu .nav .menu a.link-principal,
-#cabecalho .nav-desktop .menu li.link-principal {
+#cabecalho #modal-container #menu .nav .menu .link-principal {
+    margin: 10px 0 5px;
+}
+#cabecalho #modal-container #menu .nav .menu .link-principal,
+#cabecalho #modal-container #menu .nav .menu .link-principal a,
+#cabecalho .nav-desktop .menu .link-principal {
     background-color: var(--amarela);
     box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
     color: var(--cinza);
     text-shadow: 4px 4px 4px var(--sombra-cinza);
     font-weight: 600;
 }
-#cabecalho #modal-container #menu .nav .menu a.link-principal:hover,
-#cabecalho #modal-container #menu .nav .menu a.link-principal:focus-visible,
-#cabecalho .nav-desktop .menu li.link-principal:hover a,
-#cabecalho .nav-desktop .menu li.link-principal a:focus-visible {
+#cabecalho #modal-container #menu .nav .menu .link-principal:hover a,
+#cabecalho #modal-container #menu .nav .menu .link-principal a:focus-visible,
+#cabecalho .nav-desktop .menu .link-principal:hover a,
+#cabecalho .nav-desktop .menu .link-principal a:focus-visible {
     background-color: var(--laranja);
     box-shadow: 0px 4px 4px 0px var(--sombra-laranja), 0px 4px 4px 0px var(--sombra-cinza);
     color: var(--preta);
     text-shadow: 4px 4px 4px var(--sombra-preta);
 }
-#cabecalho #modal-container #menu .nav .menu a.link-principal:active,
-#cabecalho .nav-desktop .menu li.link-principal:active a {
+#cabecalho #modal-container #menu .nav .menu .link-principal:active a,
+#cabecalho .nav-desktop .menu .link-principal:active a {
     background-color: var(--branca);
     box-shadow: 0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza);
     color: var(--laranja);
@@ -144,10 +153,10 @@
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
     background-color: #fffffD0D;
-    padding: 3.5em 0 2.2em;
+    padding: 28px 0 15px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
-    font-size: 3em;
+    font-size: 24px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label {

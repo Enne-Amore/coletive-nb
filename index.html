@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Enne Jim Pessoa">
-    <meta name="keywords" content="coletive, não-binárie, lgbt, direitos, acesso, público">
     <meta name="description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
     <meta property="og:image" content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true">
     <meta property="og:image:alt" content="Logo do Coletive Não-Binárie">
@@ -12,7 +11,7 @@
     <meta property="og:description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
     <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta name="color-scheme" content="light only">
+    <meta name="color-scheme" content="light dark">
     <title>Coletive Não-Binárie</title>
     <link rel="shortcut icon" href="img/logo-icone/favicon.ico" type="image/x-icon">
     <!-- CSS -->
@@ -39,7 +38,7 @@
         <!-- Mobile menu -->
         <button class="fa-solid fa-bars menu-icon" id="menu-icon" aria-label="Ícone de menu de navegação, clique para abrir o menu"></button>
 
-        <dialog id="modal-container">
+        <dialog id="modal-container" aria-modal="false">
             <div id="transparencia"></div>
 
             <section id="menu">
@@ -49,44 +48,44 @@
 
                 <nav class="nav">
                     <ul class="menu">
-                        <li>
+                        <li class="link">
                             <a href="#finalidades" aria-label="Ir à seção de finalidades">
                                 Finalidades
                             </a>
                         </li>
 
-                        <li>
+                        <li class="link">
                             <a href="#atividades" aria-label="Ir à seção de atividades">
                                 Atividades
                             </a>
                         </li>
                         
-                        <li>
+                        <li class="link">
                             <a href="#membres" aria-label="Ir à seção de membres">
                                 Membres
                             </a>
                         </li>
                         
-                        <li>
+                        <li class="link">
                             <a href="#parceires" aria-label="Ir à seção de parceires">
                                 Parceires
                             </a>
                         </li>
 
-                        <li>
+                        <li class="link">
                             <a href="#direitos" aria-label="Ir à seção de direitos">
                                 Direitos
                             </a>
                         </li>
 
-                        <li>
+                        <li class="link">
                             <a href="#rodape" aria-label="Ir à seção de nossos contatos">
                                 Contatos
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento" class="link-principal">
+                        <li class="link-principal">
+                            <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento">
                                 Mapeie-se
                             </a>
                         </li>
@@ -116,41 +115,41 @@
         <!-- Desktop menu -->
         <nav class="nav-desktop">
             <ul class="menu">
-                <li>
+                <li class="link">
                     <a href="#finalidades" aria-label="Ir à seção de finalidades">
                         Finalidades
                     </a>
                 </li>
 
-                <li>
+                <li class="link">
                     <a href="#atividades" aria-label="Ir à seção de atividades">
                         Atividades
                     </a>
                 </li>
 
-                <li>
+                <li class="link">
                     <a href="#membres" aria-label="Ir à seção de membres">
                         Membres
                     </a>
                 </li>
 
-                <ul class="dropdown" id="dropdown">
+                <li class="dropdown" id="dropdown">
                     <button class="fa-solid fa-angle-down dropdown-icon" aria-label="Abrir mais opções de menu" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-content" id="dropdown-icon"></button>
 
-                    <div class="dropdown-content" id="dropdown-content" role="menu">
-                        <li>
+                    <ul class="dropdown-content" id="dropdown-content" role="menu">
+                        <li class="link">
                             <a href="#parceires" aria-label="Ir à seção de parceires">
                                 Parceires
                             </a>
                         </li>
 
-                        <li>
+                        <li class="link">
                             <a href="#direitos" aria-label="Ir à seção de direitos">
                                 Direitos
                             </a>
                         </li>
 
-                        <li>
+                        <li class="link">
                             <a href="#rodape" aria-label="Ir à seção de nossos contatos">
                                 Contatos
                             </a>
@@ -191,9 +190,9 @@
                 <img src="img/populacao-nb.png" alt="População não-binária unida!">
             </figure>
 
-            <p class="frase-efeito">
+            <h1 class="frase-efeito" aria-label="Formação des não-bináries da Paraíba">
                 Formação des <br> <strong>não-bináries</strong> <br> da Paraíba
-            </p>
+            </h1>
         </section>
 
         <section id="finalidades">
