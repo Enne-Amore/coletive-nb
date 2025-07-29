@@ -839,6 +839,13 @@
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+        padding-right: 32px;
+        font-size: 2.8em;
+    }
+}
+
 @media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
     #cabecalho .nav-desktop .menu .dropdown {
         padding-right: 1em;
