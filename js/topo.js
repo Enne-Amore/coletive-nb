@@ -13,22 +13,22 @@ document.addEventListener("scroll", ocultar);
 // Funcção de ocultar
 function ocultar() {
   if (innerWidth <= 1200 && innerWidth < innerHeight) { // portrait mobile
-    if (window.scrollY > 6000) {
+    if (window.scrollY > 7000) {
       topo.style.display = "flex";
     } else {
       topo.style.display = "none";
     }
   }
-  
+
   if (innerWidth <= 1200 && innerWidth > innerHeight) {
-    if (window.scrollY > 4000) { // landscape mobile
+    if (window.scrollY > 5000) { // landscape mobile
       topo.style.display = "flex";
     } else {
       topo.style.display = "none";
     }
 
   } else { // desktop
-    if (window.scrollY > 5000) {
+    if (window.scrollY > 6000) {
       topo.style.display = "flex";
     } else {
       topo.style.display = "none";
