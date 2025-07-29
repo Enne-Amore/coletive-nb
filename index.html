@@ -1,700 +1,982 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Enne Jim Pessoa">
-    <meta name="description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
-    <meta property="og:image" content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true">
-    <meta property="og:image:alt" content="Logo do Coletive Não-Binárie">
-    <meta property="og:title" content="Coletive Não-Binárie">
-    <meta property="og:description" content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="color-scheme" content="light dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Enne Jim Pessoa" />
+    <meta
+      name="description"
+      content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos"
+    />
+    <meta
+      property="og:image"
+      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true"
+    />
+    <meta property="og:image:alt" content="Logo do Coletive Não-Binárie" />
+    <meta property="og:title" content="Coletive Não-Binárie" />
+    <meta
+      property="og:description"
+      content="Conheça a união de não-bináries da Paraíba a caminho de fortalecer a promoção dos nossos direitos"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
     <title>Coletive Não-Binárie</title>
-    <link rel="shortcut icon" href="img/logo-icone/favicon.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="img/logo-icone/favicon.ico"
+      type="image/x-icon"
+    />
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/dark-theme.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dark-theme.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- Fontes -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- JavaScript -->
     <script src="js/menu.js" defer></script>
     <script src="js/tema-cores.js" defer></script>
     <script src="js/topo.js" defer></script>
     <script src="js/ilustracoes.js" defer></script>
     <script src="js/btn-mapeamento.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="cabecalho">
-        <figure class="logo">
-            <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie">
-        </figure>
+      <figure class="logo">
+        <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie" />
+      </figure>
 
-        <!-- Mobile menu -->
-        <button class="fa-solid fa-bars menu-icon" id="menu-icon" aria-label="Ícone de menu de navegação, clique para abrir o menu"></button>
+      <!-- Mobile menu -->
+      <button
+        class="fa-solid fa-bars menu-icon"
+        id="menu-icon"
+        aria-label="Ícone de menu de navegação, clique para abrir o menu"
+      ></button>
 
-        <dialog id="modal-container" aria-modal="false">
-            <div id="transparencia"></div>
+      <dialog id="modal-container" aria-modal="false">
+        <div id="transparencia"></div>
 
-            <section id="menu">
-                <h3 class="titulo">Navegação</h3>
-                
-                <hr>
+        <section id="menu">
+          <h3 class="titulo">Navegação</h3>
 
-                <nav class="nav">
-                    <ul class="menu">
-                        <li class="link">
-                            <a href="#finalidades" aria-label="Ir à seção de finalidades">
-                                Finalidades
-                            </a>
-                        </li>
+          <hr />
 
-                        <li class="link">
-                            <a href="#atividades" aria-label="Ir à seção de atividades">
-                                Atividades
-                            </a>
-                        </li>
-                        
-                        <li class="link">
-                            <a href="#membres" aria-label="Ir à seção de membres">
-                                Membres
-                            </a>
-                        </li>
-                        
-                        <li class="link">
-                            <a href="#parceires" aria-label="Ir à seção de parceires">
-                                Parceires
-                            </a>
-                        </li>
-
-                        <li class="link">
-                            <a href="#direitos" aria-label="Ir à seção de direitos">
-                                Direitos
-                            </a>
-                        </li>
-
-                        <li class="link">
-                            <a href="#rodape" aria-label="Ir à seção de nossos contatos">
-                                Contatos
-                            </a>
-                        </li>
-
-                        <li class="link-principal">
-                            <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento">
-                                Mapeie-se
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="btn-colors" role="radiogroup" aria-label="Escolha de tema de cores">
-                    <div class="btn-color light">
-                        <input type="radio" name="mobile-theme" id="mobile-light" value="light" aria-label="Alterar tema de cores para claro">
-
-                        <label for="mobile-light" title="Tema claro">
-                            <i class="fa-solid fa-sun" aria-hidden="true"></i>
-                        </label>
-                    </div>
-
-                    <div class="btn-color dark">
-                        <input type="radio" name="mobile-theme" id="mobile-dark" value="dark" aria-label="Alterar tema de cores para escuro">
-
-                        <label for="mobile-dark" title="Tema escuro">
-                            <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
-                        </label>
-                    </div>
-                </div>
-            </section>
-        </dialog>
-
-        <!-- Desktop menu -->
-        <nav class="nav-desktop">
+          <nav class="nav">
             <ul class="menu">
-                <li class="link">
-                    <a href="#finalidades" aria-label="Ir à seção de finalidades">
-                        Finalidades
-                    </a>
-                </li>
+              <li class="link">
+                <a href="#finalidades" aria-label="Ir à seção de finalidades">
+                  Finalidades
+                </a>
+              </li>
 
-                <li class="link">
-                    <a href="#atividades" aria-label="Ir à seção de atividades">
-                        Atividades
-                    </a>
-                </li>
+              <li class="link">
+                <a href="#atividades" aria-label="Ir à seção de atividades">
+                  Atividades
+                </a>
+              </li>
 
-                <li class="link">
-                    <a href="#membres" aria-label="Ir à seção de membres">
-                        Membres
-                    </a>
-                </li>
+              <li class="link">
+                <a href="#membres" aria-label="Ir à seção de membres">
+                  Membres
+                </a>
+              </li>
 
-                <li class="dropdown" id="dropdown">
-                    <button class="fa-solid fa-angle-down dropdown-icon" aria-label="Abrir mais opções de menu" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-content" id="dropdown-icon"></button>
+              <li class="link">
+                <a href="#parceires" aria-label="Ir à seção de parceires">
+                  Parceires
+                </a>
+              </li>
 
-                    <ul class="dropdown-content" id="dropdown-content" role="menu">
-                        <li class="link">
-                            <a href="#parceires" aria-label="Ir à seção de parceires">
-                                Parceires
-                            </a>
-                        </li>
+              <li class="link">
+                <a href="#direitos" aria-label="Ir à seção de direitos">
+                  Direitos
+                </a>
+              </li>
 
-                        <li class="link">
-                            <a href="#direitos" aria-label="Ir à seção de direitos">
-                                Direitos
-                            </a>
-                        </li>
+              <li class="link">
+                <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+                  Contatos
+                </a>
+              </li>
 
-                        <li class="link">
-                            <a href="#rodape" aria-label="Ir à seção de nossos contatos">
-                                Contatos
-                            </a>
-                        </li>
-
-                        <li class="btn-colors" role="radiogroup" aria-label="Escolha de tema de cores">
-                            <div class="btn-color light">
-                                <input type="radio" name="desktop-theme" id="desktop-light" value="light">
-
-                                <label for="desktop-light" title="Tema claro" aria-label="Alterar tema de cores para claro" tabindex="0">
-                                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
-                                </label>
-                            </div>
-
-                            <div class="btn-color dark">
-                                <input type="radio" name="desktop-theme" id="desktop-dark" value="dark">
-
-                                <label for="desktop-dark" title="Tema escuro" aria-label="Alterar tema de cores para escuro" tabindex="0">
-                                    <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
-                                </label>
-                            </div>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="link-principal">
-                    <a href="#mapeamento" aria-label="Ir à seção sobre o nosso mapeamento">
-                        Mapeie-se
-                    </a>
-                </li>
+              <li class="link-principal">
+                <a
+                  href="#mapeamento"
+                  aria-label="Ir à seção sobre o nosso mapeamento"
+                >
+                  Mapeie-se
+                </a>
+              </li>
             </ul>
-        </nav>
+          </nav>
+
+          <div
+            class="btn-colors"
+            role="radiogroup"
+            aria-label="Escolha de tema de cores"
+          >
+            <div class="btn-color light">
+              <input
+                type="radio"
+                name="mobile-theme"
+                id="mobile-light"
+                value="light"
+                aria-label="Alterar tema de cores para claro"
+              />
+
+              <label for="mobile-light" title="Tema claro">
+                <i class="fa-solid fa-sun" aria-hidden="true"></i>
+              </label>
+            </div>
+
+            <div class="btn-color dark">
+              <input
+                type="radio"
+                name="mobile-theme"
+                id="mobile-dark"
+                value="dark"
+                aria-label="Alterar tema de cores para escuro"
+              />
+
+              <label for="mobile-dark" title="Tema escuro">
+                <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+              </label>
+            </div>
+          </div>
+        </section>
+      </dialog>
+
+      <!-- Desktop menu -->
+      <nav class="nav-desktop">
+        <ul class="menu">
+          <li class="link">
+            <a href="#finalidades" aria-label="Ir à seção de finalidades">
+              Finalidades
+            </a>
+          </li>
+
+          <li class="link">
+            <a href="#atividades" aria-label="Ir à seção de atividades">
+              Atividades
+            </a>
+          </li>
+
+          <li class="link">
+            <a href="#membres" aria-label="Ir à seção de membres"> Membres </a>
+          </li>
+
+          <li class="dropdown" id="dropdown">
+            <button
+              class="fa-solid fa-angle-down dropdown-icon"
+              aria-label="Abrir mais opções de menu"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="dropdown-content"
+              id="dropdown-icon"
+            ></button>
+
+            <ul class="dropdown-content" id="dropdown-content" role="menu">
+              <li class="link">
+                <a href="#parceires" aria-label="Ir à seção de parceires">
+                  Parceires
+                </a>
+              </li>
+
+              <li class="link">
+                <a href="#direitos" aria-label="Ir à seção de direitos">
+                  Direitos
+                </a>
+              </li>
+
+              <li class="link">
+                <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+                  Contatos
+                </a>
+              </li>
+
+              <li
+                class="btn-colors"
+                role="radiogroup"
+                aria-label="Escolha de tema de cores"
+              >
+                <div class="btn-color light">
+                  <input
+                    type="radio"
+                    name="desktop-theme"
+                    id="desktop-light"
+                    value="light"
+                  />
+
+                  <label
+                    for="desktop-light"
+                    title="Tema claro"
+                    aria-label="Alterar tema de cores para claro"
+                    tabindex="0"
+                  >
+                    <i class="fa-solid fa-sun" aria-hidden="true"></i>
+                  </label>
+                </div>
+
+                <div class="btn-color dark">
+                  <input
+                    type="radio"
+                    name="desktop-theme"
+                    id="desktop-dark"
+                    value="dark"
+                  />
+
+                  <label
+                    for="desktop-dark"
+                    title="Tema escuro"
+                    aria-label="Alterar tema de cores para escuro"
+                    tabindex="0"
+                  >
+                    <i class="fa-solid fa-moon icone" aria-hidden="true"></i>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="link-principal">
+            <a
+              href="#mapeamento"
+              aria-label="Ir à seção sobre o nosso mapeamento"
+            >
+              Mapeie-se
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="conteudo">
-        <section id="introducao">
-            <figure class="ilustracao">
-                <img src="img/populacao-nb.png" alt="População não-binária unida!">
-            </figure>
+      <section id="introducao">
+        <figure class="ilustracao">
+          <img src="img/populacao-nb.png" alt="População não-binária unida!" />
+        </figure>
 
-            <h1 class="frase-efeito" aria-label="Formação des não-bináries da Paraíba">
-                Formação des <br> <strong>não-bináries</strong> <br> da Paraíba
-            </h1>
-        </section>
+        <h1
+          class="frase-efeito"
+          aria-label="Formação des não-bináries da Paraíba"
+        >
+          Formação des <br />
+          <strong>não-bináries</strong> <br />
+          da Paraíba
+        </h1>
+      </section>
 
-        <section id="finalidades">
-            <div class="textos">
-                <h2 class="titulo">Nossas Finalidades</h2>
-                
-                <ul class="lista">
-                   <li>
-                        Refletir e <strong>visibilizar as vivências des não-bináries</strong>
-                   </li>
+      <section id="finalidades">
+        <div class="textos">
+          <h2 class="titulo">Nossas Finalidades</h2>
 
-                   <li>
-                        <strong>Desconstrução da norma binária de gênero e de sexualidade</strong>, além de outros conservadorismos
-                   </li>
+          <ul class="lista">
+            <li>
+              Refletir e <strong>visibilizar as vivências des não-bináries</strong>
+            </li>
 
-                   <li>
-                        Combate cotidiano à misoginia, à LGBTQIAPNb+misia, ao racismo, e ao extermínio dos povos originários de diversas etnias, quilombolas e periféricos
-                   </li>
-                </ul>
-            </div>
+            <li>
+              <strong>Desconstrução da norma binária de gênero e de sexualidade</strong>, além de outros conservadorismos
+            </li>
 
-            <figure class="img">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="img/logo-completa-desktop.png" type="image/png">
+            <li>
+              Combate cotidiano à misoginia, à LGBTQIAPNb+misia, ao racismo, e ao extermínio dos originários de diversas etnias, quilombolas e periféricos
+            </li>
+          </ul>
+        </div>
 
-                    <img src="img/logo-completa-mobile.png" alt="Logo completa do Coletive Não-Binárie com a bandeira da comunidade">
-                </picture>
-            </figure>
-        </section>
+        <figure class="img">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/logo-completa-desktop.png"
+              type="image/png"
+            />
 
-        <section id="atividades">
-            <h2 class="titulo">Nossas Atividades</h2>
+            <img
+              src="img/logo-completa-mobile.png"
+              alt="Logo completa do Coletive Não-Binárie com a bandeira da comunidade"
+            />
+          </picture>
+        </figure>
+      </section>
 
-            <ul class="lista">
-                <li class="atividade">
-                    <hr>
+      <section id="atividades">
+        <h2 class="titulo">Nossas Atividades</h2>
 
-                    <p>
-                        Continuidade e ampliação da <strong>capacitação</strong> em espaços públicos e serviços para a população LGBTQIAPNb+, índigena e negra
-                    </p>
-                </li>
+        <ul class="lista">
+          <li class="atividade">
+            <hr />
 
-                <li class="atividade">
-                    <hr>
-
-                    <p>
-                        Continuidade de <strong>mapeamento e orientação</strong> para <strong>retificação</strong> de gênero para não-binárie
-                    </p>
-                </li>
-
-                <li class="atividade">
-                    <hr>
-
-                    <p>
-                        <strong>Rodas de conversas e atividades</strong> em aldeias indígenas e quilombolas
-                    </p>
-                </li>
-
-                <li class="atividade">
-                    <hr>
-
-                    <p>
-                        <strong>Festival de artes</strong> feitas por não-bináries
-                    </p>
-                </li>
-
-                <li class="atividade">
-                    <hr>
-
-                    <p>
-                        <strong>Atividades de formação interna e externa</strong> (para organizações ou grupos de natureza pública ou privada)
-                    </p>
-                </li>
-            </ul>
-
-            <article class="ilustracoes">
-                <hr>
-
-                <div class="imgs-container">
-                    <ul class="imgs">
-                        <li>
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/espaco-lgbtpedrinho-cnb-desktop.png" type="image/png">
-                                    
-                                    <img src="img/espaco-lgbtpedrinho-cnb-mobile.png" alt="Coletive Não-Binárie unido com o Espaço LGBTPedrinho">
-                                </picture>
-                            </figure>
-                        </li>
-                    
-                        <li>
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/roda-dialogo-cnb-desktop.png" type="image/png">
-                                    
-                                    <img src="img/roda-dialogo-cnb-mobile.png" alt="Roda de diálogo">
-                                </picture>
-                            </figure>
-                        </li>
-                    
-                        <li>
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/panfletos-desktop.png" type="image/png">
-                                    
-                                    <img src="img/panfletos-mobile.png" alt="Panfletos do Coletive Não-Binárie">
-                                </picture>
-                            </figure>
-                        </li>
-
-                        <li>
-                            <figure>
-                                <picture>
-                                    <source media="(min-width: 1200px)" srcset="img/cartaz-desktop.png" type="image/png">
-                                    
-                                    <img src="img/cartaz-mobile.png" alt="Cartaz do Coletive Não-Binárie">
-                                </picture>
-                            </figure>
-                        </li>
-                    </ul>
-                </div>
-
-                <span class="aviso">
-                    Arraste para o lado
-                    <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
-                </span>
-            </article>
-        </section>
-
-        <section id="membres">
-            <section class="membres-geral">
-                <p class="frase-efeito">
-                    Interseccionalidade não-binária de vivências e experiências
-                </p>
-    
-                <article class="ilustracoes">
-                    <hr>
-    
-                    <div class="imgs-container">
-                        <ul class="imgs">
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/membres-unides-desktop.png" type="image/png">
-
-                                        <img src="img/membres-unides-mobile.png" alt="Membres do Coletive Não-Binárie unides">
-                                    </picture>
-                                </figure>
-                            </li>
-                        
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-1-desktop.png" type="image/png">
-
-                                        <img src="img/nbs-conversando-1-mobile.png" alt="Roda de diálogo entre es membres">
-                                    </picture>
-                                </figure>
-                            </li>
-                        
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-2-desktop.png" type="image/png">
-
-                                        <img src="img/nbs-conversando-2-mobile.png" alt="Roda de diálogo entre es membres">
-                                    </picture>
-                                </figure>
-                            </li>
-    
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/nbs-conversando-3-desktop.png" type="image/png">
-
-                                        <img src="img/nbs-conversando-3-mobile.png" alt="Roda de diálogo entre es membres">
-                                    </picture>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <span class="aviso">
-                        Arraste para o lado
-                        <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
-                    </span>
-                </article>
-            </section>
-
-            <section class="diretories">
-                <p class="frase-efeito">
-                    Saiba quem são es diretories
-                </p>
-    
-                <article class="ilustracoes">
-                    <hr>
-    
-                    <div class="imgs-container">
-                        <ul class="imgs">
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/yuri-diretoria-desktop.png" type="image/png">
-
-                                        <img src="img/yuri-diretoria-mobile.png" alt="Foto de diretore">
-                                    </picture>
-
-                                    <figcaption> Yuri Kariri </figcaption>
-                                </figure>
-                            </li>
-                        
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/selme-diretoria-desktop.png" type="image/png">
-
-                                        <img src="img/selme-diretoria-mobile.png" alt="Foto de diretore">
-                                    </picture>
-
-                                    <figcaption> Selme Cabral </figcaption>
-                                </figure>
-                            </li>
-                        
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/d'angelles-diretoria-desktop.png" type="image/png">
-
-                                        <img src="img/d'angelles-diretoria-mobile.png" alt="Foto de diretore">
-                                    </picture>
-
-                                    <figcaption> D'Angelles Coutinho </figcaption>
-                                </figure>
-                            </li>
-                        
-                            <li>
-                                <figure>
-                                    <picture>
-                                        <source media="(min-width: 1200px)" srcset="img/lobo-diretoria-desktop.png" type="image/png">
-
-                                        <img src="img/lobo-diretoria-mobile.png" alt="Foto de diretore">
-                                    </picture>
-
-                                    <figcaption> Índigo Lobo </figcaption>
-                                </figure>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <span class="aviso">
-                        Arraste para o lado
-                        <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
-                    </span>
-                </article>
-            </section>
-        </section>
-
-        <section id="parceires">
-            <h2 class="titulo">Conheça Nosses Parceires</h2>
-
-            <div class="parceires">
-                <article class="parceire">
-                    <figure class="img">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="img/abranb-desktop.png" type="image/png">
-
-                            <img src="img/abranb-mobile.png" alt="Coletive Não-Binárie unido com a ABRANB">
-                        </picture>
-                    </figure>
-
-                    <div class="texto">
-                        <p>
-                            A <strong>Articulação Brasileira Não-Binárie (ABRANB)</strong> é uma rede nacional na qual estamos vinculades e contribuindo para as causas não-binárias.
-                        </p>
-
-                        <a href="https://linktr.ee/abranb.articulacao" aria-label="Ir ao Linktree da ABRANB" target="_blank" rel="noopener noreferrer">
-                            <span>
-                                Saber Mais Sobre <strong>ABRANB</strong>
-                            </span>
-
-                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </article>
-
-                <article class="parceire">
-                    <figure class="img">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="img/fundo-brasil-desktop.png" type="image/png">
-                            
-                            <img src="img/fundo-brasil-mobile.png" alt="Coletive Não-Binárie unido com o Fundo Brasil">
-                        </picture>
-                    </figure>
-
-                    <div class="texto">
-                        <p>
-                            O <strong>Fundo Brasil</strong> nos apoiou em um dos nossos projetos com recurso ao passar no edital.
-                        </p>
-
-                        <a href="https://www.fundobrasil.org.br/" aria-label="Ir à página inicial do Fundo Brasil" target="_blank" rel="noopener noreferrer">
-                            <span>
-                                Saber Mais Sobre <strong>Fundo Brasil</strong>
-                            </span>
-
-                            <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="mapeamento">
-            <div class="textos">
-                <h2 class="titulo">Vem somar com a gente!</h2>
-
-                <p>
-                    Estamos <strong>mapeando membres da comunidade não-binária</strong> que moram na <strong>Paraíba</strong> para ajudar a fortalecer a <strong>promoção dos nossos direitos</strong> enquanto cidadães não-bináries, e <strong>você pode contribuir com a nossa rede</strong>. Vamos juntes!
-                </p>
-
-                <a href="https://forms.gle/6xWbZWccebKZFtEH9" aria-label="Ir ao formulário de mapeamento no Google Forms" target="_blank" rel="noopener noreferrer" id="btn-mapeamento">
-                    <span>Mapeie-se</span>
-
-                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
-                </a>
-            </div>
-
-            <figure class="img">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="img/maos-unidas-desktop.png" type="image/png">
-
-                    <img src="img/maos-unidas-mobile.png" alt="Mãos unidas com as cores da bandeira não-binária">
-                </picture>
-            </figure>
-        </section>
-
-        <section id="direitos">
-            <p class="frase-efeito">
-                Conscientize-se dos seus próprios direitos!
+            <p>
+              Continuidade e ampliação da <strong>capacitação</strong> em espaços públicos e serviços para a população LGBTQIAPNb+, índigena e negra
             </p>
+          </li>
 
-            <div class="direitos">
-                <a href="https://mpvirtual.mppb.mp.br/public/validacao/9ca043b6dfb560a3f8f98f3b8ec6e728" aria-label="Ir à página de acesso ao provimento de direitos" target="_blank" rel="noopener noreferrer" class="card">
-                    <figure class="img">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="img/doc-nb-desktop.png" type="image/png">
+          <li class="atividade">
+            <hr />
 
-                            <img src="img/doc-nb-mobile.png" alt="Não-binariedade constando em documentação">
-                        </picture>
-                    </figure>
-                    
-                    <span class="texto">
-                        Provimento que garante o direito à retificação de prenome e de gênero nos documentos
-                    </span>
-                </a>
+            <p>
+              Continuidade de <strong>mapeamento e orientação</strong> para <strong>retificação</strong> de gênero para não-binárie
+            </p>
+          </li>
 
-                <hr>
+          <li class="atividade">
+            <hr />
 
-                <a href="https://www.in.gov.br/en/web/dou/-/resolucao-n-2.265-de-20-de-setembro-de-2019-237203294" aria-label="Ir à página da resolução de leis" target="_blank" rel="noopener noreferrer" class="card">
-                    <figure class="img">
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="img/atendimento-desktop.png" type="image/png">
+            <p>
+              <strong>Rodas de conversas e atividades</strong> em aldeias indígenas e quilombolas
+            </p>
+          </li>
 
-                            <img src="img/atendimento-mobile.png" alt="Recepção de atendimento">
-                        </picture>
-                    </figure>
-                    
-                    <span class="texto">
-                        Resolução do CFM que amplia o acesso ao atendimento de pessoas cisdissidentes
-                    </span>
-                </a>
+          <li class="atividade">
+            <hr />
+
+            <p>
+              <strong>Festival de artes</strong> feitas por não-bináries
+            </p>
+          </li>
+
+          <li class="atividade">
+            <hr />
+
+            <p>
+              <strong>Atividades de formação interna e externa</strong> (para organizações ou grupos de natureza pública ou privada)
+            </p>
+          </li>
+        </ul>
+
+        <article class="ilustracoes">
+          <hr />
+
+          <div class="imgs-container">
+            <ul class="imgs">
+              <li>
+                <figure>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="img/espaco-lgbtpedrinho-cnb-desktop.png"
+                      type="image/png"
+                    />
+
+                    <img
+                      src="img/espaco-lgbtpedrinho-cnb-mobile.png"
+                      alt="Coletive Não-Binárie unido com o Espaço LGBTPedrinho"
+                    />
+                  </picture>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="img/roda-dialogo-cnb-desktop.png"
+                      type="image/png"
+                    />
+
+                    <img
+                      src="img/roda-dialogo-cnb-mobile.png"
+                      alt="Roda de diálogo"
+                    />
+                  </picture>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="img/panfletos-desktop.png"
+                      type="image/png"
+                    />
+
+                    <img
+                      src="img/panfletos-mobile.png"
+                      alt="Panfletos do Coletive Não-Binárie"
+                    />
+                  </picture>
+                </figure>
+              </li>
+
+              <li>
+                <figure>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="img/cartaz-desktop.png"
+                      type="image/png"
+                    />
+
+                    <img
+                      src="img/cartaz-mobile.png"
+                      alt="Cartaz do Coletive Não-Binárie"
+                    />
+                  </picture>
+                </figure>
+              </li>
+            </ul>
+          </div>
+
+          <span class="aviso">
+            Arraste para o lado
+            <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
+          </span>
+        </article>
+      </section>
+
+      <section id="membres">
+        <section class="membres-geral">
+          <p class="frase-efeito">
+            Interseccionalidade não-binária de vivências e experiências
+          </p>
+
+          <article class="ilustracoes">
+            <hr />
+
+            <div class="imgs-container">
+              <ul class="imgs">
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/membres-unides-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/membres-unides-mobile.png"
+                        alt="Membres do Coletive Não-Binárie unides"
+                      />
+                    </picture>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/nbs-conversando-1-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/nbs-conversando-1-mobile.png"
+                        alt="Roda de diálogo entre es membres"
+                      />
+                    </picture>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/nbs-conversando-2-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/nbs-conversando-2-mobile.png"
+                        alt="Roda de diálogo entre es membres"
+                      />
+                    </picture>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/nbs-conversando-3-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/nbs-conversando-3-mobile.png"
+                        alt="Roda de diálogo entre es membres"
+                      />
+                    </picture>
+                  </figure>
+                </li>
+              </ul>
             </div>
+
+            <span class="aviso">
+              Arraste para o lado
+              <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
+            </span>
+          </article>
         </section>
 
-        <aside id="conselho-municipal">
-            <div class="textos">
-                <h2 class="titulo">E Falando em direitos ...</h2>
+        <section class="diretories">
+          <p class="frase-efeito">Saiba quem são es diretories</p>
 
-                <p>
-                    Fazemos parte do <strong>Conselho Municipal LGBTQIAPNb+ de João Pessoa</strong>, então podemos participar do controle e da implementação de políticas públicas para a nossa população.
-                </p>
+          <article class="ilustracoes">
+            <hr />
 
-                <a href="https://www.instagram.com/conselholgbtjp/" aria-label="Ir ao perfil do Conselho no Instagram" target="_blank" rel="noopener noreferrer">
-                    <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
+            <div class="imgs-container">
+              <ul class="imgs">
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/yuri-diretoria-desktop.png"
+                        type="image/png"
+                      />
 
-                    <i class="fa-solid fa-arrow-up-right-from-square icone" aria-hidden="true"></i>
-                </a>
+                      <img
+                        src="img/yuri-diretoria-mobile.png"
+                        alt="Foto de diretore"
+                      />
+                    </picture>
+
+                    <figcaption>Yuri Kariri</figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/selme-diretoria-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/selme-diretoria-mobile.png"
+                        alt="Foto de diretore"
+                      />
+                    </picture>
+
+                    <figcaption>Selme Cabral</figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/d'angelles-diretoria-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/d'angelles-diretoria-mobile.png"
+                        alt="Foto de diretore"
+                      />
+                    </picture>
+
+                    <figcaption>D'Angelles Coutinho</figcaption>
+                  </figure>
+                </li>
+
+                <li>
+                  <figure>
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="img/lobo-diretoria-desktop.png"
+                        type="image/png"
+                      />
+
+                      <img
+                        src="img/lobo-diretoria-mobile.png"
+                        alt="Foto de diretore"
+                      />
+                    </picture>
+
+                    <figcaption>Índigo Lobo</figcaption>
+                  </figure>
+                </li>
+              </ul>
             </div>
 
+            <span class="aviso">
+              Arraste para o lado
+              <i class="fa-solid fa-left-right icone" aria-hidden="true"></i>
+            </span>
+          </article>
+        </section>
+      </section>
+
+      <section id="parceires">
+        <h2 class="titulo">Conheça Nosses Parceires</h2>
+
+        <div class="parceires">
+          <article class="parceire">
             <figure class="img">
-                <picture>
-                    <source media="(min-width: 1200px)" srcset="img/conselho-municipal-cnb-desktop.png" type="image/png">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/abranb-desktop.png"
+                  type="image/png"
+                />
 
-                    <img src="img/conselho-municipal-cnb-mobile.png" alt="Coletive Não-Binárie dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa">
-                </picture>
+                <img
+                  src="img/abranb-mobile.png"
+                  alt="Coletive Não-Binárie unido com a ABRANB"
+                />
+              </picture>
             </figure>
-        </aside>
 
-        <button class="fa-solid fa-up-long" id="topo" aria-label="Ícone de cima, clique para voltar ao topo da página" title="Voltar ao topo da página"></button>
+            <div class="texto">
+              <p>
+                A <strong>Articulação Brasileira Não-Binárie (ABRANB)</strong> é uma rede nacional na qual estamos vinculades e contribuindo para as causas não-binárias.
+              </p>
+
+              <a
+                href="https://linktr.ee/abranb.articulacao"
+                aria-label="Ir ao Linktree da ABRANB"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span> Saber Mais Sobre <strong>ABRANB</strong> </span>
+
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square icone"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="parceire">
+            <figure class="img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/fundo-brasil-desktop.png"
+                  type="image/png"
+                />
+
+                <img
+                  src="img/fundo-brasil-mobile.png"
+                  alt="Coletive Não-Binárie unido com o Fundo Brasil"
+                />
+              </picture>
+            </figure>
+
+            <div class="texto">
+              <p>
+                O <strong>Fundo Brasil</strong> nos apoiou em um dos nossos projetos com recurso ao passar no edital.
+              </p>
+
+              <a
+                href="https://www.fundobrasil.org.br/"
+                aria-label="Ir à página inicial do Fundo Brasil"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span> Saber Mais Sobre <strong>Fundo Brasil</strong> </span>
+
+                <i
+                  class="fa-solid fa-arrow-up-right-from-square icone"
+                  aria-hidden="true"
+                ></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="mapeamento">
+        <div class="textos">
+          <h2 class="titulo">Vem somar com a gente!</h2>
+
+          <p>
+            Estamos <strong>mapeando membres da comunidade não-binária</strong> que moram na <strong>Paraíba</strong> para ajudar a fortalecer a <strong>promoção dos nossos direitos</strong> enquanto cidadães não-bináries, e <strong>você pode contribuir com a nossa rede</strong>. Vamos juntes!
+          </p>
+
+          <a
+            href="https://forms.gle/6xWbZWccebKZFtEH9"
+            aria-label="Ir ao formulário de mapeamento no Google Forms"
+            target="_blank"
+            rel="noopener noreferrer"
+            id="btn-mapeamento"
+          >
+            <span>Mapeie-se</span>
+
+            <i
+              class="fa-solid fa-arrow-up-right-from-square icone"
+              aria-hidden="true"
+            ></i>
+          </a>
+        </div>
+
+        <figure class="img">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/maos-unidas-desktop.png"
+              type="image/png"
+            />
+
+            <img
+              src="img/maos-unidas-mobile.png"
+              alt="Mãos unidas com as cores da bandeira não-binária"
+            />
+          </picture>
+        </figure>
+      </section>
+
+      <section id="direitos">
+        <p class="frase-efeito">Conscientize-se dos seus próprios direitos!</p>
+
+        <div class="direitos">
+          <a
+            href="https://mpvirtual.mppb.mp.br/public/validacao/9ca043b6dfb560a3f8f98f3b8ec6e728"
+            aria-label="Ir à página de acesso ao provimento de direitos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card"
+          >
+            <figure class="img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/doc-nb-desktop.png"
+                  type="image/png"
+                />
+
+                <img
+                  src="img/doc-nb-mobile.png"
+                  alt="Não-binariedade constando em documentação"
+                />
+              </picture>
+            </figure>
+
+            <span class="texto">
+              Provimento que garante o direito à retificação de prenome e de gênero nos documentos
+            </span>
+          </a>
+
+          <hr />
+
+          <a
+            href="https://www.in.gov.br/en/web/dou/-/resolucao-n-2.265-de-20-de-setembro-de-2019-237203294"
+            aria-label="Ir à página da resolução de leis"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="card"
+          >
+            <figure class="img">
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="img/atendimento-desktop.png"
+                  type="image/png"
+                />
+
+                <img
+                  src="img/atendimento-mobile.png"
+                  alt="Recepção de atendimento"
+                />
+              </picture>
+            </figure>
+
+            <span class="texto">
+              Resolução do CFM que amplia o acesso ao atendimento de pessoas cisdissidentes
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <aside id="conselho-municipal">
+        <div class="textos">
+          <h2 class="titulo">E Falando em direitos ...</h2>
+
+          <p>
+            Fazemos parte do <strong>Conselho Municipal LGBTQIAPNb+ de João Pessoa</strong>, então podemos participar do controle e da implementação de políticas públicas para a nossa população.
+          </p>
+
+          <a
+            href="https://www.instagram.com/conselholgbtjp/"
+            aria-label="Ir ao perfil do Conselho no Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Saber Mais Sobre Esse <strong>Conselho</strong></span>
+
+            <i
+              class="fa-solid fa-arrow-up-right-from-square icone"
+              aria-hidden="true"
+            ></i>
+          </a>
+        </div>
+
+        <figure class="img">
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="img/conselho-municipal-cnb-desktop.png"
+              type="image/png"
+            />
+
+            <img
+              src="img/conselho-municipal-cnb-mobile.png"
+              alt="Coletive Não-Binárie dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa"
+            />
+          </picture>
+        </figure>
+      </aside>
+
+      <button
+        class="fa-solid fa-up-long"
+        id="topo"
+        aria-label="Ícone de cima, clique para voltar ao topo da página"
+        title="Voltar ao topo da página"
+      ></button>
     </main>
 
     <footer id="rodape">
-        <div class="container-logo-contatos">
-            <figure class="logo">
-                <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie">
-            </figure>
+      <div class="container-logo-contatos">
+        <figure class="logo">
+          <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie" />
+        </figure>
 
-            <section class="contatos">
-                <article class="card-tell">
-                    <h3 class="titulo">
-                        <span class="texto">Nossos Contatos</span>
-            
-                        <img src="img/logo-icone/favicon-32x32.png" alt="Ícone do Coletive Não-Binárie">
-                    </h3>
+        <section class="contatos">
+          <article class="card-tell">
+            <h3 class="titulo">
+              <span class="texto">Nossos Contatos</span>
 
-                    <ul class="tells">
-                        <li>
-                            <a href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="Ir ao perfil do Coletive Não-Binárie no Instagram" target="_blank" rel="noopener noreferrer" class="tell">
-                                <i class="fa-brands fa-instagram icone"aria-hidden="true"></i>
-
-                                <span class="texto">
-                                    @coletivenaobinariepb
-                                </span>
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <a href="mailto:coletivenaobinariepb@gmail.com" aria-label="Email do Coletive Não-Binárie para contatar" target="_blank" rel="noopener noreferrer" class="tell">
-                                <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
-                                <span class="texto mobile">
-                                    coletivenaobinariepb @gmail.com
-                                </span>
-                                <span class="texto desktop">
-                                    coletivenaobinariepb@gmail.com
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-
-                <article class="card-tell">
-                    <h3 class="titulo">
-                        <span class="texto">Desenvolvedore Web</span>
-
-                        <i class="fa-solid fa-code icone" aria-hidden="true"></i>
-                    </h3>
-
-                    <ul class="tells">
-                        <li>
-                            <a href="https://www.linkedin.com/in/enne-jim-pessoa/" aria-label="Ir ao perfil de Enne no LinkedIn" target="_blank" rel="noopener noreferrer" class="tell">
-                                <i class="fa-brands fa-linkedin icone" aria-hidden="true"></i>
-
-                                <span class="texto">
-                                    Enne Jim Pessoa
-                                </span>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="mailto:Enne.Pessoa@gmail.com" aria-label="Email de Enne para contatar" target="_blank" rel="noopener noreferrer" class="tell">
-                                <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
-
-                                <span class="texto">
-                                    Enne.Pessoa@gmail.com
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </article>
-            </section>
-        </div>
-
-        <article class="tells-emergencia">
-            <p class="texto">
-                Em caso de violência ou preconceito, <strong>NÃO SE CALE!</strong>
-            </p>
+              <img
+                src="img/logo-icone/favicon-32x32.png"
+                alt="Ícone do Coletive Não-Binárie"
+              />
+            </h3>
 
             <ul class="tells">
-                <li>
-                    <a href="tel:100" aria-label="ligar para 100" class="tell">
-                        <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+              <li>
+                <a
+                  href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  aria-label="Ir ao perfil do Coletive Não-Binárie no Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tell"
+                >
+                  <i
+                    class="fa-brands fa-instagram icone"
+                    aria-hidden="true"
+                  ></i>
 
-                        <span>
-                            Direitos Humanos <strong>Nacional (100)</strong>
-                        </span>
-                    </a>
-                </li>
+                  <span class="texto"> @coletivenaobinariepb </span>
+                </a>
+              </li>
 
-                <li>
-                    <a href="tel:155" aria-label="ligar para 155" class="tell">
-                        <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+              <li>
+                <a
+                  href="mailto:coletivenaobinariepb@gmail.com"
+                  aria-label="Email do Coletive Não-Binárie para contatar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tell"
+                >
+                  <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
 
-                        <span>
-                            Direitos Humanos <strong>Estadual (155)</strong>
-                        </span>
-                    </a>
-                </li>
+                  <span class="texto mobile">
+                    coletivenaobinariepb @gmail.com
+                  </span>
+                  
+                  <span class="texto desktop">
+                    coletivenaobinariepb@gmail.com
+                  </span>
+                </a>
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <figure class="img">
-            <img src="img/baleia.png" alt="Baleia pintada com as cores da bandeira da comunidade">
-        </figure>
+          <article class="card-tell">
+            <h3 class="titulo">
+              <span class="texto">Desenvolvedore Web</span>
+
+              <i class="fa-solid fa-code icone" aria-hidden="true"></i>
+            </h3>
+
+            <ul class="tells">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/enne-jim-pessoa/"
+                  aria-label="Ir ao perfil de Enne no LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tell"
+                >
+                  <i class="fa-brands fa-linkedin icone" aria-hidden="true"></i>
+
+                  <span class="texto"> Enne Jim Pessoa </span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:Enne.Pessoa@gmail.com"
+                  aria-label="Email de Enne para contatar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tell"
+                >
+                  <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
+
+                  <span class="texto"> Enne.Pessoa@gmail.com </span>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </div>
+
+      <article class="tells-emergencia">
+        <p class="texto">
+          Em caso de violência ou preconceito, <strong>NÃO SE CALE!</strong>
+        </p>
+
+        <ul class="tells">
+          <li>
+            <a href="tel:100" aria-label="ligar para 100" class="tell">
+              <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+
+              <span> Direitos Humanos <strong>Nacional (100)</strong> </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:155" aria-label="ligar para 155" class="tell">
+              <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
+
+              <span> Direitos Humanos <strong>Estadual (155)</strong> </span>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <figure class="img">
+        <img
+          src="img/baleia.png"
+          alt="Baleia pintada com as cores da bandeira da comunidade"
+        />
+      </figure>
     </footer>
-</body>
+  </body>
 </html>
