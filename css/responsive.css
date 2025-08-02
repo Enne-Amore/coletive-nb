@@ -166,7 +166,7 @@
 
     #conteudo #mapeamento .textos a,
     #conteudo #conselho-municipal .textos a {
-        margin: .7em 0;
+        margin: .7em 0 .1em;
         max-width: fit-content;
     }
 
@@ -836,6 +836,13 @@
     }
     #conteudo #membres .diretories .ilustracoes hr {
         transform: translateY(550%);
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) and (orientation: landscape) {
+    #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
+        padding-right: 32px;
+        font-size: 2.8em;
     }
 }
 

@@ -21,7 +21,7 @@
 #cabecalho .menu-icon {
     color: var(--branca);
     text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-    font-size: 5.5em;
+    font-size: 38px;
     cursor: pointer;
 }
 #cabecalho #modal-container {
@@ -96,6 +96,7 @@
     padding: 15px 30px;
     border-radius: 30px;
     cursor: pointer;
+    user-select: none;
 }
 #cabecalho #modal-container #menu .nav .menu .link:hover a,
 #cabecalho #modal-container #menu .nav .menu .link a:focus-visible,
@@ -153,10 +154,10 @@
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
     background-color: #fffffD0D;
-    padding: 28px 0 15px;
+    padding: 24px 0 13px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
-    font-size: 24px;
+    font-size: 22px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label {

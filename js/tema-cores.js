@@ -1,58 +1,46 @@
-const html = document.body;
-const prefs = window.matchMedia('(prefers-color-scheme: dark)');
+const html = document.documentElement;
+const prefs = window.matchMedia("(prefers-color-scheme: dark)");
 const mobile_radios = document.querySelectorAll('input[name="mobile-theme"]');
 const desktop_radios = document.querySelectorAll('input[name="desktop-theme"]');
-const labels = document.querySelectorAll('label')
+const labels = document.querySelectorAll("label");
 
 function aplicarTema(tema) {
-  html.classList.toggle('dark-mode', tema === 'dark');
-  localStorage.setItem('tema', tema);
+  html.classList.toggle("dark-mode", tema === "dark");
 }
 
 function temaInicial() {
-  const salvo = localStorage.getItem('tema');
-  if (salvo === 'light' || salvo === 'dark') {
-    aplicarTema(salvo);
-    document.querySelector(`input[name="mobile-theme"][value="${salvo}"]`).checked = true;
-    document.querySelector(`input[name="desktop-theme"][value="${salvo}"]`).checked = true;
-  } else {
-    const sistema = prefs.matches ? 'dark' : 'light';
-    aplicarTema(sistema);
-    document.querySelector(`input[name="mobile-theme"][value="${sistema}"]`).checked = true;
-    document.querySelector(`input[name="desktop-theme"][value="${sistema}"]`).checked = true;
-  }
+  const sistema = prefs.matches ? "dark" : "light";
+  aplicarTema(sistema);
+
+  document.querySelector(
+    `input[name="mobile-theme"][value="${sistema}"]`
+  ).checked = true;
+  document.querySelector(
+    `input[name="desktop-theme"][value="${sistema}"]`
+  ).checked = true;
 }
 
 // Escutar mudança de qualquer um dos rádios
-mobile_radios.forEach(radio => {
-  radio.addEventListener('change', () => {
+mobile_radios.forEach((radio) => {
+  radio.addEventListener("change", () => {
     if (radio.checked) aplicarTema(radio.value);
   });
 });
 
-desktop_radios.forEach(radio => {
-  radio.addEventListener('change', () => {
+desktop_radios.forEach((radio) => {
+  radio.addEventListener("change", () => {
     if (radio.checked) aplicarTema(radio.value);
   });
 });
-labels.forEach(label => {
-  label.addEventListener('keypress', (tecla) => {
-      if (tecla.key === "Enter") {
-          tecla.target.click()
-          label.focus()
-      }
-  })
-})
 
-// Ajustar tema se a preferência do sistema mudar dinâmicamente
-prefs.addEventListener('change', e => {
-  const salvo = localStorage.getItem('tema');
-  if (!salvo) {
-    const novo = e.matches ? 'dark' : 'light';
-    aplicarTema(novo);
-    document.querySelector(`input[name="mobile-theme"][value="${novo}"]`).checked = true;
-    document.querySelector(`input[name="desktop-theme"][value="${novo}"]`).checked = true;
-  }
+// Mudar tema via teclado
+labels.forEach((label) => {
+  label.addEventListener("keypress", (tecla) => {
+    if (tecla.key === "Enter") {
+      tecla.target.click();
+      label.focus();
+    }
+  });
 });
 
 temaInicial();
