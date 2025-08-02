@@ -96,6 +96,7 @@
     padding: 15px 30px;
     border-radius: 30px;
     cursor: pointer;
+    user-select: none;
 }
 #cabecalho #modal-container #menu .nav .menu .link:hover a,
 #cabecalho #modal-container #menu .nav .menu .link a:focus-visible,

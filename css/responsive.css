@@ -166,7 +166,7 @@
 
     #conteudo #mapeamento .textos a,
     #conteudo #conselho-municipal .textos a {
-        margin: .7em 0;
+        margin: .7em 0 .1em;
         max-width: fit-content;
     }
 
