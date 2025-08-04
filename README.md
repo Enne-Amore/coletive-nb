@@ -1,6 +1,6 @@
-# 💜 Coletive Não-Binárie
+# 💜 Coletive Não-Binárie da Paraíba
  
- Website exclusivo sobre o Coletive Não-Binárie e suas atividades, finalidades, membres, etc
+ Website exclusivo sobre o Coletive Não-Binárie da Paraíba e suas atividades, finalidades, membres, etc
 
 
 ## 🌐 Aplicação Hospedada
