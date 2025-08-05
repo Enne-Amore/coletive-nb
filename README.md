@@ -1,4 +1,6 @@
-# 💜 Coletive Não-Binárie da Paraíba
+<img src="img/logo-icone/android-chrome-192x192.png" alt="Logo do site" width="50" height="50">
+
+# Coletive Não-Binárie da Paraíba
  
  Website exclusivo sobre o Coletive Não-Binárie da Paraíba e suas atividades, finalidades, membres, etc
 
