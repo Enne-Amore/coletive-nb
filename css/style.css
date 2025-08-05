@@ -2,89 +2,97 @@
 
 /* Cabeçalho */
 #cabecalho {
-    background-color: var(--preta);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 25px;
-    padding-left: 10px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-preta);
+  background-color: var(--preta);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  padding-left: 10px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-preta);
 }
 #cabecalho .logo {
-    width: 60vw;
-    max-width: 300px;
-    height: auto;
+  width: 60vw;
+  max-width: 300px;
+  height: auto;
 }
 #cabecalho .logo img {
-    filter: drop-shadow(0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza));
+  filter: drop-shadow(
+    0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza)
+  );
 }
 #cabecalho .menu-icon {
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-    font-size: 38px;
-    cursor: pointer;
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  font-size: 38px;
+  cursor: pointer;
 }
 #cabecalho #modal-container {
-    background-color: transparent;
-    display: none;
-    width: max-content;
-    height: max-content;
-    z-index: 3;
-    border: 0;
+  background-color: transparent;
+  display: none;
+  width: max-content;
+  height: max-content;
+  z-index: 3;
+  border: 0;
 }
 #cabecalho #modal-container #transparencia {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #00000080;
-    backdrop-filter: blur(2px);
-    animation: fade .1s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #00000080;
+  backdrop-filter: blur(2px);
+  animation: fade 0.1s ease-out;
 }
 #cabecalho #modal-container #menu {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: radial-gradient(50% 50% at 50% 50%, var(--cinza) 0%, var(--preta) 100%);
-    box-shadow: 4px 4px 4px 0px var(--sombra-preta);
-    padding: 5.5em 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    width: 65vw;
-    height: 100vh;
-    animation: menu-bar .35s ease-out .1s both;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    var(--cinza) 0%,
+    var(--preta) 100%
+  );
+  box-shadow: 4px 4px 4px 0px var(--sombra-preta);
+  padding: 5.5em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  width: 65vw;
+  height: 100vh;
+  animation: menu-bar 0.35s ease-out 0.1s both;
 }
 #cabecalho #modal-container #menu .titulo {
-    font-size: 24px;
-    font-family: var(--titulo);
-    font-weight: 400;
-    text-shadow: 4px 4px 4px var(--sombra-amarela-2), 4px 4px 4px var(--sombra-cinza);
-    background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-family: var(--titulo);
+  font-weight: 400;
+  text-shadow: 4px 4px 4px var(--sombra-amarela-2),
+    4px 4px 4px var(--sombra-cinza);
+  background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #cabecalho #modal-container #menu hr {
-    border-color: var(--amarela);
-    box-shadow: 0px 4px 4px 0px var(--sombra-cinza) inset;
-    width: 100%;
-    margin: 1em auto .9em;
+  border-color: var(--amarela);
+  box-shadow: 0px 4px 4px 0px var(--sombra-cinza) inset;
+  width: 100%;
+  margin: 1em auto 0.9em;
 }
 #cabecalho #modal-container #menu .nav .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
 }
 #cabecalho #modal-container #menu .nav .menu .link,
 #cabecalho #modal-container #menu .nav .menu .link-principal,
 #cabecalho .nav-desktop .menu .link,
 #cabecalho .nav-desktop .menu .link-principal {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 #cabecalho #modal-container #menu .nav .menu .link,
 #cabecalho #modal-container #menu .nav .menu .link a,
@@ -93,787 +101,876 @@
 #cabecalho .nav-desktop .menu .link a,
 #cabecalho .nav-desktop .menu .link-principal,
 #cabecalho .nav-desktop .menu .link-principal a {
-    padding: 15px 30px;
-    border-radius: 30px;
-    cursor: pointer;
-    user-select: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  user-select: none;
 }
 #cabecalho #modal-container #menu .nav .menu .link:hover a,
 #cabecalho #modal-container #menu .nav .menu .link a:focus-visible,
 #cabecalho .nav-desktop .menu .link:hover a,
 #cabecalho .nav-desktop .menu .link a:focus-visible {
-    color: var(--amarela);
-    text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
+  color: var(--amarela);
+  text-shadow: 4px 4px 4px var(--sombra-amarela),
+    4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .nav .menu .link:active a,
 #cabecalho .nav-desktop .menu .link:active a {
-    color: var(--laranja);
-    text-shadow: 4px 4px 4px var(--sombra-laranja), 4px 4px 4px var(--sombra-cinza);
+  color: var(--laranja);
+  text-shadow: 4px 4px 4px var(--sombra-laranja),
+    4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal {
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal,
 #cabecalho #modal-container #menu .nav .menu .link-principal a,
 #cabecalho .nav-desktop .menu .link-principal {
-    background-color: var(--amarela);
-    box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
-    font-weight: 600;
+  background-color: var(--amarela);
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+  font-weight: 600;
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal:hover a,
 #cabecalho #modal-container #menu .nav .menu .link-principal a:focus-visible,
 #cabecalho .nav-desktop .menu .link-principal:hover a,
 #cabecalho .nav-desktop .menu .link-principal a:focus-visible {
-    background-color: var(--laranja);
-    box-shadow: 0px 4px 4px 0px var(--sombra-laranja), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--preta);
-    text-shadow: 4px 4px 4px var(--sombra-preta);
+  background-color: var(--laranja);
+  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--preta);
+  text-shadow: 4px 4px 4px var(--sombra-preta);
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal:active a,
 #cabecalho .nav-desktop .menu .link-principal:active a {
-    background-color: var(--branca);
-    box-shadow: 0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--laranja);
-    text-shadow: 4px 4px 4px var(--sombra-laranja), 4px 4px 4px var(--sombra-cinza);
+  background-color: var(--branca);
+  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--laranja);
+  text-shadow: 4px 4px 4px var(--sombra-laranja),
+    4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .btn-colors,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
-    display: flex;
-    align-items: center;
-    margin-top: 4em;
-    box-shadow: 0px 4px 4px 0px var(--sombra-cinza);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 4em;
+  box-shadow: 0px 4px 4px 0px var(--sombra-cinza);
+  cursor: pointer;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color input,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color input {
-    position: absolute;
-    width: 0;
-    height: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
-    background-color: #fffffD0D;
-    padding: 24px 0 13px;
+  background-color: #fffffd0d;
+  padding: 24px 0 13px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
-    font-size: 22px;
+  font-size: 22px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label {
-    padding-left: 20px;
-    padding-right: 15px;
-    border-radius: 30px 0px 0px 30px;
-    border: 2px solid var(--amarela);
+  padding-left: 20px;
+  padding-right: 15px;
+  border-radius: 30px 0px 0px 30px;
+  border: 2px solid var(--amarela);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light label .fa-sun,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label .fa-sun {
-    color: var(--amarela);
-    text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
+  color: var(--amarela);
+  text-shadow: 4px 4px 4px var(--sombra-amarela),
+    4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light input:checked ~ label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light input:checked ~ label {
-    background-color: var(--amarela);
+  background-color: var(--amarela);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.light input:checked ~ label .fa-sun,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light input:checked ~ label .fa-sun {
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.dark label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label {
-    padding-left: 15px;
-    padding-right: 20px;
-    border-radius: 0px 30px 30px 0px;
-    border: 2px solid var(--roxa-clara);
+  padding-left: 15px;
+  padding-right: 20px;
+  border-radius: 0px 30px 30px 0px;
+  border: 2px solid var(--roxa-clara);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.dark label .fa-moon,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label .fa-moon {
-    color: var(--roxa-clara);
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 4px 4px 4px var(--sombra-cinza);
+  color: var(--roxa-clara);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.dark input:checked ~ label,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark input:checked ~ label {
-    background-color: var(--roxa-clara);
+  background-color: var(--roxa-clara);
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color.dark input:checked ~ label .fa-moon,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark input:checked ~ label .fa-moon {
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 #cabecalho .nav-desktop {
-    display: none;
+  display: none;
 }
 
 /* Conteúdo */
 #conteudo {
-    background-color: var(--branca);
+  background-color: var(--branca);
 }
 
 #conteudo #introducao {
-    background: url(../img/fundo-roxo-mobile.png) no-repeat;
-    background-size: cover;
-    padding: 8em 0 16em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4em;
+  background: url(../img/fundo-roxo-mobile.png) no-repeat;
+  background-size: cover;
+  padding: 8em 0 16em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4em;
 }
 #conteudo #introducao .ilustracao {
-    width: 90vw;
-    height: auto;
+  width: 90vw;
+  height: auto;
 }
 #conteudo #introducao .ilustracao img,
 #rodape .img img {
-    background: none;
-    filter: drop-shadow(0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza));
-    pointer-events: none;
+  background: none;
+  filter: drop-shadow(
+    0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza)
+  );
+  pointer-events: none;
 }
 #conteudo #introducao .frase-efeito {
-    text-align: center;
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 4px 4px 4px var(--sombra-cinza);
-    font-family: var(--titulo);
-    font-size: 3.8em;
-    font-weight: 400;
-    line-height: 1.7em;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    background: linear-gradient(106deg, var(--roxa-clara) 0%, var(--roxa-escura) 97.93%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  text-align: center;
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
+  font-family: var(--titulo);
+  font-size: 3.8em;
+  font-weight: 400;
+  line-height: 1.7em;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    106deg,
+    var(--roxa-clara) 0%,
+    var(--roxa-escura) 97.93%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 #conteudo #introducao .frase-efeito strong {
-    font-weight: 400;
-    background: var(--amarela);
-    background-clip: padding-box;
-    -webkit-background-clip: padding-box;
-    -webkit-text-fill-color: var(--roxa-clara);
-    box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
-    padding: .37em .1em 0 .15em;
-    border-radius: 1px;
+  font-weight: 400;
+  background: var(--amarela);
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  -webkit-text-fill-color: var(--roxa-clara);
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
+  padding: 0.37em 0.1em 0 0.15em;
+  border-radius: 1px;
 }
 
 #conteudo #finalidades,
 #conteudo #mapeamento,
 #conteudo #conselho-municipal {
-    display: flex;
-    flex-direction: column;
-    padding: 35px 30px 80px;
-    justify-content: center;
-    align-items: center;
-    gap: 6em;
-    align-self: stretch;
-    background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura), 0px 4px 4px 0px var(--sombra-cinza);
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 6em;
+  align-self: stretch;
+  background: linear-gradient(
+    180deg,
+    var(--roxa-clara) 0%,
+    var(--roxa-escura) 100%
+  );
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #finalidades .textos,
 #conteudo #mapeamento .textos,
 #conteudo #conselho-municipal .textos {
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 #conteudo #finalidades .textos .titulo,
 #conteudo #mapeamento .textos .titulo {
-    background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 4px 4px 4px var(--sombra-amarela-2), 4px 4px 4px var(--sombra-cinza);
+  background: linear-gradient(90deg, var(--amarela) 0%, var(--amarela-2) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 4px var(--sombra-amarela-2),
+    4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #finalidades .textos .titulo,
 #conteudo #mapeamento .textos .titulo,
 #conteudo #conselho-municipal .textos .titulo {
-    font-size: 24px;
-    font-family: var(--titulo);
-    font-weight: 400;
-    line-height: 35px;
+  font-size: 24px;
+  font-family: var(--titulo);
+  font-weight: 400;
+  line-height: 35px;
 }
 #conteudo #finalidades .textos .lista {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding-left: 4.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 4.5em;
 }
 #conteudo #finalidades .textos .lista li,
 #conteudo #mapeamento .textos p,
 #conteudo #conselho-municipal .textos p {
-    position: relative;
-    font-size: 20px;
-    font-family: var(--texto);
-    line-height: 35px;
+  position: relative;
+  font-size: 20px;
+  font-family: var(--texto);
+  line-height: 35px;
 }
 #conteudo #finalidades .textos .lista li::before {
-    content: "⭐";
-    position: absolute;
-    left: -12%;
+  content: "⭐";
+  position: absolute;
+  left: -12%;
 }
 #conteudo #finalidades .textos .lista li strong,
 #conteudo #mapeamento .textos p strong {
-    font-weight: bolder;
-    color: var(--amarela);
-    text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
+  font-weight: bolder;
+  color: var(--amarela);
+  text-shadow: 4px 4px 4px var(--sombra-amarela),
+    4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #finalidades .img,
 #conteudo #mapeamento .img,
 #conteudo #conselho-municipal .img {
-    width: 315px;
-    height: auto;
+  width: 315px;
+  height: auto;
 }
 #conteudo #finalidades .img img,
 #conteudo #mapeamento .img img,
 #conteudo #conselho-municipal .img img {
-    border-radius: 35px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 
 #conteudo #atividades,
 #conteudo #parceires,
 #conteudo #direitos {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8em;
-    padding: 100px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8em;
+  padding: 100px 0;
 }
 #conteudo #atividades {
-    padding-bottom: 110px;
+  padding-bottom: 110px;
 }
 #conteudo #atividades .titulo,
 #conteudo #parceires .titulo {
-    padding: 22px 40px 15px 40px;
-    background: linear-gradient(90deg, #713CA600 0%, var(--roxa-escura) 50%, #713CA600 100%);
-    text-align: center;
-    font-family: var(--titulo);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 35px;
-    width: 90%;
+  padding: 22px 40px 15px 40px;
+  background: linear-gradient(
+    90deg,
+    #713ca600 0%,
+    var(--roxa-escura) 50%,
+    #713ca600 100%
+  );
+  text-align: center;
+  font-family: var(--titulo);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  width: 90%;
 }
 #conteudo #atividades .lista {
-    display: flex;
-    flex-direction: column;
-    gap: 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
 }
 #conteudo #atividades .lista .atividade hr {
-    width: 90%;
-    height: 10px;
-    margin: auto;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(90deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  width: 90%;
+  height: 10px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    var(--roxa-clara) 0%,
+    var(--roxa-escura) 100%
+  );
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #atividades .lista .atividade p {
-    border-radius: 0px 0px 40px 40px;
-    background: var(--amarela);
-    box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--roxa-escura);
-    text-shadow: 4px 4px 4px var(--sombra-roxa-escura), 4px 4px 4px var(--sombra-cinza);
-    text-align: center;
-    font-family: var(--texto);
-    font-size: 18px;
-    font-style: normal;
-    line-height: 30px;
-    padding: 10px 15px 20px;
-    margin: auto;
-    width: 85%;
+  border-radius: 0px 0px 40px 40px;
+  background: var(--amarela);
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--roxa-escura);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
+    4px 4px 4px var(--sombra-cinza);
+  text-align: center;
+  font-family: var(--texto);
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+  padding: 10px 15px 20px;
+  margin: auto;
+  width: 85%;
 }
 #conteudo #atividades .lista .atividade p strong {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 #conteudo #atividades .ilustracoes {
-    margin-top: -1em;
+  margin-top: -1em;
 }
 #conteudo #membres .ilustracoes,
 #conteudo #atividades .ilustracoes {
-    position: relative;
-    width: 100%;
-    height: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 #conteudo #membres .ilustracoes hr,
 #conteudo #atividades .ilustracoes hr {
-    border: 16px solid var(--amarela);
-    width: 100%;
-    box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
-    transform: translateY(350%);
+  border: 16px solid var(--amarela);
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
+  transform: translateY(350%);
 }
 #conteudo #membres .ilustracoes .imgs-container,
 #conteudo #atividades .ilustracoes .imgs-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow-x: auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
 }
 #conteudo #membres .ilustracoes .imgs-container::-webkit-scrollbar,
 #conteudo #atividades .ilustracoes .imgs-container::-webkit-scrollbar {
-    height: 0;
+  height: 0;
 }
 #conteudo #membres .ilustracoes .imgs,
 #conteudo #atividades .ilustracoes .imgs {
-    display: flex;
-    gap: 8em;
-    width: max-content;
-    height: auto;
-    padding-left: calc(100vw - 88.5vw);
-    padding-right: calc(100vw - 88.5vw);
-    overflow-x: auto;
+  display: flex;
+  gap: 8em;
+  width: max-content;
+  height: auto;
+  padding-left: calc(100vw - 88.5vw);
+  padding-right: calc(100vw - 88.5vw);
+  overflow-x: auto;
 }
 #conteudo #membres .ilustracoes .imgs figure,
 #conteudo #atividades .ilustracoes .imgs figure {
-    border-radius: 4.5em;
-    overflow: hidden;
-    width: 77vw;
-    height: max-content;
-    z-index: 1;
+  border-radius: 4.5em;
+  overflow: hidden;
+  width: 77vw;
+  height: max-content;
+  z-index: 1;
 }
 #conteudo #membres .ilustracoes .imgs figure img,
 #conteudo #atividades .ilustracoes .imgs figure img {
-    border-radius: 35px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #membres .ilustracoes .aviso,
 #conteudo #atividades .ilustracoes .aviso {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: .5em;
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 3em;
-    user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 3em;
+  user-select: none;
 }
 #conteudo #membres .ilustracoes .aviso .icone,
 #conteudo #atividades .ilustracoes .aviso .icone {
-    font-size: 1.3em;
-    margin-bottom: -1px;
+  font-size: 1.3em;
+  margin-bottom: -1px;
 }
 
 #conteudo #membres {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: stretch;
-    gap: 100px;
-    padding: 40px 0px 100px;
-    background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
-    box-shadow: 0px 4px 4px 0px var(--sombra-amarela), 0px 4px 4px 0px var(--sombra-cinza);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  gap: 100px;
+  padding: 40px 0px 100px;
+  background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #membres .frase-efeito,
 #conteudo #direitos .frase-efeito {
-    text-align: center;
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 0px 4px 4px var(--sombra-cinza);
-    font-family: var(--titulo);
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 40px;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    background: linear-gradient(91deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: auto 5%;
+  text-align: center;
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    0px 4px 4px var(--sombra-cinza);
+  font-family: var(--titulo);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    91deg,
+    var(--roxa-escura) 0%,
+    var(--roxa-clara) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: auto 5%;
 }
 #conteudo #membres .ilustracoes hr {
-    border-color: var(--roxa-clara);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  border-color: var(--roxa-clara);
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #membres .diretories .ilustracoes hr {
-    transform: translateY(480%);
+  transform: translateY(480%);
 }
 #conteudo #membres .diretories .ilustracoes .imgs {
-    padding-left: calc(100vw - 85vw);
-    padding-right: calc(100vw - 85vw);
+  padding-left: calc(100vw - 85vw);
+  padding-right: calc(100vw - 85vw);
 }
 #conteudo #membres .diretories .ilustracoes .imgs figure {
-    position: relative;
-    width: 70vw;
+  position: relative;
+  width: 70vw;
 }
 #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
-    position: absolute;
-    font-family: var(--texto);
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-    bottom: 1.5vh;
-    user-select: none;
+  position: absolute;
+  font-family: var(--texto);
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  bottom: 1.5vh;
+  user-select: none;
 }
 
 #conteudo #parceires .parceires,
 #conteudo #parceires .parceires .parceire {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8em;
 }
 #conteudo #parceires .parceires .parceire {
-    gap: 5em;
+  gap: 5em;
 }
 #conteudo #parceires .parceires .parceire .img {
-    width: 250px;
-    height: auto;
+  width: 250px;
+  height: auto;
 }
 #conteudo #parceires .parceires .parceire .img img {
-    border-radius: 35px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto {
-    display: flex;
-    width: 315px;
-    padding: 18px 25px 30px 25px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 25px;
-    border-radius: 30px;
-    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
-    box-shadow: 4px 4px 4px 0px var(--sombra-amarela), 4px 4px 4px 0px var(--sombra-cinza);
+  display: flex;
+  width: 315px;
+  padding: 18px 25px 30px 25px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-radius: 30px;
+  background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+  box-shadow: 4px 4px 4px 0px var(--sombra-amarela),
+    4px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto p {
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
-    font-family: var(--texto);
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 35px;
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+  font-family: var(--texto);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
 }
 #conteudo #parceires .parceires .parceire .texto p strong,
 #conteudo #conselho-municipal .textos p strong {
-    font-weight: bolder;
-    color: var(--roxa-clara);
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 4px 4px 4px var(--sombra-cinza);
+  font-weight: bolder;
+  color: var(--roxa-clara);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto a,
 #conteudo #mapeamento .textos a,
 #conteudo #conselho-municipal .textos a {
-    display: flex;
-    padding: 15px 35px;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    align-self: stretch;
-    border-radius: 30px;
-    border: 2px solid var(--roxa-clara);
-    background: #FFFFFD33;
-    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara), 4px 4px 4px 0px var(--sombra-cinza);
-    color: var(--roxa-clara);
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 4px 4px 4px var(--sombra-cinza);
-    text-align: center;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 32px;
-    user-select: none;
+  display: flex;
+  padding: 15px 35px;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  align-self: stretch;
+  border-radius: 30px;
+  border: 2px solid var(--roxa-clara);
+  background: #fffffd33;
+  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
+    4px 4px 4px 0px var(--sombra-cinza);
+  color: var(--roxa-clara);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  user-select: none;
 }
 #conteudo #parceires .parceires .parceire .texto a:hover,
 #conteudo #parceires .parceires .parceire .texto a:focus-visible,
 #conteudo #conselho-municipal .textos a:hover,
 #conteudo #conselho-municipal .textos a:focus-visible {
-    background-color: var(--roxa-clara);
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  background-color: var(--roxa-clara);
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto a:active,
 #conteudo #conselho-municipal .textos a:active {
-    background-color: var(--roxa-escura);
-    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura), 4px 4px 4px 0px var(--sombra-cinza);
+  background-color: var(--roxa-escura);
+  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
+    4px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto a strong,
 #conteudo #conselho-municipal .textos a strong {
-    font-weight: 800;
+  font-weight: 800;
 }
 #conteudo #parceires .parceires .parceire .texto a .icone,
 #conteudo #conselho-municipal .textos a .icone {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 #conteudo #mapeamento .textos a {
-    background-color: var(--amarela);
-    box-shadow: 4px 4px 4px 0px var(--sombra-amarela), 4px 4px 4px 0px var(--sombra-cinza);
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
-    margin: .9em auto 1em;
-    max-width: 260px;
-    gap: 12px;
+  background-color: var(--amarela);
+  box-shadow: 4px 4px 4px 0px var(--sombra-amarela),
+    4px 4px 4px 0px var(--sombra-cinza);
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+  margin: 0.9em auto 1em;
+  max-width: 260px;
+  gap: 12px;
 }
 #conteudo #mapeamento .textos a:hover,
 #conteudo #mapeamento .textos a:focus-visible {
-    background-color: var(--laranja);
-    box-shadow: 4px 4px 4px 0px var(--sombra-laranja), 4px 4px 4px 0px var(--sombra-cinza);
-    color: var(--preta);
-    text-shadow: 4px 4px 4px var(--sombra-preta);
+  background-color: var(--laranja);
+  box-shadow: 4px 4px 4px 0px var(--sombra-laranja),
+    4px 4px 4px 0px var(--sombra-cinza);
+  color: var(--preta);
+  text-shadow: 4px 4px 4px var(--sombra-preta);
 }
 #conteudo #mapeamento .textos a:active {
-    background-color: var(--branca);
-    box-shadow: 4px 4px 4px 0px var(--sombra-branca), 4px 4px 4px 0px var(--sombra-cinza);
-    color: var(--laranja);
-    text-shadow: 4px 4px 4px var(--sombra-laranja), 4px 4px 4px var(--sombra-cinza);
+  background-color: var(--branca);
+  box-shadow: 4px 4px 4px 0px var(--sombra-branca),
+    4px 4px 4px 0px var(--sombra-cinza);
+  color: var(--laranja);
+  text-shadow: 4px 4px 4px var(--sombra-laranja),
+    4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #mapeamento .textos a .icone {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 #conteudo #direitos {
-    padding-top: 90px;
+  padding-top: 90px;
 }
 #conteudo #direitos .frase-efeito {
-    margin: auto 8%;
+  margin: auto 8%;
 }
 #conteudo #direitos .direitos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 #conteudo #direitos .direitos .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 35px;
-    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
-    box-shadow: 4px 4px 4px 0px var(--sombra-amarela), 4px 4px 4px 0px var(--sombra-cinza);
-    width: 280px;
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 35px;
+  background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+  box-shadow: 4px 4px 4px 0px var(--sombra-amarela),
+    4px 4px 4px 0px var(--sombra-cinza);
+  width: 280px;
+  user-select: none;
 }
 #conteudo #direitos .direitos .card:hover,
 #conteudo #direitos .direitos .card:focus-visible {
-    background: linear-gradient(100deg, var(--roxa-escura) 0%, var(--roxa-clara) 100%);
-    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara), 4px 4px 4px 0px var(--sombra-cinza);
+  background: linear-gradient(
+    100deg,
+    var(--roxa-escura) 0%,
+    var(--roxa-clara) 100%
+  );
+  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
+    4px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #direitos .direitos .card:hover .img img,
 #conteudo #direitos .direitos .card:focus-visible .img img {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 #conteudo #direitos .direitos .card:hover .texto,
 #conteudo #direitos .direitos .card:focus-visible .texto {
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #direitos .direitos .card:active {
-    background: linear-gradient(100deg, var(--roxa-clara) 0%, var(--roxa-escura) 100%);
-    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura), 4px 4px 4px 0px var(--sombra-cinza);
+  background: linear-gradient(
+    100deg,
+    var(--roxa-clara) 0%,
+    var(--roxa-escura) 100%
+  );
+  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
+    4px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #direitos .direitos .card .img {
-    width: 280px;
-    height: auto;
-    border-radius: 35px;
-    overflow: hidden;
+  width: 280px;
+  height: auto;
+  border-radius: 35px;
+  overflow: hidden;
 }
 #conteudo #direitos .direitos .card .img img {
-    border-radius: 35px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
-    transition: .3s ease-out;
-    pointer-events: none;
+  border-radius: 35px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
+  transition: 0.3s ease-out;
+  pointer-events: none;
 }
 #conteudo #direitos .direitos .card .texto {
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 35px;
-    width: 85%;
-    margin: .6em auto 1em;
-    transition: .2s ease-out;
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 35px;
+  width: 85%;
+  margin: 0.6em auto 1em;
+  transition: 0.2s ease-out;
 }
 #conteudo #direitos .direitos hr {
-    border-color: var(--roxa-clara);
-    box-shadow: 0px 0px 6px 0px var(--sombra-roxa-clara), 0px 0px 6px 0px var(--sombra-cinza);
-    width: 105%;
+  border-color: var(--roxa-clara);
+  box-shadow: 0px 0px 6px 0px var(--sombra-roxa-clara),
+    0px 0px 6px 0px var(--sombra-cinza);
+  width: 105%;
 }
 
 #conteudo #conselho-municipal {
-    background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
-    box-shadow: 0px 4px 4px 0px var(--sombra-laranja), 0px 4px 4px 0px var(--sombra-cinza);
+  background: linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
+  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #conselho-municipal .textos .titulo {
-    background: linear-gradient(90deg, var(--roxa-escura) -0.06%, var(--roxa-clara) 100.06%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 4px 4px 4px var(--sombra-roxa-clara), 4px 4px 4px var(--sombra-cinza);
-    width: 70%;
+  background: linear-gradient(
+    90deg,
+    var(--roxa-escura) -0.06%,
+    var(--roxa-clara) 100.06%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
+    4px 4px 4px var(--sombra-cinza);
+  width: 70%;
 }
 #conteudo #conselho-municipal .textos p {
-    color: var(--cinza);
-    text-shadow: 4px 4px 4px var(--sombra-cinza);
+  color: var(--cinza);
+  text-shadow: 4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #conselho-municipal .textos a {
-    margin: .9em auto 1em;
-    padding: 15px 25px;
-    max-width: 290px;
+  margin: 0.9em auto 1em;
+  padding: 15px 25px;
+  max-width: 290px;
 }
 
 #conteudo #topo {
-    position: fixed;
-    right: 4.5%;
-    bottom: 6%;
-    background-color: var(--roxa-clara);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-    border-radius: 50%;
-    padding: 5% 7.5%;
-    font-size: 6em;
-    cursor: pointer;
-    transition-duration: .4s;
-    z-index: 2;
-    animation: fade .5s ease;
+  position: fixed;
+  right: 4.5%;
+  bottom: 6%;
+  background-color: var(--roxa-clara);
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  border-radius: 50%;
+  padding: 5% 7.5%;
+  font-size: 6em;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  z-index: 2;
+  animation: fade 0.5s ease;
 }
 #conteudo #topo:hover,
 #conteudo #topo:focus-visible {
-    background-color: var(--roxa-escura);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura), 0px 4px 4px 0px var(--sombra-cinza);
+  background-color: var(--roxa-escura);
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #conteudo #topo:active {
-    background-color: var(--branca);
-    box-shadow: 0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza);
-    color: var(--roxa-escura);
-    text-shadow: 4px 4px 4px var(--sombra-roxa-escura), 4px 4px 4px var(--sombra-cinza);
+  background-color: var(--branca);
+  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza);
+  color: var(--roxa-escura);
+  text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
+    4px 4px 4px var(--sombra-cinza);
 }
 
 /* Rodapé */
 #rodape {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 21px 80px;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
-    background: linear-gradient(180deg, var(--roxa-clara) 0%, var(--roxa-escura) 50%, var(--cinza) 100%);
-    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara), 0px 4px 4px 0px var(--sombra-cinza);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 21px 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
+  background: linear-gradient(
+    180deg,
+    var(--roxa-clara) 0%,
+    var(--roxa-escura) 50%,
+    var(--cinza) 100%
+  );
+  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #rodape .container-logo-contatos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8em;
 }
 #rodape .logo {
-    width: 220px;
-    height: auto;
+  width: 220px;
+  height: auto;
 }
 #rodape .logo img {
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px 0px var(--sombra-preta);
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px 0px var(--sombra-preta);
 }
 #rodape .contatos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 #rodape .contatos .card-tell {
-    display: flex;
-    padding: 25px 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 5px;
-    border-radius: 30px;
-    border: 1.5px dashed var(--branca);
-    background: #FFFFFD03;
-    box-shadow: 0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza);
-    max-width: 300px;
+  display: flex;
+  padding: 25px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  border-radius: 30px;
+  border: 1.5px dashed var(--branca);
+  background: #fffffd03;
+  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza);
+  max-width: 300px;
 }
 #rodape .contatos .card-tell .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 #rodape .contatos .card-tell .titulo .texto {
-    text-align: right;
-    font-family: var(--titulo);
-    font-size: 20px;
-    font-weight: 400;
+  text-align: right;
+  font-family: var(--titulo);
+  font-size: 20px;
+  font-weight: 400;
 }
 #rodape .contatos .card-tell .titulo img {
-    width: 32px;
-    height: auto;
-    background: none;
-    pointer-events: none;
+  width: 32px;
+  height: auto;
+  background: none;
+  pointer-events: none;
 }
 #rodape .contatos .card-tell .titulo .icone {
-    font-size: 1.8em;
-    background-color: var(--preta);
-    box-shadow: 0px 4px 4px 0px var(--sombra-preta);
-    color: var(--amarela);
-    text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
-    padding: .6em .5em;
-    border-radius: 50%;
+  font-size: 1.8em;
+  background-color: var(--preta);
+  box-shadow: 0px 4px 4px 0px var(--sombra-preta);
+  color: var(--amarela);
+  text-shadow: 4px 4px 4px var(--sombra-amarela),
+    4px 4px 4px var(--sombra-cinza);
+  padding: 0.6em 0.5em;
+  border-radius: 50%;
 }
 #rodape .contatos .card-tell .tells {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 #rodape .contatos .card-tell .tells .tell {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 10px;
-    text-align: right;
-    font-size: 18px;
-    font-weight: 500;
-    width: 100%;
-    border-radius: 30px;
-    padding: .6em .8em;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 10px;
+  text-align: right;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  border-radius: 30px;
+  padding: 0.6em 0.8em;
 }
 #rodape .contatos .card-tell .tells .tell .texto.desktop {
-    display: none;
+  display: none;
 }
 #rodape .contatos .card-tell .tells .tell .icone,
 #rodape .tells-emergencia .tells .tell .icone {
-    font-size: 1.2em;
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  font-size: 1.2em;
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 #rodape .tells-emergencia {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 298px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 298px;
 }
 #rodape .tells-emergencia .texto {
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-    font-family: var(--texto);
-    font-size: 18px;
-    font-weight: 400;
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  font-family: var(--texto);
+  font-size: 18px;
+  font-weight: 400;
 }
 #rodape .tells-emergencia .texto strong,
 #rodape .tells-emergencia .tells .tell strong {
-    color: var(--amarela);
-    text-shadow: 4px 4px 4px var(--sombra-amarela), 4px 4px 4px var(--sombra-cinza);
+  color: var(--amarela);
+  text-shadow: 4px 4px 4px var(--sombra-amarela),
+    4px 4px 4px var(--sombra-cinza);
 }
 #rodape .tells-emergencia .tells {
-    width: max-content;
+  width: max-content;
 }
 #rodape .tells-emergencia .tells .tell {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 30px;
-    font-size: 16px;
-    padding: .6em .8em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  padding: 0.6em 0.8em;
 }
 #rodape .tells-emergencia .tells .tell:hover,
 #rodape .tells-emergencia .tells .tell:focus-visible,
 #rodape .contatos .card-tell .tells .tell:hover,
 #rodape .contatos .card-tell .tells .tell:focus-visible {
-    background: #FFFFFD26;
-    box-shadow: 0px 4px 4px 0px var(--sombra-branca), 0px 4px 4px 0px var(--sombra-cinza);
+  background: #fffffd26;
+  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+    0px 4px 4px 0px var(--sombra-cinza);
 }
 #rodape .tells-emergencia .tells .tell:active,
 #rodape .contatos .card-tell .tells .tell:active {
-    background: #FFFFFD4D;
+  background: #fffffd4d;
 }
 #rodape .img {
-    width: 80vw;
-    max-width: 350px;
-    height: auto;
+  width: 80vw;
+  max-width: 350px;
+  height: auto;
 }

@@ -2,148 +2,149 @@
 
 /* Fontes do site */
 @font-face {
-    font-family: "Geometos Rounded";
-    src: url(../fonts/geometos_rounded/Geometos\ Rounded.ttf) format(truetype);
+  font-family: "Geometos Rounded";
+  src: url(../fonts/geometos_rounded/Geometos\ Rounded.ttf) format(truetype);
 }
 
 @font-face {
-    font-family: "Open Dyslexic Alta";
-    src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  font-family: "Open Dyslexic Alta";
+  src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
 }
 
 /* Reset das tags */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--roxa-clara);
-    color: var(--branca);
-    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-    font: 2vw var(--padrao);
-    max-width: 100vw;
-    overflow-x: hidden;
-    animation: aparecer .5s ease-out;
+  background-color: var(--roxa-clara);
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  font: 2vw var(--padrao);
+  max-width: 100vw;
+  overflow-x: hidden;
+  animation: aparecer 0.5s ease-out;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
-    color: var(--branca);
-    transition: .2s;
+  text-decoration: none;
+  color: var(--branca);
+  transition: 0.2s;
 }
 
 button {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(50% 50% at 50% 50%, #6A4EA680 0%, #6A4EA600 100%), #D3D3D31A -9px 0px / 117.857% 100% no-repeat;
-    user-select: none;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, #6a4ea680 0%, #6a4ea600 100%),
+    #d3d3d31a -9px 0px / 117.857% 100% no-repeat;
+  user-select: none;
 }
 
 /* Variáveis CSS */
 :root {
-    --roxa-escura: #713CA6;
-    --roxa-clara: #6A4EA6;
-    --amarela: #F2E530;
-    --amarela-2: #ECE35A;
-    --laranja: #F2C029;
-    --preta: #040008;
-    --cinza: #242325;
-    --branca: #FFFFFD;
-    --sombra-preta: #0400080D;
-    --sombra-cinza: #2423250D;
-    --sombra-branca: #FFFFFD08;
-    --sombra-roxa-escura: #713CA608;
-    --sombra-roxa-clara: #6A4EA608;
-    --sombra-amarela: #F2E53008;
-    --sombra-amarela-2: #ECE35A08;
-    --sombra-laranja: #F2C02908;
-    --titulo: "Geometos Rounded", sans-serif;
-    --padrao: "Open Sans", sans-serif;
-    --texto: "Open Dyslexic Alta", sans-serif;
+  --roxa-escura: #713ca6;
+  --roxa-clara: #6a4ea6;
+  --amarela: #f2e530;
+  --amarela-2: #ece35a;
+  --laranja: #f2c029;
+  --preta: #040008;
+  --cinza: #242325;
+  --branca: #fffffd;
+  --sombra-preta: #0400080d;
+  --sombra-cinza: #2423250d;
+  --sombra-branca: #fffffd08;
+  --sombra-roxa-escura: #713ca608;
+  --sombra-roxa-clara: #6a4ea608;
+  --sombra-amarela: #f2e53008;
+  --sombra-amarela-2: #ece35a08;
+  --sombra-laranja: #f2c02908;
+  --titulo: "Geometos Rounded", sans-serif;
+  --padrao: "Open Sans", sans-serif;
+  --texto: "Open Dyslexic Alta", sans-serif;
 }
 
 /* Estilização da barrinha de rolagem */
 ::-webkit-scrollbar {
-    width: auto;
+  width: auto;
 }
 ::-webkit-scrollbar-track {
-    background-color: var(--branca);
+  background-color: var(--branca);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: var(--roxa-clara);
-    border-radius: 1em;
+  background-color: var(--roxa-clara);
+  border-radius: 1em;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--roxa-escura);
+  background-color: var(--roxa-escura);
 }
 
 /* Animações dos elementos */
 @keyframes aparecer {
-    from {
-        transform: translateX(-5px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(-5px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes menu-bar {
-    from {
-        opacity: 0;
-        translate: 5vw 0;
-    }
-    to {
-        opacity: 1;
-        translate: 0 0;
-    }
+  from {
+    opacity: 0;
+    translate: 5vw 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 
 @keyframes cima {
-    from {
-        opacity: 0;
-        translate: 0 -1vh;
-    }
-    to {
-        opacity: 1;
-        translate: 0 0;
-    }
+  from {
+    opacity: 0;
+    translate: 0 -1vh;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
 }
 
 @keyframes btn-mapeamento {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
