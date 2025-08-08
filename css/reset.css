@@ -51,29 +51,29 @@ button {
 img {
   width: 100%;
   height: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, #6a4ea680 0%, #6a4ea600 100%),
-    #d3d3d31a -9px 0px / 117.857% 100% no-repeat;
+  background: radial-gradient(50% 50% at 50% 50%, #6A4EA680 0%, #6A4EA600 100%),
+    #D3D3D31A -9px 0px / 117.857% 100% no-repeat;
   user-select: none;
 }
 
 /* Variáveis CSS */
 :root {
-  --roxa-escura: #713ca6;
-  --roxa-clara: #6a4ea6;
-  --amarela: #f2e530;
-  --amarela-2: #ece35a;
-  --laranja: #f2c029;
+  --roxa-escura: #713CA6;
+  --roxa-clara: #6A4EA6;
+  --amarela: #F2E530;
+  --amarela-2: #ECE35A;
+  --laranja: #F2C029;
   --preta: #040008;
   --cinza: #242325;
-  --branca: #fffffd;
-  --sombra-preta: #0400080d;
-  --sombra-cinza: #2423250d;
-  --sombra-branca: #fffffd08;
-  --sombra-roxa-escura: #713ca608;
-  --sombra-roxa-clara: #6a4ea608;
-  --sombra-amarela: #f2e53008;
-  --sombra-amarela-2: #ece35a08;
-  --sombra-laranja: #f2c02908;
+  --branca: #FFFFFD;
+  --sombra-preta: #0400080D;
+  --sombra-cinza: #2423250D;
+  --sombra-branca: #FFFFFD08;
+  --sombra-roxa-escura: #713CA608;
+  --sombra-roxa-clara: #6A4EA608;
+  --sombra-amarela: #F2E53008;
+  --sombra-amarela-2: #ECE35A08;
+  --sombra-laranja: #F2C02908;
   --titulo: "Geometos Rounded", sans-serif;
   --padrao: "Open Sans", sans-serif;
   --texto: "Open Dyslexic Alta", sans-serif;

@@ -167,7 +167,7 @@
   height: 0;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
-  background-color: #fffffd0d;
+  background-color: #fffffD0D;
   padding: 24px 0 13px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
@@ -266,6 +266,9 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#conteudo #introducao .frase-efeito span {
+  display: block;
 }
 #conteudo #introducao .frase-efeito strong {
   font-weight: 400;
@@ -379,9 +382,9 @@
   padding: 22px 40px 15px 40px;
   background: linear-gradient(
     90deg,
-    #713ca600 0%,
+    #713CA600 0%,
     var(--roxa-escura) 50%,
-    #713ca600 100%
+    #713CA600 100%
   );
   text-align: center;
   font-family: var(--titulo);
@@ -616,7 +619,7 @@
   align-self: stretch;
   border-radius: 30px;
   border: 2px solid var(--roxa-clara);
-  background: #fffffd33;
+  background: #fffffD33;
   box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
     4px 4px 4px 0px var(--sombra-cinza);
   color: var(--roxa-clara);
@@ -961,13 +964,13 @@
 #rodape .tells-emergencia .tells .tell:focus-visible,
 #rodape .contatos .card-tell .tells .tell:hover,
 #rodape .contatos .card-tell .tells .tell:focus-visible {
-  background: #fffffd26;
+  background: #fffffD26;
   box-shadow: 0px 4px 4px 0px var(--sombra-branca),
     0px 4px 4px 0px var(--sombra-cinza);
 }
 #rodape .tells-emergencia .tells .tell:active,
 #rodape .contatos .card-tell .tells .tell:active {
-  background: #fffffd4d;
+  background: #fffffD4D;
 }
 #rodape .img {
   width: 80vw;
