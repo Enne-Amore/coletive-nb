@@ -1,15 +1,15 @@
-.dark-mode::-webkit-scrollbar-track {
+.dark-mode body::-webkit-scrollbar-track {
   background-color: var(--preta);
 }
-.dark-mode::-webkit-scrollbar-thumb {
+.dark-mode body::-webkit-scrollbar-thumb {
   background-color: var(--amarela);
 }
-.dark-mode::-webkit-scrollbar-thumb:hover {
+.dark-mode body::-webkit-scrollbar-thumb:hover {
   background-color: var(--laranja);
 }
 
 .dark-mode #conteudo {
-  background: linear-gradient(180deg, #211e23 0%, var(--cinza) 100%);
+  background: linear-gradient(180deg, #211E23 0%, var(--cinza) 100%);
 }
 
 .dark-mode #conteudo #introducao {
@@ -41,9 +41,9 @@
 .dark-mode #conteudo #parceires .titulo {
   background: linear-gradient(
     90deg,
-    #f2c02900 0%,
+    #F2C02900 0%,
     var(--laranja) 50%,
-    #f2c02900 100%
+    #F2C02900 100%
   );
   color: var(--preta);
   text-shadow: 4px 4px 4px var(--sombra-preta);
@@ -66,7 +66,7 @@
 
 .dark-mode #conteudo #membres,
 .dark-mode #conteudo #conselho-municipal {
-  background: linear-gradient(0deg, #242325b3 0%, #242325b3 100%),
+  background: linear-gradient(0deg, #242325B3 0%, #242325B3 100%),
     linear-gradient(180deg, var(--amarela) 0%, var(--laranja) 100%);
 }
 

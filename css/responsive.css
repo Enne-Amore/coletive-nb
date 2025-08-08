@@ -68,11 +68,11 @@
   }
   #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:hover,
   #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.light label:focus-visible {
-    background-color: #f2e5301a;
+    background-color: #F2E5301A;
   }
   #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:hover,
   #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors .btn-color.dark label:focus-visible {
-    background-color: #6a4ea633;
+    background-color: #6A4EA633;
   }
   #cabecalho .nav-desktop .menu .link-principal {
     padding: 15px 0;
@@ -242,8 +242,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) and (orientation: landscape) {
-  /* Desktop */
+@media screen and (min-width: 1200px) and (orientation: landscape) { /* Desktop */
   #cabecalho {
     padding: 10px 60px;
     padding-left: 40px;
@@ -484,8 +483,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) and (orientation: landscape) {
-  /* Mobile Deitado */
+@media screen and (max-width: 1200px) and (orientation: landscape) { /* Mobile Deitado */
   #cabecalho .logo {
     width: 215px;
   }
@@ -635,8 +633,7 @@
   }
 }
 
-@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) {
-  /* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1200px) and (orientation: portrait) { /* Tablets */
   #cabecalho {
     padding: 10px 40px;
     padding-left: 20px;
@@ -854,8 +851,11 @@
   }
 }
 
-@media screen and (min-width: 1500px) and (orientation: landscape) {
-  /* Particularidades de telas enormes */
+@media screen and (min-width: 1500px) and (orientation: landscape) { /* Particularidades de telas enormes */
+  #cabecalho {
+    padding-right: 80px;
+    padding-left: 75px;
+  }
   #cabecalho .nav-desktop .menu .dropdown {
     padding-right: 1em;
   }
