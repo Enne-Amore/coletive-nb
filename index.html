@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WHT2VXZ2");
+    </script>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-RX5TYLV2CB');
+      gtag("config", "G-RX5TYLV2CB");
     </script>
     <!-- Meta tags -->
     <meta charset="UTF-8" />
@@ -22,7 +40,10 @@
       property="og:image"
       content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true"
     />
-    <meta property="og:image:alt" content="Logo do Coletive Não-Binárie da Paraíba" />
+    <meta
+      property="og:image:alt"
+      content="Logo do Coletive Não-Binárie da Paraíba"
+    />
     <meta property="og:title" content="Coletive Não-Binárie da Paraíba" />
     <meta
       property="og:description"
@@ -58,6 +79,17 @@
     <script src="js/btn-mapeamento.js" defer></script>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WHT2VXZ2"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+    
+    <!-- Conteúdo visível -->
     <header id="cabecalho">
       <figure class="logo">
         <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie" />
@@ -874,7 +906,11 @@
     <footer id="rodape">
       <div class="container-logo-contatos">
         <figure class="logo">
-          <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie" loading="lazy" />
+          <img
+            src="img/logo-escura.png"
+            alt="Logo: Coletive Não-Binárie"
+            loading="lazy"
+          />
         </figure>
 
         <section class="contatos">
@@ -920,7 +956,7 @@
                   <span class="texto mobile">
                     coletivenaobinariepb @gmail.com
                   </span>
-                  
+
                   <span class="texto desktop">
                     coletivenaobinariepb@gmail.com
                   </span>
