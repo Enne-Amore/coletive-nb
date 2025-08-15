@@ -1,4 +1,4 @@
-<img src="img/logo-icone/android-chrome-192x192.png" alt="Logo do site" width="50" height="50">
+<img src="img/logo-icone/android-chrome-192x192.png" alt="Logo do site" width="60" height="60">
 
 # Coletive Não-Binárie da Paraíba
  
@@ -23,6 +23,7 @@
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
  - Scroll horizontal arrastando através do clique do mouse nos carrosséis de imagem
+ - Escolha de tema de cores entre escuro e claro
 
 
 ## 🚀 Tecnologias Utilizadas
@@ -46,6 +47,7 @@
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
+ │   ├── preview.mp4
  ├── fonts/                  # Arquivos das fontes utilizadas  
  │   ├── geometos-rounded/
  │   ├── open-dyslexic/
