@@ -47,8 +47,8 @@
  │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
  ├── fonts/                  # Arquivos das fontes utilizadas  
- │   ├── geometos_rounded/
- │   ├── open_dyslexic/
+ │   ├── geometos-rounded/
+ │   ├── open-dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
  │   ├── btn-mapeamento.js 

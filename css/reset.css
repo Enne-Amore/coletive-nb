@@ -3,12 +3,12 @@
 /* Fontes do site */
 @font-face {
   font-family: "Geometos Rounded";
-  src: url(../fonts/geometos_rounded/Geometos\ Rounded.ttf) format(truetype);
+  src: url(../fonts/geometos-rounded/Geometos\ Rounded.ttf) format(truetype);
 }
 
 @font-face {
   font-family: "Open Dyslexic Alta";
-  src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  src: url(../fonts/open-dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
 }
 
 /* Reset das tags */

@@ -22,6 +22,14 @@
     position: relative;
     display: inline-block;
     margin: auto;
+
+    &:hover .dropdown-icon {
+      color: var(--laranja);
+    }
+    
+    &:hover .dropdown-content {
+      display: flex;
+    }
   }
   #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
     display: inline-block;
@@ -29,12 +37,6 @@
     padding: 0 15px;
     border-radius: 1em;
     cursor: default;
-  }
-  #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-icon {
-    color: var(--laranja);
-  }
-  #cabecalho .nav-desktop .menu .dropdown:hover .dropdown-content {
-    display: flex;
   }
   #cabecalho .nav-desktop .menu .dropdown .dropdown-content {
     display: none;
@@ -358,7 +360,7 @@
     font-size: 32px;
     line-height: 60px;
     letter-spacing: 1.6px;
-    margin: auto 22%;
+    margin: auto 9em;
   }
   #conteudo #membres .diretories {
     display: flex;
@@ -866,5 +868,9 @@
   }
   #conteudo #membres .diretories .ilustracoes hr {
     transform: translateY(650%);
+  }
+
+  #conteudo #direitos .frase-efeito {
+    margin: auto 15em;
   }
 }
