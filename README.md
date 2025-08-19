@@ -19,11 +19,12 @@
 
  - Menu de navegação por páginas abrível e fechável para mobile
  - Barra horizontal de navegação por dentro da página para desktop englobando uma opção de abrir uma lista de opções restantes
+ - Detecção de tema de cores preferencial da pessoa usuária e adaptação da tela conforme sua preferência
+ - Opções de escolher tema de cores entre escuro e claro
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
  - Scroll horizontal arrastando através do clique do mouse nos carrosséis de imagem
- - Escolha de tema de cores entre escuro e claro
 
 
 ## 🚀 Tecnologias Utilizadas
