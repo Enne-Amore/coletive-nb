@@ -1,4 +1,4 @@
-<img src="img/logo-icone/android-chrome-192x192.png" alt="Logo do site" width="60" height="60">
+<img src="favicon/android-chrome-192x192.png" alt="Logo do site" width="60" height="60">
 
 # Coletive Não-Binárie da Paraíba
  
@@ -49,6 +49,7 @@
  │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
  │   ├── preview.mp4
+ ├── favicon/                # Arquivos da logo como ícone  
  ├── fonts/                  # Arquivos das fontes utilizadas  
  │   ├── geometos-rounded/
  │   ├── open-dyslexic/
