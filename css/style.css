@@ -106,51 +106,54 @@
   cursor: pointer;
   user-select: none;
 }
-#cabecalho #modal-container #menu .nav .menu .link:hover a,
-#cabecalho #modal-container #menu .nav .menu .link a:focus-visible,
-#cabecalho .nav-desktop .menu .link:hover a,
-#cabecalho .nav-desktop .menu .link a:focus-visible {
-  color: var(--amarela);
-  text-shadow: 4px 4px 4px var(--sombra-amarela),
-    4px 4px 4px var(--sombra-cinza);
-}
-#cabecalho #modal-container #menu .nav .menu .link:active a,
-#cabecalho .nav-desktop .menu .link:active a {
-  color: var(--laranja);
-  text-shadow: 4px 4px 4px var(--sombra-laranja),
-    4px 4px 4px var(--sombra-cinza);
+#cabecalho #modal-container #menu .nav .menu .link,
+#cabecalho #modal-container #menu .nav .menu .link a,
+#cabecalho .nav-desktop .menu .link,
+#cabecalho .nav-desktop .menu .link a {
+  &:hover,
+  &:focus-visible {
+    color: var(--amarela);
+    text-shadow: 4px 4px 4px var(--sombra-amarela),
+      4px 4px 4px var(--sombra-cinza);
+  }
+
+  &:active {
+    color: var(--laranja);
+    text-shadow: 4px 4px 4px var(--sombra-laranja),
+      4px 4px 4px var(--sombra-cinza);
+  }
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal {
   margin: 10px 0 5px;
 }
 #cabecalho #modal-container #menu .nav .menu .link-principal,
 #cabecalho #modal-container #menu .nav .menu .link-principal a,
-#cabecalho .nav-desktop .menu .link-principal {
+#cabecalho .nav-desktop .menu .link-principal,
+#cabecalho .nav-desktop .menu .link-principal a {
   background-color: var(--amarela);
   box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
     0px 4px 4px 0px var(--sombra-cinza);
   color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-cinza);
   font-weight: 600;
-}
-#cabecalho #modal-container #menu .nav .menu .link-principal:hover a,
-#cabecalho #modal-container #menu .nav .menu .link-principal a:focus-visible,
-#cabecalho .nav-desktop .menu .link-principal:hover a,
-#cabecalho .nav-desktop .menu .link-principal a:focus-visible {
-  background-color: var(--laranja);
-  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
-    0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--preta);
-  text-shadow: 4px 4px 4px var(--sombra-preta);
-}
-#cabecalho #modal-container #menu .nav .menu .link-principal:active a,
-#cabecalho .nav-desktop .menu .link-principal:active a {
-  background-color: var(--branca);
-  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
-    0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--laranja);
-  text-shadow: 4px 4px 4px var(--sombra-laranja),
-    4px 4px 4px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--laranja);
+    box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+      0px 4px 4px 0px var(--sombra-cinza);
+    color: var(--preta);
+    text-shadow: 4px 4px 4px var(--sombra-preta);
+  }
+
+  &:active {
+    background-color: var(--branca);
+    box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+      0px 4px 4px 0px var(--sombra-cinza);
+    color: var(--laranja);
+    text-shadow: 4px 4px 4px var(--sombra-laranja),
+      4px 4px 4px var(--sombra-cinza);
+  }
 }
 #cabecalho #modal-container #menu .btn-colors,
 #cabecalho .nav-desktop .menu .dropdown .dropdown-content .btn-colors {
@@ -167,7 +170,7 @@
   height: 0;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label {
-  background-color: #fffffD0D;
+  background-color: #FFFFFD0D;
   padding: 24px 0 13px;
 }
 #cabecalho #modal-container #menu .btn-colors .btn-color label .fa-solid {
@@ -619,7 +622,7 @@
   align-self: stretch;
   border-radius: 30px;
   border: 2px solid var(--roxa-clara);
-  background: #fffffD33;
+  background: #FFFFFD33;
   box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
     4px 4px 4px 0px var(--sombra-cinza);
   color: var(--roxa-clara);
@@ -631,19 +634,20 @@
   line-height: 32px;
   user-select: none;
 }
-#conteudo #parceires .parceires .parceire .texto a:hover,
-#conteudo #parceires .parceires .parceire .texto a:focus-visible,
-#conteudo #conselho-municipal .textos a:hover,
-#conteudo #conselho-municipal .textos a:focus-visible {
-  background-color: var(--roxa-clara);
-  color: var(--branca);
-  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-}
-#conteudo #parceires .parceires .parceire .texto a:active,
-#conteudo #conselho-municipal .textos a:active {
-  background-color: var(--roxa-escura);
-  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
-    4px 4px 4px 0px var(--sombra-cinza);
+#conteudo #parceires .parceires .parceire .texto a,
+#conteudo #conselho-municipal .textos a {
+  &:hover,
+  &:focus-visible {
+    background-color: var(--roxa-clara);
+    color: var(--branca);
+    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  }
+
+  &:active {
+    background-color: var(--roxa-escura);
+    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
+      4px 4px 4px 0px var(--sombra-cinza);
+  }
 }
 #conteudo #parceires .parceires .parceire .texto a strong,
 #conteudo #conselho-municipal .textos a strong {
@@ -663,22 +667,24 @@
   margin: 0.9em auto 1em;
   max-width: 260px;
   gap: 12px;
-}
-#conteudo #mapeamento .textos a:hover,
-#conteudo #mapeamento .textos a:focus-visible {
-  background-color: var(--laranja);
-  box-shadow: 4px 4px 4px 0px var(--sombra-laranja),
-    4px 4px 4px 0px var(--sombra-cinza);
-  color: var(--preta);
-  text-shadow: 4px 4px 4px var(--sombra-preta);
-}
-#conteudo #mapeamento .textos a:active {
-  background-color: var(--branca);
-  box-shadow: 4px 4px 4px 0px var(--sombra-branca),
-    4px 4px 4px 0px var(--sombra-cinza);
-  color: var(--laranja);
-  text-shadow: 4px 4px 4px var(--sombra-laranja),
-    4px 4px 4px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--laranja);
+    box-shadow: 4px 4px 4px 0px var(--sombra-laranja),
+      4px 4px 4px 0px var(--sombra-cinza);
+    color: var(--preta);
+    text-shadow: 4px 4px 4px var(--sombra-preta);
+  }
+
+  &:active {
+    background-color: var(--branca);
+    box-shadow: 4px 4px 4px 0px var(--sombra-branca),
+      4px 4px 4px 0px var(--sombra-cinza);
+    color: var(--laranja);
+    text-shadow: 4px 4px 4px var(--sombra-laranja),
+      4px 4px 4px var(--sombra-cinza);
+  }
 }
 #conteudo #mapeamento .textos a .icone {
   font-size: 1em;
@@ -706,34 +712,38 @@
     4px 4px 4px 0px var(--sombra-cinza);
   width: 280px;
   user-select: none;
-}
-#conteudo #direitos .direitos .card:hover,
-#conteudo #direitos .direitos .card:focus-visible {
-  background: linear-gradient(
-    100deg,
-    var(--roxa-escura) 0%,
-    var(--roxa-clara) 100%
-  );
-  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
-    4px 4px 4px 0px var(--sombra-cinza);
-}
-#conteudo #direitos .direitos .card:hover .img img,
-#conteudo #direitos .direitos .card:focus-visible .img img {
-  transform: scale(1.2);
-}
-#conteudo #direitos .direitos .card:hover .texto,
-#conteudo #direitos .direitos .card:focus-visible .texto {
-  color: var(--branca);
-  text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-}
-#conteudo #direitos .direitos .card:active {
-  background: linear-gradient(
-    100deg,
-    var(--roxa-clara) 0%,
-    var(--roxa-escura) 100%
-  );
-  box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
-    4px 4px 4px 0px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background: linear-gradient(
+      100deg,
+      var(--roxa-escura) 0%,
+      var(--roxa-clara) 100%
+    );
+    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-clara),
+      4px 4px 4px 0px var(--sombra-cinza);
+  }
+
+  &:hover .img img,
+  &:focus-visible .img img {
+    transform: scale(1.2);
+  }
+
+  &:hover .texto,
+  &:focus-visible .texto {
+    color: var(--branca);
+    text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
+  }
+
+  &:active {
+    background: linear-gradient(
+      100deg,
+      var(--roxa-clara) 0%,
+      var(--roxa-escura) 100%
+    );
+    box-shadow: 4px 4px 4px 0px var(--sombra-roxa-escura),
+      4px 4px 4px 0px var(--sombra-cinza);
+  }
 }
 #conteudo #direitos .direitos .card .img {
   width: 280px;
@@ -809,20 +819,22 @@
   transition-duration: 0.4s;
   z-index: 2;
   animation: fade 0.5s ease;
-}
-#conteudo #topo:hover,
-#conteudo #topo:focus-visible {
-  background-color: var(--roxa-escura);
-  box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
-    0px 4px 4px 0px var(--sombra-cinza);
-}
-#conteudo #topo:active {
-  background-color: var(--branca);
-  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
-    0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--roxa-escura);
-  text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
-    4px 4px 4px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--roxa-escura);
+    box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
+
+  &:active {
+    background-color: var(--branca);
+    box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+      0px 4px 4px 0px var(--sombra-cinza);
+    color: var(--roxa-escura);
+    text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
+      4px 4px 4px var(--sombra-cinza);
+  }
 }
 
 /* Rodapé */
@@ -889,20 +901,14 @@
   font-size: 20px;
   font-weight: 400;
 }
-#rodape .contatos .card-tell .titulo img {
-  width: 32px;
-  height: auto;
-  background: none;
-  pointer-events: none;
-}
 #rodape .contatos .card-tell .titulo .icone {
   font-size: 1.8em;
-  background-color: var(--preta);
-  box-shadow: 0px 4px 4px 0px var(--sombra-preta);
+  background-color: var(--cinza);
+  box-shadow: 0px 4px 4px 0px var(--sombra-cinza);
   color: var(--amarela);
   text-shadow: 4px 4px 4px var(--sombra-amarela),
     4px 4px 4px var(--sombra-cinza);
-  padding: 0.6em 0.5em;
+  padding: .6em;
   border-radius: 50%;
 }
 #rodape .contatos .card-tell .tells {
@@ -960,17 +966,20 @@
   font-size: 16px;
   padding: 0.6em 0.8em;
 }
-#rodape .tells-emergencia .tells .tell:hover,
-#rodape .tells-emergencia .tells .tell:focus-visible,
-#rodape .contatos .card-tell .tells .tell:hover,
-#rodape .contatos .card-tell .tells .tell:focus-visible {
-  background: #fffffD26;
-  box-shadow: 0px 4px 4px 0px var(--sombra-branca),
-    0px 4px 4px 0px var(--sombra-cinza);
-}
-#rodape .tells-emergencia .tells .tell:active,
-#rodape .contatos .card-tell .tells .tell:active {
-  background: #fffffD4D;
+#rodape .tells-emergencia .tells .tell,
+#rodape .tells-emergencia .tells .tell,
+#rodape .contatos .card-tell .tells .tell,
+#rodape .contatos .card-tell .tells .tell {
+  &:hover,
+  &:focus-visible {
+    background: #FFFFFD26;
+    box-shadow: 0px 4px 4px 0px var(--sombra-branca),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
+
+  &:active {
+    background: #FFFFFD4D;
+  }
 }
 #rodape .img {
   width: 80vw;

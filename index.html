@@ -1,41 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Google Tag Manager -->
-    <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-WHT2VXZ2");
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-RX5TYLV2CB");
-    </script>
-    <!-- Meta tags -->
+    <!-- Meta tags essenciais -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Enne Jim Pessoa" />
+    <title>Coletive Não-Binárie da Paraíba</title>
     <meta
       name="description"
       content="Conheça a união de não-bináries da Paraíba a caminho de promover a conquista e a proteção dos nossos direitos, e vamos juntes forteceler a nossa rede de apoio!"
     />
+    <meta name="author" content="Enne Jim Pessoa" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="color-scheme" content="light dark" />
+
+    <!-- Open Graph / Redes sociais -->
+    <meta property="og:type" content="website" />
     <meta
       property="og:image"
       content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true"
@@ -49,21 +29,67 @@
       property="og:description"
       content="Conheça a união de não-bináries da Paraíba a caminho de promover a conquista e a proteção dos nossos direitos, e vamos juntes forteceler a nossa rede de apoio!"
     />
-    <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Coletive Não-Binárie da Paraíba</title>
-    <link
-      rel="shortcut icon"
-      href="img/logo-icone/favicon.ico"
-      type="image/x-icon"
+    <meta
+      property="og:image"
+      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo.avif?raw=true"
     />
+    <meta
+      property="og:image:alt"
+      content="Logo do Coletive Não-Binárie da Paraíba"
+    />
+    <meta
+      property="og:url"
+      content="https://enne-amore.github.io/coletive-nb"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Coletive Não-Binárie da Paraíba" />
+    <meta
+      name="twitter:description"
+      content="Conheça a união de não-bináries da Paraíba..."
+    />
+    <meta
+      name="twitter:image"
+      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo.avif?raw=true"
+    />
+
+    <!-- Pré-carregamento de imagens e fontes -->
+    <link rel="preload" href="/img/populacao-nb.avif" as="image" />
+    <link rel="preload" href="/img/logo.avif" as="image" />
+    <link
+      rel="preload"
+      href="/fonts/geometos-rounded/geometos-rounded.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/dark-theme.css" />
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- Fontes -->
+
+    <!-- Fontes de ícone -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -71,6 +97,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-RX5TYLV2CB");
+    </script>
+
     <!-- JavaScript -->
     <script src="js/menu.js" defer></script>
     <script src="js/tema-cores.js" defer></script>
@@ -78,6 +119,7 @@
     <script src="js/ilustracoes.js" defer></script>
     <script src="js/btn-mapeamento.js" defer></script>
   </head>
+
   <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -92,7 +134,14 @@
     <!-- Conteúdo visível -->
     <header id="cabecalho">
       <figure class="logo">
-        <img src="img/logo-escura.png" alt="Logo: Coletive Não-Binárie" />
+        <img
+          src="img/logo.avif"
+          alt="Logo: Coletive Não-Binárie"
+          width="225"
+          height="82"
+          fetchpriority="high"
+          loading="eager"
+        />
       </figure>
 
       <!-- Mobile menu -->
@@ -111,7 +160,7 @@
           <hr />
 
           <nav class="nav">
-            <ul class="menu">
+            <ul class="menu" role="menubar">
               <li class="link">
                 <a href="#finalidades" aria-label="Ir à seção de finalidades">
                   Finalidades
@@ -197,7 +246,7 @@
 
       <!-- Desktop menu -->
       <nav class="nav-desktop">
-        <ul class="menu">
+        <ul class="menu" role="menu">
           <li class="link">
             <a href="#finalidades" aria-label="Ir à seção de finalidades">
               Finalidades
@@ -302,12 +351,21 @@
     <main id="conteudo">
       <section id="introducao">
         <figure class="ilustracao">
-          <img src="img/populacao-nb.png" alt="População não-binária unida!" />
+          <img
+            src="img/populacao-nb.avif"
+            alt="População não-binária unida!"
+            width="337"
+            height="181"
+            fetchpriority="high"
+            loading="eager"
+          />
         </figure>
 
         <h1 class="frase-efeito">
           <span>Formação des</span>
+
           <strong>não-bináries</strong>
+
           <span>da Paraíba</span>
         </h1>
       </section>
@@ -335,13 +393,16 @@
           <picture>
             <source
               media="(min-width: 1200px)"
-              srcset="img/logo-completa-desktop.png"
-              type="image/png"
+              srcset="img/logo-completa-desktop.avif"
+              type="image/avif"
             />
 
             <img
-              src="img/logo-completa-mobile.png"
+              src="img/logo-completa-mobile.avif"
               alt="Logo completa do Coletive Não-Binárie da Paraíba com a bandeira da comunidade"
+              width="315"
+              height="238"
+              fetchpriority="low"
             />
           </picture>
         </figure>
@@ -396,18 +457,18 @@
           <hr />
 
           <div class="imgs-container">
-            <ul class="imgs">
+            <ul class="imgs" role="list">
               <li>
                 <figure>
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/espaco-lgbtpedrinho-cnb-desktop.png"
-                      type="image/png"
+                      srcset="img/espaco-lgbtpedrinho-cnb-desktop.avif"
+                      type="image/avif"
                     />
 
                     <img
-                      src="img/espaco-lgbtpedrinho-cnb-mobile.png"
+                      src="img/espaco-lgbtpedrinho-cnb-mobile.avif"
                       alt="Coletive Não-Binárie da Paraíba unido com o Espaço LGBTPedrinho"
                       loading="lazy"
                     />
@@ -420,13 +481,16 @@
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/roda-dialogo-cnb-desktop.png"
-                      type="image/png"
+                      srcset="img/roda-dialogo-cnb-desktop.avif"
+                      type="image/avif"
                     />
 
                     <img
-                      src="img/roda-dialogo-cnb-mobile.png"
+                      src="img/roda-dialogo-cnb-mobile.avif"
                       alt="Roda de diálogo"
+                      width="288"
+                      height="190"
+                      fetchpriority="low"
                       loading="lazy"
                     />
                   </picture>
@@ -438,13 +502,16 @@
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/panfletos-desktop.png"
-                      type="image/png"
+                      srcset="img/panfletos-desktop.avif"
+                      type="image/avif"
                     />
 
                     <img
-                      src="img/panfletos-mobile.png"
+                      src="img/panfletos-mobile.avif"
                       alt="Panfletos do Coletive Não-Binárie da Paraíba"
+                      width="288"
+                      height="190"
+                      fetchpriority="low"
                       loading="lazy"
                     />
                   </picture>
@@ -456,13 +523,16 @@
                   <picture>
                     <source
                       media="(min-width: 1200px)"
-                      srcset="img/cartaz-desktop.png"
-                      type="image/png"
+                      srcset="img/cartaz-desktop.avif"
+                      type="image/avif"
                     />
 
                     <img
-                      src="img/cartaz-mobile.png"
+                      src="img/cartaz-mobile.avif"
                       alt="Cartaz do Coletive Não-Binárie da Paraíba"
+                      width="288"
+                      height="190"
+                      fetchpriority="low"
                       loading="lazy"
                     />
                   </picture>
@@ -488,18 +558,18 @@
             <hr />
 
             <div class="imgs-container">
-              <ul class="imgs">
+              <ul class="imgs" role="list">
                 <li>
                   <figure>
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/membres-unides-desktop.png"
-                        type="image/png"
+                        srcset="img/membres-unides-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/membres-unides-mobile.png"
+                        src="img/membres-unides-mobile.avif"
                         alt="Membres do Coletive Não-Binárie da Paraíba unides"
                         loading="lazy"
                       />
@@ -512,13 +582,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/nbs-conversando-1-desktop.png"
-                        type="image/png"
+                        srcset="img/nbs-conversando-1-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/nbs-conversando-1-mobile.png"
+                        src="img/nbs-conversando-1-mobile.avif"
                         alt="Roda de diálogo entre es membres"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -530,13 +603,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/nbs-conversando-2-desktop.png"
-                        type="image/png"
+                        srcset="img/nbs-conversando-2-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/nbs-conversando-2-mobile.png"
+                        src="img/nbs-conversando-2-mobile.avif"
                         alt="Roda de diálogo entre es membres"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -548,13 +624,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/nbs-conversando-3-desktop.png"
-                        type="image/png"
+                        srcset="img/nbs-conversando-3-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/nbs-conversando-3-mobile.png"
+                        src="img/nbs-conversando-3-mobile.avif"
                         alt="Roda de diálogo entre es membres"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -571,24 +650,24 @@
         </section>
 
         <section class="diretories">
-          <h2 class="frase-efeito">Saiba quem são es diretories</h2>
+          <h3 class="frase-efeito">Saiba quem são es diretories</h3>
 
           <article class="ilustracoes">
             <hr />
 
             <div class="imgs-container">
-              <ul class="imgs">
+              <ul class="imgs" role="list">
                 <li>
                   <figure>
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/yuri-diretoria-desktop.png"
-                        type="image/png"
+                        srcset="img/yuri-diretoria-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/yuri-diretoria-mobile.png"
+                        src="img/yuri-diretoria-mobile.avif"
                         alt="Foto de diretore"
                         loading="lazy"
                       />
@@ -603,13 +682,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/selme-diretoria-desktop.png"
-                        type="image/png"
+                        srcset="img/selme-diretoria-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/selme-diretoria-mobile.png"
+                        src="img/selme-diretoria-mobile.avif"
                         alt="Foto de diretore"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -623,13 +705,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/d'angelles-diretoria-desktop.png"
-                        type="image/png"
+                        srcset="img/d'angelles-diretoria-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/d'angelles-diretoria-mobile.png"
+                        src="img/d'angelles-diretoria-mobile.avif"
                         alt="Foto de diretore"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -643,13 +728,16 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="img/lobo-diretoria-desktop.png"
-                        type="image/png"
+                        srcset="img/lobo-diretoria-desktop.avif"
+                        type="image/avif"
                       />
 
                       <img
-                        src="img/lobo-diretoria-mobile.png"
+                        src="img/lobo-diretoria-mobile.avif"
                         alt="Foto de diretore"
+                        width="288"
+                        height="190"
+                        fetchpriority="low"
                         loading="lazy"
                       />
                     </picture>
@@ -677,12 +765,12 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/abranb-desktop.png"
-                  type="image/png"
+                  srcset="img/abranb-desktop.avif"
+                  type="image/avif"
                 />
 
                 <img
-                  src="img/abranb-mobile.png"
+                  src="img/abranb-mobile.avif"
                   alt="Coletive Não-Binárie da Paraíba unido com a ABRANB"
                   loading="lazy"
                 />
@@ -715,12 +803,12 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/fundo-brasil-desktop.png"
-                  type="image/png"
+                  srcset="img/fundo-brasil-desktop.avif"
+                  type="image/avif"
                 />
 
                 <img
-                  src="img/fundo-brasil-mobile.png"
+                  src="img/fundo-brasil-mobile.avif"
                   alt="Coletive Não-Binárie da Paraíba unido com o Fundo Brasil"
                   loading="lazy"
                 />
@@ -778,12 +866,12 @@
           <picture>
             <source
               media="(min-width: 1200px)"
-              srcset="img/maos-unidas-desktop.png"
-              type="image/png"
+              srcset="img/maos-unidas-desktop.avif"
+              type="image/avif"
             />
 
             <img
-              src="img/maos-unidas-mobile.png"
+              src="img/maos-unidas-mobile.avif"
               alt="Mãos unidas com as cores da bandeira não-binária"
               loading="lazy"
             />
@@ -792,7 +880,9 @@
       </section>
 
       <section id="direitos">
-        <h2 class="frase-efeito">Conscientize-se dos seus próprios direitos!</h2>
+        <h2 class="frase-efeito">
+          Conscientize-se dos seus próprios direitos!
+        </h2>
 
         <div class="direitos">
           <a
@@ -806,12 +896,12 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/doc-nb-desktop.png"
-                  type="image/png"
+                  srcset="img/doc-nb-desktop.avif"
+                  type="image/avif"
                 />
 
                 <img
-                  src="img/doc-nb-mobile.png"
+                  src="img/doc-nb-mobile.avif"
                   alt="Não-binariedade constando em documentação"
                   loading="lazy"
                 />
@@ -836,12 +926,12 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
-                  srcset="img/atendimento-desktop.png"
-                  type="image/png"
+                  srcset="img/atendimento-desktop.avif"
+                  type="image/avif"
                 />
 
                 <img
-                  src="img/atendimento-mobile.png"
+                  src="img/atendimento-mobile.avif"
                   alt="Recepção de atendimento"
                   loading="lazy"
                 />
@@ -882,12 +972,12 @@
           <picture>
             <source
               media="(min-width: 1200px)"
-              srcset="img/conselho-municipal-cnb-desktop.png"
-              type="image/png"
+              srcset="img/conselho-municipal-cnb-desktop.avif"
+              type="image/avif"
             />
 
             <img
-              src="img/conselho-municipal-cnb-mobile.png"
+              src="img/conselho-municipal-cnb-mobile.avif"
               alt="Coletive Não-Binárie da Paraíba dentro do Conselho Municipal LGBTQIAPNb+ de João Pessoa"
               loading="lazy"
             />
@@ -907,7 +997,7 @@
       <div class="container-logo-contatos">
         <figure class="logo">
           <img
-            src="img/logo-escura.png"
+            src="img/logo.avif"
             alt="Logo: Coletive Não-Binárie"
             loading="lazy"
           />
@@ -918,14 +1008,10 @@
             <h3 class="titulo">
               <span class="texto">Nossos Contatos</span>
 
-              <img
-                src="img/logo-icone/favicon-32x32.png"
-                alt="Ícone do Coletive Não-Binárie da Paraíba"
-                loading="lazy"
-              />
+              <i class="fa-solid fa-message icone" aria-hidden="true"></i>
             </h3>
 
-            <ul class="tells">
+            <ul class="tells" role="listitem">
               <li>
                 <a
                   href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
@@ -972,7 +1058,7 @@
               <i class="fa-solid fa-code icone" aria-hidden="true"></i>
             </h3>
 
-            <ul class="tells">
+            <ul class="tells" role="listitem">
               <li>
                 <a
                   href="https://www.linkedin.com/in/enne-jim-pessoa/"
@@ -1010,7 +1096,7 @@
           Em caso de violência ou preconceito, <strong>NÃO SE CALE!</strong>
         </p>
 
-        <ul class="tells">
+        <ul class="tells" role="listitem">
           <li>
             <a href="tel:100" aria-label="ligar para 100" class="tell">
               <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
@@ -1031,7 +1117,7 @@
 
       <figure class="img">
         <img
-          src="img/baleia.png"
+          src="img/baleia.avif"
           alt="Baleia pintada com as cores da bandeira da comunidade"
           loading="lazy"
         />

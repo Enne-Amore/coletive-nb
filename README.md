@@ -1,4 +1,4 @@
-<img src="img/logo-icone/android-chrome-192x192.png" alt="Logo do site" width="50" height="50">
+<img src="favicon/android-chrome-192x192.png" alt="Logo do site" width="60" height="60">
 
 # Coletive Não-Binárie da Paraíba
  
@@ -19,6 +19,8 @@
 
  - Menu de navegação por páginas abrível e fechável para mobile
  - Barra horizontal de navegação por dentro da página para desktop englobando uma opção de abrir uma lista de opções restantes
+ - Detecção de tema de cores preferencial da pessoa usuária e adaptação da tela conforme sua preferência
+ - Opções de escolher tema de cores entre escuro e claro
  - Mais acessibilidade usando a tecla "tab"
  - Efeitos de "hover" e de "active" nos elementos  clicáveis
  - Botão de voltar ao topo da página
@@ -46,9 +48,11 @@
  ├── docs/                   # Arquivos de documentação do projeto
  │   ├── guia-de-estilo/
  │   ├── prototipos-de-tela/
+ │   ├── preview.mp4
+ ├── favicon/                # Arquivos da logo como ícone  
  ├── fonts/                  # Arquivos das fontes utilizadas  
- │   ├── geometos_rounded/
- │   ├── open_dyslexic/
+ │   ├── geometos-rounded/
+ │   ├── open-dyslexic/
  ├── img/                    # Imagens utilizadas 
  ├── js/                     # Arquivos JavaScript
  │   ├── btn-mapeamento.js 

@@ -108,23 +108,22 @@
   color: var(--amarela);
   text-shadow: 4px 4px 4px var(--sombra-amarela),
     4px 4px 4px var(--sombra-cinza);
-}
-.dark-mode #conteudo #parceires .parceires .parceire .texto a:hover,
-.dark-mode #conteudo #parceires .parceires .parceire .texto a:focus-visible,
-.dark-mode #conteudo #conselho-municipal .textos a:hover,
-.dark-mode #conteudo #conselho-municipal .textos a:focus-visible {
-  background-color: var(--amarela);
-  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
-    0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--cinza);
-  text-shadow: 4px 4px 4px var(--sombra-cinza);
-}
-.dark-mode #conteudo #parceires .parceires .parceire .texto a:active,
-.dark-mode #conteudo #conselho-municipal .textos a:active {
-  background-color: var(--laranja);
-  border-color: var(--laranja);
-  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
-    0px 4px 4px 0px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background-color: var(--amarela);
+    box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+      0px 4px 4px 0px var(--sombra-cinza);
+    color: var(--cinza);
+    text-shadow: 4px 4px 4px var(--sombra-cinza);
+  }
+
+  &:active {
+    background-color: var(--laranja);
+    border-color: var(--laranja);
+    box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
 }
 
 .dark-mode #conteudo #direitos .direitos .card {
@@ -135,22 +134,25 @@
   );
   box-shadow: 0px 4px 4px 0px var(--sombra-roxa-clara),
     0px 4px 4px 0px var(--sombra-cinza);
-}
-.dark-mode #conteudo #direitos .direitos .card:hover,
-.dark-mode #conteudo #direitos .direitos .card:focus-visible {
-  background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
-  box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
-    0px 4px 4px 0px var(--sombra-cinza);
-}
-.dark-mode #conteudo #direitos .direitos .card:hover .texto,
-.dark-mode #conteudo #direitos .direitos .card:focus-visible .texto {
-  color: var(--preta);
-  text-shadow: 4px 4px 4px var(--sombra-preta);
-}
-.dark-mode #conteudo #direitos .direitos .card:active {
-  background: linear-gradient(100deg, var(--amarela) 0%, var(--laranja) 100%);
-  box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
-    0px 4px 4px 0px var(--sombra-cinza);
+
+  &:hover,
+  &:focus-visible {
+    background: linear-gradient(100deg, var(--laranja) 0%, var(--amarela) 100%);
+    box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
+    
+  &:hover .texto,
+  &:focus-visible .texto {
+    color: var(--preta);
+    text-shadow: 4px 4px 4px var(--sombra-preta);
+  }
+
+  &:active {
+    background: linear-gradient(100deg, var(--amarela) 0%, var(--laranja) 100%);
+    box-shadow: 0px 4px 4px 0px var(--sombra-laranja),
+      0px 4px 4px 0px var(--sombra-cinza);
+  }
 }
 
 .dark-mode #conteudo #direitos .direitos .card .texto {
