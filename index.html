@@ -15,15 +15,7 @@
     <meta name="color-scheme" content="light dark" />
 
     <!-- Open Graph / Redes sociais -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo-escura.png?raw=true"
-    />
-    <meta
-      property="og:image:alt"
-      content="Logo do Coletive Não-Binárie da Paraíba"
-    />
+    <meta property="og:type" content="non_profit" />
     <meta property="og:title" content="Coletive Não-Binárie da Paraíba" />
     <meta
       property="og:description"
@@ -31,7 +23,7 @@
     />
     <meta
       property="og:image"
-      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo.avif?raw=true"
+      content="https://github.com/Enne-Amore/coletive-nb/blob/main/favicon/logo.jpg?raw=true"
     />
     <meta
       property="og:image:alt"
@@ -41,20 +33,32 @@
       property="og:url"
       content="https://enne-amore.github.io/coletive-nb"
     />
+    <meta property="og:site_name" content="Coletive Não-Binárie da Paraíba" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://enne-amore.github.io/coletive-nb/" />
     <meta name="twitter:title" content="Coletive Não-Binárie da Paraíba" />
     <meta
       name="twitter:description"
-      content="Conheça a união de não-bináries da Paraíba..."
+      content="Conheça a união de não-bináries da Paraíba a caminho de promover a conquista e a proteção dos nossos direitos, e vamos juntes forteceler a nossa rede de apoio!"
     />
     <meta
       name="twitter:image"
-      content="https://github.com/Enne-Amore/coletive-nb/blob/main/img/logo.avif?raw=true"
+      content="https://github.com/Enne-Amore/coletive-nb/blob/main/favicon/logo.jpg?raw=true"
     />
 
     <!-- Pré-carregamento de imagens e fontes -->
-    <link rel="preload" href="/img/populacao-nb.avif" as="image" />
-    <link rel="preload" href="/img/logo.avif" as="image" />
+    <link 
+      rel="preload" 
+      href="/img/logo.avif" 
+      as="image"
+      type="image/avif"
+    />
+    <link 
+      rel="preload" 
+      href="/img/populacao-nb.avif"
+      as="image" 
+      type="image/avif"
+     />
     <link
       rel="preload"
       href="/fonts/geometos-rounded/geometos-rounded.ttf"
@@ -84,10 +88,30 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/dark-theme.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link 
+      rel="stylesheet" 
+      href="css/reset.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/style.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/dark-theme.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/responsive.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
 
     <!-- Fontes de ícone -->
     <link
@@ -96,6 +120,8 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- Google tag (gtag.js) -->
@@ -161,46 +187,71 @@
 
           <nav class="nav">
             <ul class="menu" role="menubar">
-              <li class="link">
-                <a href="#finalidades" aria-label="Ir à seção de finalidades">
+              <li class="link" role="none">
+                <a 
+                  href="#finalidades" 
+                  aria-label="Ir à seção de finalidades" 
+                  role="menuitem"
+                >
                   Finalidades
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#atividades" aria-label="Ir à seção de atividades">
+              <li class="link" role="none">
+                <a 
+                  href="#atividades" 
+                  aria-label="Ir à seção de atividades" 
+                  role="menuitem"
+                >
                   Atividades
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#membres" aria-label="Ir à seção de membres">
+              <li class="link" role="none">
+                <a 
+                  href="#membres" 
+                  aria-label="Ir à seção de membres" 
+                  role="menuitem"
+                >
                   Membres
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#parceires" aria-label="Ir à seção de parceires">
+              <li class="link" role="none">
+                <a 
+                  href="#parceires" 
+                  aria-label="Ir à seção de parceires" 
+                  role="menuitem"
+                >
                   Parceires
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#direitos" aria-label="Ir à seção de direitos">
+              <li class="link" role="none">
+                <a 
+                  href="#direitos" 
+                  aria-label="Ir à seção de direitos" 
+                  role="menuitem"
+                >
                   Direitos
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+              <li class="link" role="none">
+                <a 
+                  href="#rodape" 
+                  aria-label="Ir à seção de nossos contatos" 
+                  role="menuitem"
+                >
                   Contatos
                 </a>
               </li>
 
-              <li class="link-principal">
+              <li class="link-principal" role="none">
                 <a
                   href="#mapeamento"
                   aria-label="Ir à seção sobre o nosso mapeamento"
+                  role="menuitem"
                 >
                   Mapeie-se
                 </a>
@@ -247,20 +298,34 @@
       <!-- Desktop menu -->
       <nav class="nav-desktop">
         <ul class="menu" role="menu">
-          <li class="link">
-            <a href="#finalidades" aria-label="Ir à seção de finalidades">
+          <li class="link" role="none">
+            <a 
+              href="#finalidades" 
+              aria-label="Ir à seção de finalidades"
+              role="menuitem"
+            >
               Finalidades
             </a>
           </li>
 
-          <li class="link">
-            <a href="#atividades" aria-label="Ir à seção de atividades">
+          <li class="link" role="none">
+            <a 
+              href="#atividades" 
+              aria-label="Ir à seção de atividades"
+              role="menuitem"
+            >
               Atividades
             </a>
           </li>
 
-          <li class="link">
-            <a href="#membres" aria-label="Ir à seção de membres"> Membres </a>
+          <li class="link" role="none">
+            <a 
+              href="#membres" 
+              aria-label="Ir à seção de membres"
+              role="menuitem"
+            > 
+              Membres
+            </a>
           </li>
 
           <li class="dropdown" id="dropdown">
@@ -274,20 +339,32 @@
             ></button>
 
             <ul class="dropdown-content" id="dropdown-content" role="menu">
-              <li class="link">
-                <a href="#parceires" aria-label="Ir à seção de parceires">
+              <li class="link" role="none">
+                <a 
+                  href="#parceires" 
+                  aria-label="Ir à seção de parceires"
+                  role="menuitem"
+                >
                   Parceires
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#direitos" aria-label="Ir à seção de direitos">
+              <li class="link" role="none">
+                <a 
+                  href="#direitos" 
+                  aria-label="Ir à seção de direitos"
+                  role="menuitem"
+                >
                   Direitos
                 </a>
               </li>
 
-              <li class="link">
-                <a href="#rodape" aria-label="Ir à seção de nossos contatos">
+              <li class="link" role="none">
+                <a 
+                  href="#rodape" 
+                  aria-label="Ir à seção de nossos contatos"
+                  role="menuitem"
+                >
                   Contatos
                 </a>
               </li>
@@ -336,10 +413,11 @@
             </ul>
           </li>
 
-          <li class="link-principal">
+          <li class="link-principal" role="none">
             <a
               href="#mapeamento"
               aria-label="Ir à seção sobre o nosso mapeamento"
+              role="menuitem"
             >
               Mapeie-se
             </a>
@@ -456,7 +534,7 @@
         <article class="ilustracoes">
           <hr />
 
-          <div class="imgs-container">
+          <div class="imgs-container" tabindex="0">
             <ul class="imgs" role="list">
               <li>
                 <figure>
@@ -557,7 +635,7 @@
           <article class="ilustracoes">
             <hr />
 
-            <div class="imgs-container">
+            <div class="imgs-container" tabindex="0">
               <ul class="imgs" role="list">
                 <li>
                   <figure>
@@ -655,7 +733,7 @@
           <article class="ilustracoes">
             <hr />
 
-            <div class="imgs-container">
+            <div class="imgs-container" tabindex="0">
               <ul class="imgs" role="list">
                 <li>
                   <figure>
@@ -1011,14 +1089,15 @@
               <i class="fa-solid fa-message icone" aria-hidden="true"></i>
             </h3>
 
-            <ul class="tells" role="listitem">
-              <li>
+            <ul class="tells" role="list">
+              <li role="none">
                 <a
                   href="https://www.instagram.com/coletivenaobinariepb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                   aria-label="Ir ao perfil do Coletive Não-Binárie da Paraíba no Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="tell"
+                  role="listitem"
                 >
                   <i
                     class="fa-brands fa-instagram icone"
@@ -1029,13 +1108,14 @@
                 </a>
               </li>
 
-              <li>
+              <li role="none">
                 <a
                   href="mailto:coletivenaobinariepb@gmail.com"
                   aria-label="Email do Coletive Não-Binárie da Paraíba para contatar"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="tell"
+                  role="listitem"
                 >
                   <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
 
@@ -1058,14 +1138,15 @@
               <i class="fa-solid fa-code icone" aria-hidden="true"></i>
             </h3>
 
-            <ul class="tells" role="listitem">
-              <li>
+            <ul class="tells" role="list">
+              <li role="none">
                 <a
                   href="https://www.linkedin.com/in/enne-jim-pessoa/"
                   aria-label="Ir ao perfil de Enne no LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="tell"
+                  role="listitem"
                 >
                   <i class="fa-brands fa-linkedin icone" aria-hidden="true"></i>
 
@@ -1073,13 +1154,14 @@
                 </a>
               </li>
 
-              <li>
+              <li role="none">
                 <a
                   href="mailto:Enne.Pessoa@gmail.com"
                   aria-label="Email de Enne para contatar"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="tell"
+                  role="listitem"
                 >
                   <i class="fa-solid fa-envelope icone" aria-hidden="true"></i>
 
@@ -1096,17 +1178,27 @@
           Em caso de violência ou preconceito, <strong>NÃO SE CALE!</strong>
         </p>
 
-        <ul class="tells" role="listitem">
-          <li>
-            <a href="tel:100" aria-label="ligar para 100" class="tell">
+        <ul class="tells" role="list">
+          <li role="none">
+            <a 
+              href="tel:100" 
+              aria-label="ligar para 100" 
+              class="tell" 
+              role="listitem"
+            >
               <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
 
               <span> Direitos Humanos <strong>Nacional (100)</strong> </span>
             </a>
           </li>
 
-          <li>
-            <a href="tel:155" aria-label="ligar para 155" class="tell">
+          <li role="none">
+            <a 
+              href="tel:155" 
+              aria-label="ligar para 155" 
+              class="tell" 
+              role="listitem"
+            >
               <i class="fa-solid fa-phone icone" aria-hidden="true"></i>
 
               <span> Direitos Humanos <strong>Estadual (155)</strong> </span>
@@ -1118,7 +1210,7 @@
       <figure class="img">
         <img
           src="img/baleia.avif"
-          alt="Baleia pintada com as cores da bandeira da comunidade"
+          alt=""
           loading="lazy"
         />
       </figure>
