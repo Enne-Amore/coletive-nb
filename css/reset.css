@@ -15,7 +15,7 @@
 
 .fa-solid,
 .fa-brands {
-  font-display: swap;
+  font-display: block;
 }
 
 /* Reset das tags */

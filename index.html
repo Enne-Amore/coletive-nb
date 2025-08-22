@@ -47,8 +47,18 @@
     />
 
     <!-- Pré-carregamento de imagens e fontes -->
-    <link rel="preload" href="/img/logo.avif" as="image" />
-    <link rel="preload" href="/img/populacao-nb.avif" as="image" />
+    <link 
+      rel="preload" 
+      href="/img/logo.avif" 
+      as="image"
+      type="image/avif"
+    />
+    <link 
+      rel="preload" 
+      href="/img/populacao-nb.avif"
+      as="image" 
+      type="image/avif"
+     />
     <link
       rel="preload"
       href="/fonts/geometos-rounded/geometos-rounded.ttf"
@@ -78,10 +88,30 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/dark-theme.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link 
+      rel="stylesheet" 
+      href="css/reset.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/style.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/dark-theme.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
+    <link 
+      rel="stylesheet" 
+      href="css/responsive.css" 
+      media="print" 
+      onload="this.media='all'" 
+    />
 
     <!-- Fontes de ícone -->
     <link
@@ -90,6 +120,8 @@
       integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- Google tag (gtag.js) -->
