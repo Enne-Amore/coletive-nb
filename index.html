@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Meta tags essenciais -->
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WHT2VXZ2");
+    </script>
+
+    <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coletive Não-Binárie da Paraíba</title>
@@ -35,7 +49,10 @@
     />
     <meta property="og:site_name" content="Coletive Não-Binárie da Paraíba" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://enne-amore.github.io/coletive-nb/" />
+    <meta
+      name="twitter:url"
+      content="https://enne-amore.github.io/coletive-nb/"
+    />
     <meta name="twitter:title" content="Coletive Não-Binárie da Paraíba" />
     <meta
       name="twitter:description"
@@ -46,71 +63,50 @@
       content="https://github.com/Enne-Amore/coletive-nb/blob/main/favicon/logo.jpg?raw=true"
     />
 
-    <!-- Pré-carregamento de imagens e fontes -->
-    <link 
-      rel="preload" 
-      href="/img/logo.avif" 
-      as="image"
-      type="image/avif"
-    />
-    <link 
-      rel="preload" 
-      href="/img/populacao-nb.avif"
-      as="image" 
-      type="image/avif"
-     />
-    <link
-      rel="preload"
-      href="/fonts/geometos-rounded/geometos-rounded.ttf"
-      as="font"
-      type="font/ttf"
-      crossorigin
-    />
-
     <!-- Favicons -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
+      href="favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png"
+      href="favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
 
     <!-- CSS -->
-    <link 
-      rel="stylesheet" 
-      href="css/reset.css" 
-      media="print" 
-      onload="this.media='all'" 
+    <link
+      rel="stylesheet"
+      href="css/reset.css"
+      media="print"
+      onload="this.media='all'"
     />
-    <link 
-      rel="stylesheet" 
-      href="css/style.css" 
-      media="print" 
-      onload="this.media='all'" 
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+      media="print"
+      onload="this.media='all'"
     />
-    <link 
-      rel="stylesheet" 
-      href="css/dark-theme.css" 
-      media="print" 
-      onload="this.media='all'" 
+    <link
+      rel="stylesheet"
+      href="css/dark-theme.css"
+      media="print"
+      onload="this.media='all'"
     />
-    <link 
-      rel="stylesheet" 
-      href="css/responsive.css" 
-      media="print" 
-      onload="this.media='all'" 
+    <link
+      rel="stylesheet"
+      href="css/responsive.css"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- Fontes de ícone -->
@@ -139,6 +135,7 @@
     </script>
 
     <!-- JavaScript -->
+    <script src="js/load.js" defer></script>
     <script src="js/menu.js" defer></script>
     <script src="js/tema-cores.js" defer></script>
     <script src="js/topo.js" defer></script>
@@ -156,9 +153,43 @@
         style="display: none; visibility: hidden"
       ></iframe>
     </noscript>
-    
+
+    <!-- Tela de carregamento -->
+    <div
+      id="load"
+      role="status"
+      aria-live="polite"
+      style="
+        background-color: var(--roxa-clara);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <figure
+        style="
+          width: 100px;
+          height: auto;
+          animation: load 0.8s ease-in-out alternate infinite;
+        "
+      >
+        <img
+          src="favicon/apple-touch-icon.png"
+          alt="Carregando ..."
+          style="background: none"
+        />
+      </figure>
+    </div>
+
     <!-- Conteúdo visível -->
-    <header id="cabecalho">
+    <header id="cabecalho" style="display: none">
       <figure class="logo">
         <img
           src="img/logo.avif"
@@ -188,9 +219,9 @@
           <nav class="nav">
             <ul class="menu" role="menubar">
               <li class="link" role="none">
-                <a 
-                  href="#finalidades" 
-                  aria-label="Ir à seção de finalidades" 
+                <a
+                  href="#finalidades"
+                  aria-label="Ir à seção de finalidades"
                   role="menuitem"
                 >
                   Finalidades
@@ -198,9 +229,9 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#atividades" 
-                  aria-label="Ir à seção de atividades" 
+                <a
+                  href="#atividades"
+                  aria-label="Ir à seção de atividades"
                   role="menuitem"
                 >
                   Atividades
@@ -208,9 +239,9 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#membres" 
-                  aria-label="Ir à seção de membres" 
+                <a
+                  href="#membres"
+                  aria-label="Ir à seção de membres"
                   role="menuitem"
                 >
                   Membres
@@ -218,9 +249,9 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#parceires" 
-                  aria-label="Ir à seção de parceires" 
+                <a
+                  href="#parceires"
+                  aria-label="Ir à seção de parceires"
                   role="menuitem"
                 >
                   Parceires
@@ -228,9 +259,9 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#direitos" 
-                  aria-label="Ir à seção de direitos" 
+                <a
+                  href="#direitos"
+                  aria-label="Ir à seção de direitos"
                   role="menuitem"
                 >
                   Direitos
@@ -238,9 +269,9 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#rodape" 
-                  aria-label="Ir à seção de nossos contatos" 
+                <a
+                  href="#rodape"
+                  aria-label="Ir à seção de nossos contatos"
                   role="menuitem"
                 >
                   Contatos
@@ -299,8 +330,8 @@
       <nav class="nav-desktop">
         <ul class="menu" role="menu">
           <li class="link" role="none">
-            <a 
-              href="#finalidades" 
+            <a
+              href="#finalidades"
               aria-label="Ir à seção de finalidades"
               role="menuitem"
             >
@@ -309,8 +340,8 @@
           </li>
 
           <li class="link" role="none">
-            <a 
-              href="#atividades" 
+            <a
+              href="#atividades"
               aria-label="Ir à seção de atividades"
               role="menuitem"
             >
@@ -319,11 +350,11 @@
           </li>
 
           <li class="link" role="none">
-            <a 
-              href="#membres" 
+            <a
+              href="#membres"
               aria-label="Ir à seção de membres"
               role="menuitem"
-            > 
+            >
               Membres
             </a>
           </li>
@@ -340,8 +371,8 @@
 
             <ul class="dropdown-content" id="dropdown-content" role="menu">
               <li class="link" role="none">
-                <a 
-                  href="#parceires" 
+                <a
+                  href="#parceires"
                   aria-label="Ir à seção de parceires"
                   role="menuitem"
                 >
@@ -350,8 +381,8 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#direitos" 
+                <a
+                  href="#direitos"
                   aria-label="Ir à seção de direitos"
                   role="menuitem"
                 >
@@ -360,8 +391,8 @@
               </li>
 
               <li class="link" role="none">
-                <a 
-                  href="#rodape" 
+                <a
+                  href="#rodape"
                   aria-label="Ir à seção de nossos contatos"
                   role="menuitem"
                 >
@@ -426,7 +457,7 @@
       </nav>
     </header>
 
-    <main id="conteudo">
+    <main id="conteudo" style="display: none">
       <section id="introducao">
         <figure class="ilustracao">
           <img
@@ -1071,7 +1102,7 @@
       ></button>
     </main>
 
-    <footer id="rodape">
+    <footer id="rodape" style="display: none">
       <div class="container-logo-contatos">
         <figure class="logo">
           <img

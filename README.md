@@ -57,6 +57,7 @@
  ├── js/                     # Arquivos JavaScript
  │   ├── btn-mapeamento.js 
  │   ├── ilustracoes.js
+ │   ├── load.js
  │   ├── menu.js
  │   ├── tema-cores.js
  │   ├── topo.js
