@@ -102,6 +102,17 @@ img {
 }
 
 /* Animações dos elementos */
+@keyframes load {
+  0% {
+    transform: scale(.9);
+    opacity: .5;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
 @keyframes aparecer {
   from {
     transform: translateX(-5px);
