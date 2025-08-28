@@ -34,7 +34,7 @@
   #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
     display: inline-block;
     color: var(--amarela);
-    padding: 0 15px;
+    padding: 0 45px 0 18px;
     border-radius: 1em;
     cursor: default;
   }
@@ -256,6 +256,9 @@
     font-size: 24px;
     padding: 15px 20px;
   }
+  #cabecalho .nav-desktop .menu .dropdown {
+    padding-right: 2em;
+  }
   #cabecalho .nav-desktop .menu .dropdown .dropdown-icon {
     font-size: 2.4em;
   }
@@ -433,7 +436,7 @@
 
   #conteudo #topo {
     right: 2%;
-    padding: 1.4% 2%;
+    padding: 20px 44px 20px 48px;
     font-size: 3.3em;
   }
 
@@ -458,7 +461,8 @@
     line-height: normal;
   }
   #rodape .contatos .card-tell .titulo .icone {
-    font-size: 0.95em;
+    font-size: 1em;
+    padding: 10px 20px;
   }
   #rodape .contatos .card-tell .tells .tell .icone,
   #rodape .tells-emergencia .tells .tell .icone {
@@ -487,7 +491,7 @@
     width: 215px;
   }
   #cabecalho .nav-desktop .menu a {
-    padding: 10px 10px;
+    padding: 10px;
   }
   #cabecalho .nav-desktop .menu .dropdown {
     margin-right: 2.4em;
@@ -607,7 +611,6 @@
 
   #conteudo #topo {
     right: 2.5%;
-    padding: 2% 2.9%;
     font-size: 5em;
   }
 
@@ -785,7 +788,7 @@
   #conteudo #topo {
     right: 4.5%;
     bottom: 4%;
-    padding: 5% 6.5%;
+    padding: 20px 42px 20px 46px;
     font-size: 4em;
   }
 
@@ -826,8 +829,7 @@
   }
 }
 
-@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) {
-  /* Particularidades de celulares maiores */
+@media screen and (min-width: 400px) and (max-width: 500px) and (orientation: portrait) { /* Particularidades de celulares maiores */
   #conteudo #membres .ilustracoes hr,
   #conteudo #atividades .ilustracoes hr {
     transform: translateY(390%);
