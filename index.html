@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <!-- Google Tag Manager -->
-    <script>
+    <script defer>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
@@ -113,6 +113,7 @@
     <script
       src="https://kit.fontawesome.com/ff50ed4701.js"
       crossorigin="anonymous"
+      defer
     ></script>
 
     <!-- Google tag (gtag.js) -->
@@ -120,7 +121,7 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-RX5TYLV2CB"
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
@@ -155,7 +156,7 @@
       role="status"
       aria-live="polite"
       style="
-        background-color: var(--roxa-clara);
+        background-color: #6A4EA6;
         width: 100%;
         height: 100%;
         position: fixed;
@@ -170,14 +171,16 @@
     >
       <figure
         style="
+          margin: 0;
           width: 100px;
-          height: auto;
+          opacity: .5;
           animation: load 0.8s ease-in-out alternate infinite;
         "
       >
         <img
-          src="favicon/apple-touch-icon.png"
+          src="favicon/logo.avif"
           alt="Carregando ..."
+          width="100"
           style="background: none"
         />
       </figure>
@@ -357,6 +360,7 @@
           <li class="dropdown" id="dropdown" role="none">
             <button
               class="fa-solid fa-angle-down dropdown-icon"
+              role="button"
               aria-label="Abrir mais opções de menu"
               aria-haspopup="true"
               aria-expanded="false"
