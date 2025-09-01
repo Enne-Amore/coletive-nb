@@ -172,7 +172,6 @@
       <figure
         style="
           margin: 0;
-          width: 100px;
           opacity: .5;
           animation: load 0.8s ease-in-out alternate infinite;
         "
@@ -180,7 +179,6 @@
         <img
           src="favicon/logo.avif"
           alt="Carregando ..."
-          width="100"
           style="background: none"
         />
       </figure>
@@ -360,7 +358,7 @@
           <li class="dropdown" id="dropdown" role="none">
             <button
               class="fa-solid fa-angle-down dropdown-icon"
-              role="button"
+              role="menuitem"
               aria-label="Abrir mais opções de menu"
               aria-haspopup="true"
               aria-expanded="false"
@@ -567,13 +565,9 @@
           <div 
             class="imgs-container"
             tabindex="0"
-            role="scrollbar"
+            role="region"
+            aria-roledescription="carousel"
             aria-label="Carrosel de imagens sobre algumas atividades que realizamos"
-            aria-controls="images-scroll"
-            aria-orientation="horizontal"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
           >
             <ul class="imgs">
               <li>
@@ -678,13 +672,9 @@
             <div
               class="imgs-container"
               tabindex="0"
-              role="scrollbar"
+              role="region"
+              aria-roledescription="carousel"
               aria-label="Carrosel de imagens de nós mesmes em conjunto"
-              aria-controls="images-scroll"
-              aria-orientation="horizontal"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
             >
               <ul class="imgs">
                 <li>
@@ -786,13 +776,9 @@
             <div
               class="imgs-container"
               tabindex="0"
-              role="scrollbar"
+              role="region"
+              aria-roledescription="carousel"
               aria-label="Carrosel de imagens de cada diretore"
-              aria-controls="images-scroll"
-              aria-orientation="horizontal"
-              aria-valuenow="0"
-              aria-valuemin="0"
-              aria-valuemax="100"
             >
               <ul class="imgs">
                 <li>
@@ -806,7 +792,7 @@
 
                       <img
                         src="img/yuri-diretoria-mobile.avif"
-                        alt="Foto de diretore"
+                        alt="Foto de diretore Yuri"
                         loading="lazy"
                       />
                     </picture>
@@ -826,7 +812,7 @@
 
                       <img
                         src="img/selme-diretoria-mobile.avif"
-                        alt="Foto de diretore"
+                        alt="Foto de diretore Selme"
                         width="288"
                         height="190"
                         fetchpriority="low"
@@ -849,7 +835,7 @@
 
                       <img
                         src="img/d'angelles-diretoria-mobile.avif"
-                        alt="Foto de diretore"
+                        alt="Foto de diretore D'Angelles"
                         width="288"
                         height="190"
                         fetchpriority="low"
@@ -872,7 +858,7 @@
 
                       <img
                         src="img/lobo-diretoria-mobile.avif"
-                        alt="Foto de diretore"
+                        alt="Foto de diretore Lobo"
                         width="288"
                         height="190"
                         fetchpriority="low"
