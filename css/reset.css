@@ -32,7 +32,6 @@ body {
   font: 2vw var(--padrao);
   max-width: 100vw;
   overflow-x: hidden;
-  animation: aparecer 0.5s ease-out;
 }
 
 html {
