@@ -108,14 +108,10 @@
    Exemplo de uso:  
    `font-family: "Geometos Rounded";` ou 
    `font-family: var(--titulo);`
- - **Open Dyslexic Alta**  
+ - **Nunito**  
    Exemplo de uso:  
-   `font-family: "Open Dyslexic Alta";` ou 
+   `font-family: "Nunito";` ou 
    `font-family: var(--texto);`
- - **Open Sans**  
-   Exemplo de uso:  
-   `font-family: "Open Sans";` ou 
-   `font-family: var(--padrao);`
 
 
 ## 🌟 Referências de Uso

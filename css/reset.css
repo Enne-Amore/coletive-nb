@@ -8,9 +8,9 @@
 }
 
 @font-face {
-  font-family: "Open Dyslexic Alta";
+  font-family: "Nunito";
   font-display: swap;
-  src: url(../fonts/open-dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+  src: url(../fonts/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
 }
 
 .fa-solid,
@@ -29,7 +29,7 @@ body {
   background-color: var(--roxa-clara);
   color: var(--branca);
   text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-  font: 2vw var(--padrao);
+  font: 2vw var(--texto);
   max-width: 100vw;
   overflow-x: hidden;
 }
@@ -81,8 +81,7 @@ img {
   --sombra-amarela-2: #ECE35A08;
   --sombra-laranja: #F2C02908;
   --titulo: "Geometos Rounded", sans-serif;
-  --padrao: "Open Sans", sans-serif;
-  --texto: "Open Dyslexic Alta", sans-serif;
+  --texto: "Nunito", sans-serif;
 }
 
 /* Estilização da barrinha de rolagem */
