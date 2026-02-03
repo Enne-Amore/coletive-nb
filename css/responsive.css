@@ -218,6 +218,7 @@
   }
   #rodape .contatos .card-tell {
     max-width: fit-content;
+    gap: 8px;
   }
   #rodape .contatos .card-tell .titulo {
     align-items: flex-end;
