@@ -59,8 +59,8 @@
   background-color: var(--roxa-escura);
   box-shadow: 0px 4px 4px 0px var(--sombra-roxa-escura),
     0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--amarela);
-  text-shadow: 4px 4px 4px var(--sombra-amarela),
+  color: var(--branca);
+  text-shadow: 4px 4px 4px var(--sombra-branca),
     4px 4px 4px var(--sombra-cinza);
 }
 
@@ -92,6 +92,7 @@
   text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
 }
 
+.dark-mode #conteudo #atividades .lista .atividade p strong,
 .dark-mode #conteudo #parceires .parceires .parceire .texto p strong,
 .dark-mode #conteudo #conselho-municipal .textos p strong {
   color: var(--amarela);

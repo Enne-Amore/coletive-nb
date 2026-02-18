@@ -419,7 +419,7 @@
   background: var(--amarela);
   box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
     0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--roxa-escura);
+  color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
     4px 4px 4px var(--sombra-cinza);
   text-align: center;
@@ -431,6 +431,7 @@
   width: 85%;
 }
 #conteudo #atividades .lista .atividade p strong {
+  color: var(--roxa-escura);
   font-weight: 800;
 }
 #conteudo #atividades .ilustracoes {
@@ -608,7 +609,7 @@
     4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto a,
-#conteudo #mapeamento .textos a,
+#conteudo #mapeamento .textos .btn-to-form a,
 #conteudo #conselho-municipal .textos a {
   display: flex;
   padding: 15px 35px;
@@ -654,16 +655,24 @@
   font-size: 1.2em;
 }
 
-#conteudo #mapeamento .textos a {
+#conteudo #mapeamento .textos .btn-to-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 3em auto 2em;
+  width: max-content;
+}
+#conteudo #mapeamento .textos .btn-to-form a {
   background-color: var(--amarela);
   box-shadow: 4px 4px 4px 0px var(--sombra-amarela),
     4px 4px 4px 0px var(--sombra-cinza);
   color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-cinza);
   font-weight: 800;
-  margin: 0.9em auto 1em;
-  max-width: 260px;
-  gap: 12px;
+  border-radius: 40px;
+  max-width: 240px;
+  gap: 2px;
 
   &:hover,
   &:focus-visible {
@@ -683,8 +692,11 @@
       4px 4px 4px var(--sombra-cinza);
   }
 }
-#conteudo #mapeamento .textos a .icone {
-  font-size: 1em;
+#conteudo #mapeamento .textos .btn-to-form a .icone {
+  font-size: 1.4em;
+}
+#conteudo #mapeamento .textos .btn-to-form .aviso {
+  font-size: 14px;
 }
 
 #conteudo #direitos {
