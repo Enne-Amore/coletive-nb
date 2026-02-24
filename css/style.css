@@ -555,6 +555,7 @@
 }
 #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
   position: absolute;
+  font-family: "Open Dyslexic";
   font-size: 18px;
   width: 100%;
   text-align: center;

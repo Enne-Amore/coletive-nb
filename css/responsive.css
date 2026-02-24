@@ -169,6 +169,10 @@
     width: fit-content;
     margin: auto;
   }
+  #conteudo #parceires .parceires .parceire .texto a,
+  #conteudo #conselho-municipal .textos a {
+    gap: 10px;
+  }
 
   #conteudo #mapeamento .textos .btn-to-form {
     align-items: end;
@@ -358,6 +362,7 @@
   #conteudo #membres .ilustracoes .imgs figure img,
   #conteudo #atividades .ilustracoes .imgs figure img {
     pointer-events: none;
+    border-radius: 45px;
   }
   #conteudo #membres .ilustracoes .aviso,
   #conteudo #atividades .ilustracoes .aviso {
@@ -426,7 +431,7 @@
   }
 
   #conteudo #mapeamento {
-    scroll-margin-top: calc(100vh - 650px);
+    scroll-margin-top: calc(100vh - 630px);
   }
 
   #conteudo #direitos .frase-efeito {

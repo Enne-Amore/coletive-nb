@@ -13,6 +13,12 @@
   src: url(../fonts/nunito/Nunito-VariableFont-wght.ttf) format(truetype);
 }
 
+@font-face {
+  font-family: "Open Dyslexic";
+  font-display: swap;
+  src: url(../fonts/open_dyslexic/OpenDyslexicAlta-Regular.otf) format(opentype);
+}
+
 .fa-solid,
 .fa-brands {
   font-display: block;
