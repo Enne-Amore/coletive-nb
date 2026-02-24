@@ -135,7 +135,7 @@
     0px 4px 4px 0px var(--sombra-cinza);
   color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-cinza);
-  font-weight: 600;
+  font-weight: 800;
 
   &:hover,
   &:focus-visible {
@@ -338,7 +338,6 @@
 #conteudo #conselho-municipal .textos p {
   position: relative;
   font-size: 20px;
-  font-family: var(--texto);
   line-height: 35px;
 }
 #conteudo #finalidades .textos .lista li::before {
@@ -348,7 +347,7 @@
 }
 #conteudo #finalidades .textos .lista li strong,
 #conteudo #mapeamento .textos p strong {
-  font-weight: bolder;
+  font-weight: 800;
   color: var(--amarela);
   text-shadow: 4px 4px 4px var(--sombra-amarela),
     4px 4px 4px var(--sombra-cinza);
@@ -420,11 +419,10 @@
   background: var(--amarela);
   box-shadow: 0px 4px 4px 0px var(--sombra-amarela),
     0px 4px 4px 0px var(--sombra-cinza);
-  color: var(--roxa-escura);
+  color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-roxa-escura),
     4px 4px 4px var(--sombra-cinza);
   text-align: center;
-  font-family: var(--texto);
   font-size: 18px;
   font-style: normal;
   line-height: 30px;
@@ -433,7 +431,8 @@
   width: 85%;
 }
 #conteudo #atividades .lista .atividade p strong {
-  font-weight: bolder;
+  color: var(--roxa-escura);
+  font-weight: 800;
 }
 #conteudo #atividades .ilustracoes {
   margin-top: -1em;
@@ -556,7 +555,7 @@
 }
 #conteudo #membres .diretories .ilustracoes .imgs figure figcaption {
   position: absolute;
-  font-family: var(--texto);
+  font-family: "Open Dyslexic";
   font-size: 18px;
   width: 100%;
   text-align: center;
@@ -599,20 +598,19 @@
 #conteudo #parceires .parceires .parceire .texto p {
   color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-cinza);
-  font-family: var(--texto);
   font-size: 20px;
   font-weight: 400;
   line-height: 35px;
 }
 #conteudo #parceires .parceires .parceire .texto p strong,
 #conteudo #conselho-municipal .textos p strong {
-  font-weight: bolder;
+  font-weight: 800;
   color: var(--roxa-clara);
   text-shadow: 4px 4px 4px var(--sombra-roxa-clara),
     4px 4px 4px var(--sombra-cinza);
 }
 #conteudo #parceires .parceires .parceire .texto a,
-#conteudo #mapeamento .textos a,
+#conteudo #mapeamento .textos .btn-to-form a,
 #conteudo #conselho-municipal .textos a {
   display: flex;
   padding: 15px 35px;
@@ -658,15 +656,24 @@
   font-size: 1.2em;
 }
 
-#conteudo #mapeamento .textos a {
+#conteudo #mapeamento .textos .btn-to-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 3em auto 2em;
+  width: max-content;
+}
+#conteudo #mapeamento .textos .btn-to-form a {
   background-color: var(--amarela);
   box-shadow: 4px 4px 4px 0px var(--sombra-amarela),
     4px 4px 4px 0px var(--sombra-cinza);
   color: var(--cinza);
   text-shadow: 4px 4px 4px var(--sombra-cinza);
-  margin: 0.9em auto 1em;
-  max-width: 260px;
-  gap: 12px;
+  font-weight: 800;
+  border-radius: 40px;
+  max-width: 240px;
+  gap: 2px;
 
   &:hover,
   &:focus-visible {
@@ -686,8 +693,11 @@
       4px 4px 4px var(--sombra-cinza);
   }
 }
-#conteudo #mapeamento .textos a .icone {
-  font-size: 1em;
+#conteudo #mapeamento .textos .btn-to-form a .icone {
+  font-size: 1.4em;
+}
+#conteudo #mapeamento .textos .btn-to-form .aviso {
+  font-size: 14px;
 }
 
 #conteudo #direitos {
@@ -931,7 +941,7 @@
   font-weight: 500;
   width: 100%;
   border-radius: 30px;
-  padding: 0.6em 0.8em;
+  padding: 0.4em 0.6em;
 }
 #rodape .contatos .card-tell .tells .tell .texto.desktop {
   display: none;
@@ -949,7 +959,6 @@
 }
 #rodape .tells-emergencia .texto {
   text-shadow: 4px 4px 4px var(--sombra-branca), 4px 4px 4px var(--sombra-cinza);
-  font-family: var(--texto);
   font-size: 18px;
   font-weight: 400;
 }
@@ -968,7 +977,7 @@
   gap: 10px;
   border-radius: 30px;
   font-size: 16px;
-  padding: 0.6em 0.8em;
+  padding: 0.4em 0.6em;
 }
 #rodape .tells-emergencia .tells .tell,
 #rodape .tells-emergencia .tells .tell,

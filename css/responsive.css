@@ -164,15 +164,27 @@
     flex-direction: row-reverse;
   }
   #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos a,
+  #conteudo #mapeamento .textos .btn-to-form a,
   #conteudo #conselho-municipal .textos a {
     width: fit-content;
     margin: auto;
   }
-
-  #conteudo #mapeamento .textos a,
+  #conteudo #parceires .parceires .parceire .texto a,
   #conteudo #conselho-municipal .textos a {
-    margin: 0.7em 0 0.1em;
+    gap: 10px;
+  }
+
+  #conteudo #mapeamento .textos .btn-to-form {
+    align-items: end;
+    gap: 5px;
+    margin: 0.7em 0 0;
+  }
+  #conteudo #mapeamento .textos .btn-to-form a {
+    gap: 4px;
+    padding-left: 30px;
+  }
+  #conteudo #mapeamento .textos .btn-to-form a,
+  #conteudo #conselho-municipal .textos a {
     max-width: fit-content;
   }
 
@@ -184,7 +196,8 @@
     width: 100%;
   }
   #conteudo #direitos .frase-efeito {
-    margin: auto 25%;
+    margin: auto 0;
+    width: 500px;
   }
   #conteudo #direitos .direitos .card {
     flex-direction: row;
@@ -201,6 +214,7 @@
   }
   #conteudo #conselho-municipal .textos a {
     padding: 15px 35px;
+    margin: 0.7em 0 0.1em;
   }
 
   #rodape {
@@ -218,6 +232,7 @@
   }
   #rodape .contatos .card-tell {
     max-width: fit-content;
+    gap: 8px;
   }
   #rodape .contatos .card-tell .titulo {
     align-items: flex-end;
@@ -277,6 +292,10 @@
   }
   #conteudo #introducao .frase-efeito strong {
     padding-top: 0.17em;
+  }
+
+  #conteudo #finalidades {
+    scroll-margin-top: calc(100vh - 650px);
   }
 
   #conteudo #finalidades,
@@ -343,6 +362,7 @@
   #conteudo #membres .ilustracoes .imgs figure img,
   #conteudo #atividades .ilustracoes .imgs figure img {
     pointer-events: none;
+    border-radius: 45px;
   }
   #conteudo #membres .ilustracoes .aviso,
   #conteudo #atividades .ilustracoes .aviso {
@@ -361,7 +381,7 @@
   #conteudo #membres .frase-efeito,
   #conteudo #direitos .frase-efeito {
     font-size: 32px;
-    line-height: 60px;
+    line-height: 55px;
     letter-spacing: 1.6px;
     margin: auto 9em;
   }
@@ -399,18 +419,24 @@
     line-height: 40px;
   }
   #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos a,
+  #conteudo #mapeamento .textos .btn-to-form a,
   #conteudo #conselho-municipal .textos a {
     border-radius: 40px;
     font-size: 26px;
     line-height: normal;
   }
   #conteudo #parceires .parceires .parceire .texto a .icone,
-  #conteudo #mapeamento .textos a .icone,
   #conteudo #conselho-municipal .textos a .icone {
     font-size: 0.95em;
   }
 
+  #conteudo #mapeamento {
+    scroll-margin-top: calc(100vh - 630px);
+  }
+
+  #conteudo #direitos .frase-efeito {
+    width: 600px;
+  }
   #conteudo #direitos .direitos .card {
     border-radius: 40px;
     width: 575px;
@@ -473,7 +499,7 @@
     border-radius: 30px;
   }
   #rodape .tells-emergencia {
-    margin-top: -345px;
+    margin-top: -300px;
   }
   #rodape .tells-emergencia .texto {
     font-size: 24px;
@@ -750,17 +776,17 @@
     line-height: 40px;
   }
   #conteudo #parceires .parceires .parceire .texto a,
-  #conteudo #mapeamento .textos a,
+  #conteudo #mapeamento .textos .btn-to-form a,
   #conteudo #conselho-municipal .textos a {
     font-size: 26px;
     line-height: 32px;
   }
   #conteudo #parceires .parceires .parceire .texto a .icone,
-  #conteudo #mapeamento .textos a .icone,
+  #conteudo #mapeamento .textos .btn-to-form a .icone,
   #conteudo #conselho-municipal .textos a .icone {
     font-size: 1.15em;
   }
-  #conteudo #mapeamento .textos a {
+  #conteudo #mapeamento .textos .btn-to-form a {
     margin: 0.9em auto 1em;
     max-width: 300px;
   }
@@ -855,15 +881,20 @@
     padding-right: 1em;
   }
 
+  #conteudo #atividades .lista .atividade p {
+    width: 40%;
+  }
+  #conteudo #atividades .lista .atividade:nth-child(odd) p {
+    transform: translateX(-150px);
+  }
+  #conteudo #atividades .lista .atividade:nth-child(even) p {
+    transform: translateX(150px);
+  }
   #conteudo #membres .ilustracoes hr,
   #conteudo #atividades .ilustracoes hr {
     transform: translateY(550%);
   }
   #conteudo #membres .diretories .ilustracoes hr {
     transform: translateY(650%);
-  }
-
-  #conteudo #direitos .frase-efeito {
-    margin: auto 15em;
   }
 }
